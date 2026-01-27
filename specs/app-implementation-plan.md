@@ -104,7 +104,10 @@ frontend/
 ├── src/
 │   ├── components/
 │   │   ├── Map.tsx              # MapTiler map component (no controls)
-│   │   ├── FilterDrawer.tsx     # Right-side pull tab with calendar & filters
+│   │   ├── FilterBar.tsx        # Bottom filter bar (date + time + free)
+│   │   ├── DateSelector.tsx     # Date with arrows, opens calendar
+│   │   ├── CalendarPopup.tsx    # Calendar popup for date selection
+│   │   ├── TimePeriodSelector.tsx # Manhã|Tarde|Noite multi-select
 │   │   ├── BlockDetailModal.tsx # Block info popup
 │   │   ├── CitySelector.tsx     # City dropdown
 │   │   ├── LandingScreen.tsx    # Initial "find my city" screen
@@ -540,248 +543,341 @@ export function CitySelector({ currentCity, cities, onChange }: CitySelectorProp
 }
 ```
 
-### 4.4 Filter Drawer (Right-side Pull Tab)
+### 4.4 Date Selector
 
-**src/components/FilterDrawer.tsx**
+**src/components/DateSelector.tsx**
 ```typescript
-import { useState, useMemo } from 'react';
-import { format, parseISO, isSameDay } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
-import clsx from 'clsx';
-import { FilterState, TimePeriod, TIME_PERIODS } from '../lib/types';
 
-interface FilterDrawerProps {
-  availableDates: string[];  // Array of YYYY-MM-DD strings with events
-  filters: FilterState;
-  onFiltersChange: (filters: FilterState) => void;
+interface DateSelectorProps {
+  selectedDate: string | null;  // YYYY-MM-DD or null
+  availableDates: string[];     // Sorted array of available dates
+  onDateChange: (date: string | null) => void;
+  onOpenCalendar: () => void;
 }
 
-export function FilterDrawer({ availableDates, filters, onFiltersChange }: FilterDrawerProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function DateSelector({
+  selectedDate,
+  availableDates,
+  onDateChange,
+  onOpenCalendar,
+}: DateSelectorProps) {
+  // Get current index in available dates
+  const currentIndex = selectedDate
+    ? availableDates.indexOf(selectedDate)
+    : -1;
 
-  // Sort dates for calendar display
-  const sortedDates = useMemo(() => [...availableDates].sort(), [availableDates]);
+  // Navigate to previous date
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      onDateChange(availableDates[currentIndex - 1]);
+    } else if (currentIndex === -1 && availableDates.length > 0) {
+      // If "all dates", go to last date
+      onDateChange(availableDates[availableDates.length - 1]);
+    }
+  };
 
-  // Get date range for calendar
-  const dateRange = useMemo(() => {
-    if (sortedDates.length === 0) return { start: new Date(), end: new Date() };
-    return {
-      start: parseISO(sortedDates[0]),
-      end: parseISO(sortedDates[sortedDates.length - 1]),
-    };
-  }, [sortedDates]);
+  // Navigate to next date
+  const handleNext = () => {
+    if (currentIndex >= 0 && currentIndex < availableDates.length - 1) {
+      onDateChange(availableDates[currentIndex + 1]);
+    } else if (currentIndex === availableDates.length - 1) {
+      // If at last date, go back to "all dates"
+      onDateChange(null);
+    } else if (currentIndex === -1 && availableDates.length > 0) {
+      // If "all dates", go to first date
+      onDateChange(availableDates[0]);
+    }
+  };
 
-  // Generate calendar days
+  // Format display text
+  const displayText = selectedDate
+    ? format(parseISO(selectedDate), "d 'de' MMMM", { locale: ptBR })
+    : 'Todos os dias';
+
+  return (
+    <div className="flex items-center justify-center gap-2">
+      <button
+        onClick={handlePrev}
+        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white text-lg font-bold transition-colors"
+      >
+        &lt;
+      </button>
+
+      <button
+        onClick={onOpenCalendar}
+        className="px-6 py-2 bg-white rounded-full text-gray-800 font-medium min-w-[180px] hover:bg-gray-100 transition-colors"
+      >
+        {displayText}
+      </button>
+
+      <button
+        onClick={handleNext}
+        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white text-lg font-bold transition-colors"
+      >
+        &gt;
+      </button>
+    </div>
+  );
+}
+```
+
+### 4.5 Calendar Popup
+
+**src/components/CalendarPopup.tsx**
+```typescript
+import { useMemo } from 'react';
+import { format, parseISO, isSameDay, startOfMonth, endOfMonth, startOfWeek, endOfWeek, addDays } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
+import clsx from 'clsx';
+
+interface CalendarPopupProps {
+  selectedDate: string | null;
+  availableDates: string[];
+  onSelectDate: (date: string | null) => void;
+  onClose: () => void;
+}
+
+export function CalendarPopup({
+  selectedDate,
+  availableDates,
+  onSelectDate,
+  onClose,
+}: CalendarPopupProps) {
+  // Determine which month to show (first available date or selected date)
+  const displayMonth = useMemo(() => {
+    if (selectedDate) return parseISO(selectedDate);
+    if (availableDates.length > 0) return parseISO(availableDates[0]);
+    return new Date();
+  }, [selectedDate, availableDates]);
+
+  // Generate calendar grid
   const calendarDays = useMemo(() => {
+    const monthStart = startOfMonth(displayMonth);
+    const monthEnd = endOfMonth(displayMonth);
+    const calStart = startOfWeek(monthStart);
+    const calEnd = endOfWeek(monthEnd);
+
     const days: Date[] = [];
-    const current = new Date(dateRange.start);
-    while (current <= dateRange.end) {
-      days.push(new Date(current));
-      current.setDate(current.getDate() + 1);
+    let current = calStart;
+    while (current <= calEnd) {
+      days.push(current);
+      current = addDays(current, 1);
     }
     return days;
-  }, [dateRange]);
+  }, [displayMonth]);
 
-  // Check if a date has events
+  // Check if date has events
   const hasEvents = (date: Date) => {
     return availableDates.some(d => isSameDay(parseISO(d), date));
   };
 
-  // Handle date selection
-  const handleDateSelect = (date: Date) => {
-    const dateStr = format(date, 'yyyy-MM-dd');
-    onFiltersChange({ ...filters, selectedDate: dateStr });
+  // Check if date is in current month
+  const isCurrentMonth = (date: Date) => {
+    return date.getMonth() === displayMonth.getMonth();
   };
 
-  // Handle clear date
-  const handleClearDate = () => {
-    onFiltersChange({ ...filters, selectedDate: null });
+  const handleSelect = (date: Date) => {
+    onSelectDate(format(date, 'yyyy-MM-dd'));
+    onClose();
   };
 
-  // Handle free only toggle
-  const handleFreeOnlyChange = (checked: boolean) => {
-    onFiltersChange({ ...filters, freeOnly: checked });
+  const handleClear = () => {
+    onSelectDate(null);
+    onClose();
   };
-
-  // Handle time period toggle (multi-select)
-  const handleTimePeriodToggle = (period: TimePeriod) => {
-    const current = filters.timePeriods;
-    const newPeriods = current.includes(period)
-      ? current.filter(p => p !== period)
-      : [...current, period];
-    onFiltersChange({ ...filters, timePeriods: newPeriods });
-  };
-
-  // Check if filters are active (for pull tab indicator)
-  const hasActiveFilters = filters.selectedDate !== null || filters.freeOnly || filters.timePeriods.length > 0;
 
   return (
-    <>
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
       {/* Backdrop */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/30 z-40 transition-opacity"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
+      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
 
-      {/* Pull Tab (always visible) */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className={clsx(
-          'fixed right-0 top-1/2 -translate-y-1/2 z-50',
-          'w-8 h-20 bg-white rounded-l-lg shadow-lg',
-          'flex items-center justify-center',
-          'transition-transform',
-          isOpen && 'translate-x-full',
-          hasActiveFilters && 'bg-carnival-purple'
-        )}
-      >
-        <span className={clsx(
-          'text-xl',
-          hasActiveFilters ? 'text-white' : 'text-gray-600'
-        )}>
-          ☰
-        </span>
-        {hasActiveFilters && (
-          <span className="absolute -top-1 -left-1 w-3 h-3 bg-carnival-yellow rounded-full" />
-        )}
-      </button>
-
-      {/* Drawer Panel */}
-      <div
-        className={clsx(
-          'fixed right-0 top-0 h-full w-72 bg-white shadow-xl z-50',
-          'transform transition-transform duration-300 ease-out',
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        )}
-      >
+      {/* Calendar */}
+      <div className="relative bg-white rounded-xl p-4 shadow-xl w-80">
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="text-lg font-semibold text-gray-900">Filtros</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-lg font-semibold text-gray-900 capitalize">
+            {format(displayMonth, 'MMMM yyyy', { locale: ptBR })}
+          </h3>
           <button
-            onClick={() => setIsOpen(false)}
-            className="text-gray-400 hover:text-gray-600 text-2xl leading-none"
+            onClick={onClose}
+            className="text-gray-400 hover:text-gray-600 text-xl"
           >
             &times;
           </button>
         </div>
 
-        {/* Content */}
-        <div className="p-4 space-y-6 overflow-y-auto h-[calc(100%-60px)]">
-          {/* Calendar Section */}
-          <div>
-            <div className="flex items-center justify-between mb-3">
-              <h3 className="font-medium text-gray-700">Data</h3>
-              {filters.selectedDate && (
-                <button
-                  onClick={handleClearDate}
-                  className="text-sm text-carnival-purple hover:underline"
-                >
-                  Limpar
-                </button>
-              )}
+        {/* Day headers */}
+        <div className="grid grid-cols-7 gap-1 text-center text-sm mb-2">
+          {['D', 'S', 'T', 'Q', 'Q', 'S', 'S'].map((day, i) => (
+            <div key={i} className="text-gray-400 font-medium py-1">
+              {day}
             </div>
+          ))}
+        </div>
 
-            {/* Simple Calendar Grid */}
-            <div className="grid grid-cols-7 gap-1 text-center text-sm">
-              {/* Day headers */}
-              {['D', 'S', 'T', 'Q', 'Q', 'S', 'S'].map((day, i) => (
-                <div key={i} className="text-gray-400 font-medium py-1">
-                  {day}
-                </div>
-              ))}
+        {/* Calendar grid */}
+        <div className="grid grid-cols-7 gap-1 text-center text-sm">
+          {calendarDays.map((date, i) => {
+            const dateStr = format(date, 'yyyy-MM-dd');
+            const isSelected = selectedDate === dateStr;
+            const isAvailable = hasEvents(date);
+            const inMonth = isCurrentMonth(date);
 
-              {/* Calendar days */}
-              {calendarDays.map((date, i) => {
-                const dateStr = format(date, 'yyyy-MM-dd');
-                const isSelected = filters.selectedDate === dateStr;
-                const isAvailable = hasEvents(date);
+            return (
+              <button
+                key={i}
+                onClick={() => isAvailable && handleSelect(date)}
+                disabled={!isAvailable}
+                className={clsx(
+                  'py-2 rounded-lg transition-colors',
+                  !inMonth && 'opacity-30',
+                  isSelected && 'bg-carnival-purple text-white',
+                  !isSelected && isAvailable && 'bg-carnival-yellow/20 text-gray-900 hover:bg-carnival-yellow/40',
+                  !isAvailable && 'text-gray-300 cursor-not-allowed'
+                )}
+              >
+                {format(date, 'd')}
+              </button>
+            );
+          })}
+        </div>
 
-                return (
-                  <button
-                    key={i}
-                    onClick={() => isAvailable && handleDateSelect(date)}
-                    disabled={!isAvailable}
-                    className={clsx(
-                      'py-2 rounded-lg text-sm transition-colors',
-                      isSelected && 'bg-carnival-purple text-white',
-                      !isSelected && isAvailable && 'bg-carnival-yellow/20 text-gray-900 hover:bg-carnival-yellow/40',
-                      !isAvailable && 'text-gray-300 cursor-not-allowed'
-                    )}
-                  >
-                    {format(date, 'd')}
-                  </button>
-                );
-              })}
-            </div>
+        {/* Clear button */}
+        <button
+          onClick={handleClear}
+          className="w-full mt-4 py-2 text-carnival-purple font-medium hover:bg-gray-50 rounded-lg transition-colors"
+        >
+          Todos os dias
+        </button>
+      </div>
+    </div>
+  );
+}
+```
 
-            {/* Selected date display */}
-            {filters.selectedDate && (
-              <p className="mt-2 text-sm text-carnival-purple font-medium capitalize">
-                {format(parseISO(filters.selectedDate), "EEEE, d 'de' MMMM", { locale: ptBR })}
-              </p>
+### 4.6 Time Period Selector
+
+**src/components/TimePeriodSelector.tsx**
+```typescript
+import clsx from 'clsx';
+import { TimePeriod, TIME_PERIODS } from '../lib/types';
+
+interface TimePeriodSelectorProps {
+  selected: TimePeriod[];
+  onChange: (periods: TimePeriod[]) => void;
+}
+
+export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorProps) {
+  const handleToggle = (period: TimePeriod) => {
+    const newSelected = selected.includes(period)
+      ? selected.filter(p => p !== period)
+      : [...selected, period];
+    onChange(newSelected);
+  };
+
+  return (
+    <div className="flex bg-white/20 rounded-full p-1">
+      {(Object.keys(TIME_PERIODS) as TimePeriod[]).map((period, index) => {
+        const isSelected = selected.includes(period);
+        return (
+          <button
+            key={period}
+            onClick={() => handleToggle(period)}
+            className={clsx(
+              'px-4 py-1.5 text-sm font-medium transition-colors',
+              index === 0 && 'rounded-l-full',
+              index === 2 && 'rounded-r-full',
+              isSelected
+                ? 'bg-white text-carnival-purple'
+                : 'text-white hover:bg-white/10'
             )}
-          </div>
+          >
+            {TIME_PERIODS[period].label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+```
 
-          {/* Divider */}
-          <hr className="border-gray-200" />
+### 4.7 Filter Bar (Bottom Container)
 
-          {/* Time Period Multi-Select */}
-          <div>
-            <h3 className="font-medium text-gray-700 mb-3">Horário</h3>
-            <div className="flex gap-2">
-              {(Object.keys(TIME_PERIODS) as TimePeriod[]).map(period => {
-                const isSelected = filters.timePeriods.includes(period);
-                return (
-                  <button
-                    key={period}
-                    onClick={() => handleTimePeriodToggle(period)}
-                    className={clsx(
-                      'flex-1 py-2 px-3 rounded-lg text-sm font-medium transition-colors',
-                      isSelected
-                        ? 'bg-carnival-purple text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    )}
-                  >
-                    {TIME_PERIODS[period].label}
-                  </button>
-                );
-              })}
-            </div>
-            <p className="text-xs text-gray-400 mt-2">
-              Selecione um ou mais horários
-            </p>
-          </div>
+**src/components/FilterBar.tsx**
+```typescript
+import { useState } from 'react';
+import { DateSelector } from './DateSelector';
+import { CalendarPopup } from './CalendarPopup';
+import { TimePeriodSelector } from './TimePeriodSelector';
+import { FilterState } from '../lib/types';
 
-          {/* Divider */}
-          <hr className="border-gray-200" />
+interface FilterBarProps {
+  availableDates: string[];
+  filters: FilterState;
+  onFiltersChange: (filters: FilterState) => void;
+}
 
-          {/* Free Only Checkbox */}
-          <label className="flex items-center gap-3 cursor-pointer">
+export function FilterBar({ availableDates, filters, onFiltersChange }: FilterBarProps) {
+  const [calendarOpen, setCalendarOpen] = useState(false);
+
+  // Sort dates
+  const sortedDates = [...availableDates].sort();
+
+  const handleDateChange = (date: string | null) => {
+    onFiltersChange({ ...filters, selectedDate: date });
+  };
+
+  const handleTimePeriodsChange = (periods: typeof filters.timePeriods) => {
+    onFiltersChange({ ...filters, timePeriods: periods });
+  };
+
+  const handleFreeOnlyChange = (checked: boolean) => {
+    onFiltersChange({ ...filters, freeOnly: checked });
+  };
+
+  return (
+    <>
+      <div className="absolute bottom-0 left-0 right-0 z-10 bg-carnival-purple">
+        {/* Layer 1: Date Selector */}
+        <div className="px-4 py-3 border-b border-white/10">
+          <DateSelector
+            selectedDate={filters.selectedDate}
+            availableDates={sortedDates}
+            onDateChange={handleDateChange}
+            onOpenCalendar={() => setCalendarOpen(true)}
+          />
+        </div>
+
+        {/* Layer 2: Time Period + Free Only */}
+        <div className="px-4 py-3 flex items-center justify-between gap-4">
+          <TimePeriodSelector
+            selected={filters.timePeriods}
+            onChange={handleTimePeriodsChange}
+          />
+
+          <label className="flex items-center gap-2 cursor-pointer text-white">
             <input
               type="checkbox"
               checked={filters.freeOnly}
               onChange={(e) => handleFreeOnlyChange(e.target.checked)}
-              className="w-5 h-5 rounded border-gray-300 text-carnival-purple focus:ring-carnival-purple"
+              className="w-4 h-4 rounded border-white/30 bg-white/10 text-carnival-yellow focus:ring-carnival-yellow"
             />
-            <span className="text-gray-700 font-medium">Só gratuitos</span>
+            <span className="text-sm font-medium whitespace-nowrap">Só gratuitos</span>
           </label>
-
-          {/* Active filters summary */}
-          {hasActiveFilters && (
-            <div className="pt-4 border-t">
-              <p className="text-sm text-gray-500">
-                Filtros ativos: {[
-                  filters.selectedDate && 'Data',
-                  filters.timePeriods.length > 0 && `Horário (${filters.timePeriods.length})`,
-                  filters.freeOnly && 'Gratuitos'
-                ].filter(Boolean).join(', ')}
-              </p>
-            </div>
-          )}
         </div>
       </div>
+
+      {/* Calendar Popup */}
+      {calendarOpen && (
+        <CalendarPopup
+          selectedDate={filters.selectedDate}
+          availableDates={sortedDates}
+          onSelectDate={handleDateChange}
+          onClose={() => setCalendarOpen(false)}
+        />
+      )}
     </>
   );
 }
@@ -993,7 +1089,7 @@ export function Map({ cityCenter, data, filteredFeatures, onSelectBlock }: MapPr
 ```typescript
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Map } from './components/Map';
-import { FilterDrawer } from './components/FilterDrawer';
+import { FilterBar } from './components/FilterBar';
 import { BlockDetailModal } from './components/BlockDetailModal';
 import { CitySelector } from './components/CitySelector';
 import { LandingScreen } from './components/LandingScreen';
@@ -1164,8 +1260,8 @@ export default function App() {
         onSelectBlock={setSelectedBlock}
       />
 
-      {/* Filter drawer (right-side pull tab) */}
-      <FilterDrawer
+      {/* Filter bar (bottom of screen) */}
+      <FilterBar
         availableDates={availableDates}
         filters={filters}
         onFiltersChange={handleFiltersChange}
@@ -1272,17 +1368,22 @@ railway up
 - [x] Build LoadingSpinner component
 - [x] Build LandingScreen component
 - [x] Build CitySelector component
-- [x] Build FilterDrawer component (right-side pull tab with calendar, time periods, free-only)
+- [x] Build DateSelector component (arrows + date display)
+- [x] Build CalendarPopup component (date picker popup) - *merged into FilterDrawer*
+- [x] Build TimePeriodSelector component (manhã|tarde|noite multi-select) - *merged into FilterDrawer*
+- [x] Build FilterDrawer component (replaces FilterBar - right-side pull tab with calendar, time periods, free-only filter)
 - [x] Build BlockDetailModal component
 - [x] Update Map component (disable navigation controls for clean UI)
 
-### Phase 5: Integration
+### Phase 5: Integration & Testing
 - [x] Wire up App.tsx with all components
-- [ ] Test geolocation flow
-- [ ] Test city switching
-- [ ] Test date filtering
-- [ ] Test block detail modal
-- [ ] Test URL parameters
+- [x] Unit tests for lib modules (types, cities, cityDetection)
+- [x] Unit tests for hooks (useGeolocation, useCityData, useUrlParams)
+- [ ] E2E test geolocation flow
+- [ ] E2E test city switching
+- [ ] E2E test date filtering
+- [ ] E2E test block detail modal
+- [ ] E2E test URL parameters
 
 ### Phase 6: Polish
 - [ ] Mobile responsive testing
@@ -1314,10 +1415,19 @@ railway up
 - Users interact via pinch-to-zoom and drag/scroll only
 - Cleaner, more immersive mobile experience
 
-### Filter Drawer (replaces bottom date bar)
-- Right-side pull tab that slides out on tap
-- Calendar picker for date selection
-- Time period multi-select: Manhã (6-12), Tarde (12-18), Noite (18-6)
-- "Só gratuitos" checkbox for free events only
-- Visual indicator (dot) on pull tab when filters are active
-- Semi-transparent backdrop when open
+### Filter Bar (Bottom of Screen)
+Two-layer horizontal bar fixed at bottom:
+
+**Layer 1 - Date Selector:**
+- Rounded pill showing current date or "Todos os dias"
+- Left/right arrows to navigate between dates
+- Tap center to open calendar popup
+
+**Layer 2 - Time & Price Filters:**
+- Time period multi-select: Manhã | Tarde | Noite (segmented control style)
+- "Só gratuitos" checkbox on the right
+
+**Calendar Popup:**
+- Opens when date text is tapped
+- Shows month grid with available dates highlighted
+- "Todos os dias" button to clear selection
