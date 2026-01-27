@@ -30,9 +30,9 @@ export function FilterBar({ availableDates, filters, onFiltersChange }: FilterBa
 
   return (
     <>
-      <div className="absolute bottom-0 left-0 right-0 z-10 bg-carnival-purple">
+      <div className="absolute bottom-0 left-0 right-0 z-10">
         {/* Layer 1: Date Selector */}
-        <div className="px-4 py-3 border-b border-white/10">
+        <div className="px-4 py-3">
           <DateSelector
             selectedDate={filters.selectedDate}
             availableDates={sortedDates}
@@ -48,14 +48,14 @@ export function FilterBar({ availableDates, filters, onFiltersChange }: FilterBa
             onChange={handleTimePeriodsChange}
           />
 
-          <label className="flex items-center gap-2 cursor-pointer text-white">
+          <label className="flex items-center gap-2 cursor-pointer bg-white/80 rounded-full px-4 py-2 shadow-md">
             <input
               type="checkbox"
               checked={filters.freeOnly}
               onChange={(e) => handleFreeOnlyChange(e.target.checked)}
-              className="w-4 h-4 rounded border-white/30 bg-white/10 text-carnival-yellow focus:ring-carnival-yellow"
+              className="w-4 h-4 rounded border-gray-300 text-carnival-purple focus:ring-carnival-purple"
             />
-            <span className="text-sm font-medium whitespace-nowrap">So gratuitos</span>
+            <span className="text-sm font-medium text-gray-700 whitespace-nowrap">So gratuitos</span>
           </label>
         </div>
       </div>

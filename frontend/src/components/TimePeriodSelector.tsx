@@ -18,7 +18,7 @@ export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorPro
   const periods = Object.keys(TIME_PERIODS) as TimePeriod[];
 
   return (
-    <div className="flex bg-white/20 rounded-full p-1">
+    <div className="flex bg-white/80 rounded-full p-1 shadow-md">
       {periods.map((period, index) => {
         const isSelected = selected.includes(period);
         return (
@@ -30,8 +30,8 @@ export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorPro
               index === 0 && 'rounded-l-full',
               index === periods.length - 1 && 'rounded-r-full',
               isSelected
-                ? 'bg-white text-carnival-purple'
-                : 'text-white hover:bg-white/10'
+                ? 'bg-carnival-purple text-white'
+                : 'text-gray-700 hover:bg-white/50'
             )}
           >
             {TIME_PERIODS[period].label}
