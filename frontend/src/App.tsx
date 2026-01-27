@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Map } from './components/Map';
-import { DateSelector } from './components/DateSelector';
+import { FilterDrawer } from './components/FilterDrawer';
 import { BlockDetailModal } from './components/BlockDetailModal';
 import { CitySelector } from './components/CitySelector';
 import { LandingScreen } from './components/LandingScreen';
@@ -10,12 +10,17 @@ import { useCityData } from './hooks/useCityData';
 import { useUrlParams } from './hooks/useUrlParams';
 import { CITIES, getCityBySlug } from './lib/cities';
 import { detectCityFromCoords } from './lib/cityDetection';
-import type { BlockFeature, AppView } from './lib/types';
+import { isTimeInPeriod } from './lib/types';
+import type { BlockFeature, AppView, FilterState } from './lib/types';
 
 export default function App() {
   const [view, setView] = useState<AppView>('landing');
   const [citySlug, setCitySlug] = useState<string | null>(null);
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
+  const [filters, setFilters] = useState<FilterState>({
+    selectedDate: null,
+    freeOnly: false,
+    timePeriods: [],
+  });
   const [selectedBlock, setSelectedBlock] = useState<BlockFeature | null>(null);
 
   const { coords, error: geoError, loading: geoLoading, requestLocation } = useGeolocation();
@@ -28,9 +33,13 @@ export default function App() {
     if (params.city && getCityBySlug(params.city)) {
       setCitySlug(params.city);
       setView('map');
-      if (params.date) {
-        setSelectedDate(params.date);
-      }
+
+      // Restore filters from URL
+      setFilters(prev => ({
+        ...prev,
+        selectedDate: params.date || null,
+        freeOnly: params.free === '1',
+      }));
     }
   }, [getParams]);
 
@@ -49,16 +58,19 @@ export default function App() {
   // Handle city change
   const handleCityChange = useCallback((slug: string) => {
     setCitySlug(slug);
-    setParams({ city: slug });
-    setSelectedDate(null);
+    setParams({ city: slug, date: undefined, free: undefined });
+    setFilters({ selectedDate: null, freeOnly: false, timePeriods: [] });
     setSelectedBlock(null);
     setView('map');
   }, [setParams]);
 
-  // Handle date change
-  const handleDateChange = useCallback((date: string | null) => {
-    setSelectedDate(date);
-    setParams({ date: date || undefined });
+  // Handle filters change
+  const handleFiltersChange = useCallback((newFilters: FilterState) => {
+    setFilters(newFilters);
+    setParams({
+      date: newFilters.selectedDate || undefined,
+      free: newFilters.freeOnly ? '1' : undefined,
+    });
   }, [setParams]);
 
   // Get unique dates from data
@@ -68,12 +80,34 @@ export default function App() {
     return Array.from(dates);
   }, [cityData]);
 
-  // Filter features by selected date
+  // Filter features by all active filters
   const filteredFeatures = useMemo(() => {
     if (!cityData) return [];
-    if (!selectedDate) return cityData.features;
-    return cityData.features.filter(f => f.properties.date === selectedDate);
-  }, [cityData, selectedDate]);
+
+    return cityData.features.filter(feature => {
+      const { properties } = feature;
+
+      // Date filter
+      if (filters.selectedDate && properties.date !== filters.selectedDate) {
+        return false;
+      }
+
+      // Free only filter
+      if (filters.freeOnly && !properties.is_free) {
+        return false;
+      }
+
+      // Time period filter (if any selected)
+      if (filters.timePeriods.length > 0) {
+        const matchesPeriod = filters.timePeriods.some(period =>
+          isTimeInPeriod(properties.time, period)
+        );
+        if (!matchesPeriod) return false;
+      }
+
+      return true;
+    });
+  }, [cityData, filters]);
 
   // Get current city config
   const currentCity = citySlug ? getCityBySlug(citySlug) : null;
@@ -118,18 +152,18 @@ export default function App() {
         onChange={handleCityChange}
       />
 
-      {/* Map */}
+      {/* Map (clean UI - no controls) */}
       <Map
         cityCenter={currentCity.center}
         filteredFeatures={filteredFeatures}
         onSelectBlock={setSelectedBlock}
       />
 
-      {/* Date selector */}
-      <DateSelector
-        dates={availableDates}
-        selectedDate={selectedDate}
-        onSelectDate={handleDateChange}
+      {/* Filter drawer (right-side pull tab) */}
+      <FilterDrawer
+        availableDates={availableDates}
+        filters={filters}
+        onFiltersChange={handleFiltersChange}
       />
 
       {/* Block detail modal */}

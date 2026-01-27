@@ -3,6 +3,7 @@ import { useCallback } from 'react';
 interface UrlParams {
   city?: string;
   date?: string;
+  free?: string;  // "1" for free only filter
   block?: string;
 }
 
@@ -12,6 +13,7 @@ export function useUrlParams() {
     return {
       city: params.get('city') || undefined,
       date: params.get('date') || undefined,
+      free: params.get('free') || undefined,
       block: params.get('block') || undefined,
     };
   }, []);

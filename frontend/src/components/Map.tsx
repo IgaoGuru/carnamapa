@@ -31,6 +31,9 @@ export function Map({ cityCenter, filteredFeatures, onSelectBlock }: MapProps) {
       style: maptilersdk.MapStyle.STREETS,
       center: cityCenter,
       zoom: 12,
+      // Disable all navigation controls for clean UI
+      navigationControl: false,
+      geolocateControl: false,
     });
 
     return () => {
