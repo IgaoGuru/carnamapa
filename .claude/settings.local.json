@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.maptiler.com)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(uv venv:*)",
+      "Bash(source:*)",
+      "Bash(uv pip install:*)",
+      "Bash(python src/scraper.py:*)",
+      "Bash(ls:*)",
+      "Bash(for file in *.json)",
+      "Bash(done)",
+      "Bash(pnpm add:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(pnpm dlx tailwindcss:*)"
+    ]
+  }
+}

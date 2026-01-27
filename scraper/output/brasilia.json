@@ -1,0 +1,187 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Brasília",
+    "city_slug": "brasilia",
+    "generated_at": "2026-01-27T16:42:54.343609Z",
+    "total_blocks": 7,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "arlindinho-na-aruc-df-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.0640599,
+          -15.8260603
+        ]
+      },
+      "properties": {
+        "name": "Arlindinho na ARUC",
+        "date": "2026-01-30",
+        "time": "18:00",
+        "datetime": "2026-01-30T18:00-03:00",
+        "city": "Brasília",
+        "neighborhood": "SRES",
+        "address": "8 - Setor C QNC AE - Taguatinga, Brasília - DF, 72115-700, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Arlindinho na ARUC que acontecerá em 30/01/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/arlindinho-na-aruc-df-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bivalves-show-ao-vivo-df-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8947295,
+          -15.8034066
+        ]
+      },
+      "properties": {
+        "name": "Bivalves Show ao Vivo",
+        "date": "2026-01-30",
+        "time": "19:00",
+        "datetime": "2026-01-30T19:00-03:00",
+        "city": "Brasília",
+        "neighborhood": "Asa Sul",
+        "address": "16 - SHCS - Plano Piloto, Brasília - DF, 70380-535, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bivalves Show ao Vivo que acontecerá em 30/01/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/bivalves-show-ao-vivo-df-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-my-esquenta-de-carnaval-df-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8854767,
+          -15.8032581
+        ]
+      },
+      "properties": {
+        "name": "Bloco do MY &#8211; Esquenta de Carnaval",
+        "date": "2026-02-07",
+        "time": "16:00",
+        "datetime": "2026-02-07T16:00-03:00",
+        "city": "Brasília",
+        "neighborhood": "Asa Sul",
+        "address": "54JX+G6 Setor de Habitações Individuais Sul QL 14 Conjunto 10 - Asa Sul, Brasília - DF",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do MY - Esquenta de Carnaval que acontecerá em 07/02/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/bloco-do-my-esquenta-de-carnaval-df-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "suite-pee-folia-bloco-byob-df-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8642859,
+          -15.7188736
+        ]
+      },
+      "properties": {
+        "name": "Suíte Pee Folia – Bloco BYOB",
+        "date": "2026-02-13",
+        "time": "18:00",
+        "datetime": "2026-02-13T18:00-03:00",
+        "city": "Brasília",
+        "neighborhood": "Setor industrial do Gama",
+        "address": "Q. B, 5 - 20 - Lago Norte, Brasília - DF, 71256-175, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Suíte Pee Folia – Bloco BYOB que acontecerá em 13/02/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/suite-pee-folia-bloco-byob-df-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ney-matogrosso-bloco-na-rua-tour-df-28-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.9014913,
+          -15.78794
+        ]
+      },
+      "properties": {
+        "name": "Ney Matogrosso &#8211; Bloco na Rua Tour",
+        "date": "2026-02-28",
+        "time": "21:00",
+        "datetime": "2026-02-28T21:00-03:00",
+        "city": "Brasília",
+        "neighborhood": "Plano Piloto",
+        "address": "SDC, Plano Piloto, Brasília, DF, Brasil",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ney Matogrosso - Bloco na Rua Tour que acontecerá em 28/02/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/ney-matogrosso-bloco-na-rua-tour-df-28-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-my-ressaca-de-carnaval-df-07-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8854767,
+          -15.8032581
+        ]
+      },
+      "properties": {
+        "name": "Bloco do MY &#8211; Ressaca de Carnaval",
+        "date": "2026-03-07",
+        "time": "16:00",
+        "datetime": "2026-03-07T16:00-03:00",
+        "city": "Brasília",
+        "neighborhood": "Asa Sul",
+        "address": "54JX+G6 Setor de Habitações Individuais Sul QL 14 Conjunto 10 - Asa Sul, Brasília - DF",
+        "price": 30.0,
+        "price_formatted": "R$ 30,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do MY - Ressaca de Carnaval que acontecerá em 07/03/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/bloco-do-my-ressaca-de-carnaval-df-07-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "turne-oswaldo-montenegro-df-30-05-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.9014913,
+          -15.78794
+        ]
+      },
+      "properties": {
+        "name": "Turnê Oswaldo Montenegro",
+        "date": "2026-05-30",
+        "time": "21:30",
+        "datetime": "2026-05-30T21:30-03:00",
+        "city": "Brasília",
+        "neighborhood": "Plano Piloto",
+        "address": "SDC, Plano Piloto, Brasília, DF, Brasil",
+        "price": 90.0,
+        "price_formatted": "R$ 90,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Turnê Oswaldo Montenegro que acontecerá em 30/05/2026 em Brasília - DF",
+        "source_url": "https://www.blocosderua.com/brasilia/programacao/turne-oswaldo-montenegro-df-30-05-26/"
+      }
+    }
+  ]
+}

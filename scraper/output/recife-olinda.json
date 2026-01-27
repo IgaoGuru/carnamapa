@@ -1,0 +1,3512 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Recife/Olinda",
+    "city_slug": "recife-olinda",
+    "generated_at": "2026-01-27T16:56:01.607665Z",
+    "total_blocks": 140,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ensaios-tumaraca-nacao-encanto-da-alegria-pe-28-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8704218,
+          -7.9691575
+        ]
+      },
+      "properties": {
+        "name": "Ensaios Tumaraca &#8211; Nação Encanto da Alegria",
+        "date": "2026-01-28",
+        "time": "17:00",
+        "datetime": "2026-01-28T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Mangabeira",
+        "address": "Largo da Mangabeira, Mangabeira  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaios Tumaraca - Nação Encanto da Alegria que acontecerá em 28/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ensaios-tumaraca-nacao-encanto-da-alegria-pe-28-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quinta-no-galo-com-asas-da-america-e-mais-pe-29-01-26-pe-29-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8456106,
+          -8.0147776
+        ]
+      },
+      "properties": {
+        "name": "Quinta no Galo com Asas da América e mais",
+        "date": "2026-01-29",
+        "time": "19:00",
+        "datetime": "2026-01-29T19:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "São José",
+        "address": "Rua da Concórdia, 984, São José  - Recife - PE",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Quinta no Galo com Asas da América e mais que acontecerá em 29/01/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/quinta-no-galo-com-asas-da-america-e-mais-pe-29-01-26-pe-29-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-4-pe-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-01-30",
+        "time": "17:00",
+        "datetime": "2026-01-30T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 4 que acontecerá em 30/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-4-pe-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "festa-do-bloco-jovem-charles-pe-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8740913,
+          -8.0190517
+        ]
+      },
+      "properties": {
+        "name": "Festa do Bloco Jovem Charles",
+        "date": "2026-01-30",
+        "time": "18:00",
+        "datetime": "2026-01-30T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Centro",
+        "address": "Av. Rio Branco, 155, Centro  - Recife - PE",
+        "price": 55.0,
+        "price_formatted": "R$ 55,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Festa do Bloco Jovem Charles que acontecerá em 30/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/festa-do-bloco-jovem-charles-pe-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "capivara-da-beira-rio-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8695125,
+          -7.9989098
+        ]
+      },
+      "properties": {
+        "name": "Capivara da Beira Rio",
+        "date": "2026-01-31",
+        "time": "13:00",
+        "datetime": "2026-01-31T13:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Torre",
+        "address": "Av. Beira Rio, Torre  - Recife - PE",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Capivara da Beira Rio que acontecerá em 31/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/capivara-da-beira-rio-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-de-bar-em-bar-pe-31-01-26-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8754224,
+          -8.0317199
+        ]
+      },
+      "properties": {
+        "name": "Bloco de Bar Em Bar",
+        "date": "2026-01-31",
+        "time": "14:00",
+        "datetime": "2026-01-31T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Salgadinho",
+        "address": "Av. Prof. Andrade Bezerra, s/n, Salgadinho, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco de Bar Em Bar que acontecerá em 31/01/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-de-bar-em-bar-pe-31-01-26-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "amantes-de-gloria-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8389881,
+          -7.9697924
+        ]
+      },
+      "properties": {
+        "name": "Amantes de Glória",
+        "date": "2026-01-31",
+        "time": "14:00",
+        "datetime": "2026-01-31T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Boa Vista",
+        "address": "Praça Maciel Pinheiro, Boa Vista  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Amantes de Glória que acontecerá em 31/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/amantes-de-gloria-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-segura-o-piu-piu-pe-31-01-26-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8459483,
+          -8.0148023
+        ]
+      },
+      "properties": {
+        "name": "Bloco Segura o Piu-piu",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do Sol, 468, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 170.0,
+        "price_formatted": "R$ 170,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Segura o Piu-piu que acontecerá em 31/01/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-segura-o-piu-piu-pe-31-01-26-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aurora-dos-carnavais-dia-1-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8552415,
+          -8.0062083
+        ]
+      },
+      "properties": {
+        "name": "Aurora dos Carnavais",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Aurora",
+        "address": "Rua da Aurora, s/n, Aurora  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Aurora dos Carnavais - Dia 1 que acontecerá em 31/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/aurora-dos-carnavais-dia-1-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-5-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 5 que acontecerá em 31/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-5-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "trote-do-elefante-de-olinda-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8541721,
+          -8.019138
+        ]
+      },
+      "properties": {
+        "name": "Trote do Elefante de Olinda",
+        "date": "2026-01-31",
+        "time": "17:00",
+        "datetime": "2026-01-31T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Praça do Jacaré, Varadouro  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Trote do Elefante de Olinda que acontecerá em 31/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/trote-do-elefante-de-olinda-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaios-tumaraca-nacao-encanto-do-pina-pe-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8498435,
+          -7.9975092
+        ]
+      },
+      "properties": {
+        "name": "Ensaios Tumaraca &#8211; Nação Encanto do Pina",
+        "date": "2026-01-31",
+        "time": "17:00",
+        "datetime": "2026-01-31T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Pina",
+        "address": "R. Osvaldo Machado, 504, Pina  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaios Tumaraca - Nação Encanto do Pina que acontecerá em 31/01/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ensaios-tumaraca-nacao-encanto-do-pina-pe-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaios-de-carnaval-com-spok-pre-carnaval-2-pe-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518217,
+          -8.0156868
+        ]
+      },
+      "properties": {
+        "name": "Ensaios de Carnaval com SPOK &#8211; Pré-Carnaval",
+        "date": "2026-02-01",
+        "time": "15:00",
+        "datetime": "2026-02-01T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. Prudente de Morais, 313, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 100.0,
+        "price_formatted": "R$ 100,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaios de Carnaval com SPOK - Pré-Carnaval 2 que acontecerá em 01/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ensaios-de-carnaval-com-spok-pre-carnaval-2-pe-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aurora-dos-carnavais-dia-1-pe-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8552415,
+          -8.0062083
+        ]
+      },
+      "properties": {
+        "name": "Aurora dos Carnavais",
+        "date": "2026-02-01",
+        "time": "16:00",
+        "datetime": "2026-02-01T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Aurora",
+        "address": "Rua da Aurora, s/n, Aurora  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Aurora dos Carnavais - Dia 1 que acontecerá em 01/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/aurora-dos-carnavais-dia-1-pe-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-6-pe-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-02-01",
+        "time": "16:00",
+        "datetime": "2026-02-01T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 6 que acontecerá em 01/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-6-pe-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-das-sambadeiras-pre-carnaval-pe-02-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506366,
+          -8.0122809
+        ]
+      },
+      "properties": {
+        "name": "Arrastão das Sambadeiras &#8211; Pré-Carnaval",
+        "date": "2026-02-02",
+        "time": "14:00",
+        "datetime": "2026-02-02T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Centro Histórico de Olinda",
+        "address": "Ladeira da Misericórdia, Centro Histórico de Olinda  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão das Sambadeiras - Pré-Carnaval que acontecerá em 02/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-das-sambadeiras-pre-carnaval-pe-02-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aniversario-do-homem-da-meia-noite-pe-02-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "Aniversário do Homem da Meia-Noite",
+        "date": "2026-02-02",
+        "time": "19:00",
+        "datetime": "2026-02-02T19:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Aniversário do Homem da Meia-Noite que acontecerá em 02/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/aniversario-do-homem-da-meia-noite-pe-02-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "festival-cena-peixinhos-dia-2-pe-04-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Festival Cena Peixinhos",
+        "date": "2026-02-04",
+        "time": "18:00",
+        "datetime": "2026-02-04T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Festival Cena Peixinhos - Dia 2 que acontecerá em 04/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/festival-cena-peixinhos-dia-2-pe-04-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-6-pe-06-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-02-06",
+        "time": "17:00",
+        "datetime": "2026-02-06T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 6 que acontecerá em 06/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-6-pe-06-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eu-me-vingo-de-tu-no-carnaval-pe-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.878517,
+          -8.0110483
+        ]
+      },
+      "properties": {
+        "name": "Eu Me Vingo de Tu No Carnaval",
+        "date": "2026-02-07",
+        "time": "10:00",
+        "datetime": "2026-02-07T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Santo Amaro",
+        "address": "R. Mamede Simões, Santo Amaro  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Eu Me Vingo de Tu No Carnaval que acontecerá em 07/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/eu-me-vingo-de-tu-no-carnaval-pe-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-vaidosa-pe-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "A Vaidosa",
+        "date": "2026-02-07",
+        "time": "16:00",
+        "datetime": "2026-02-07T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. 27 de Janeiro, 128, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre A Vaidosa que acontecerá em 07/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/a-vaidosa-pe-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-7-pe-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-02-07",
+        "time": "17:00",
+        "datetime": "2026-02-07T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 7 que acontecerá em 07/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-7-pe-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "olinda-beer-pe-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8754224,
+          -8.0317199
+        ]
+      },
+      "properties": {
+        "name": "Olinda Beer",
+        "date": "2026-02-08",
+        "time": "09:00",
+        "datetime": "2026-02-08T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Salgadinho",
+        "address": "Av. Prof. Andrade Bezerra, s/n, Salgadinho, Recife & Olinda, PE, Brasil",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Olinda Beer que acontecerá em 08/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/olinda-beer-pe-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-ta-maluco-pe-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8538975,
+          -8.0187267
+        ]
+      },
+      "properties": {
+        "name": "Bloco Tá Maluco",
+        "date": "2026-02-08",
+        "time": "10:00",
+        "datetime": "2026-02-08T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Praça Cel. João Lapa, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Tá Maluco que acontecerá em 08/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-ta-maluco-pe-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "as-virgens-do-bairro-novo-pe-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8426716,
+          -8.0021881
+        ]
+      },
+      "properties": {
+        "name": "As Virgens do Bairro Novo",
+        "date": "2026-02-08",
+        "time": "12:00",
+        "datetime": "2026-02-08T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Bairro Novo",
+        "address": "Av. Pres. Getúlio Vargas, Bairro Novo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre As Virgens do Bairro Novo que acontecerá em 08/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/as-virgens-do-bairro-novo-pe-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-das-sambadeiras-domingo-pre-carnaval-pe-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506366,
+          -8.0122809
+        ]
+      },
+      "properties": {
+        "name": "Arrastão das Sambadeiras &#8211; Pré-Carnaval",
+        "date": "2026-02-08",
+        "time": "14:00",
+        "datetime": "2026-02-08T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Centro Histórico de Olinda",
+        "address": "Ladeira da Misericórdia, Centro Histórico de Olinda  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão das Sambadeiras - Domingo Pré-Carnaval que acontecerá em 08/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-das-sambadeiras-domingo-pre-carnaval-pe-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaios-de-carnaval-com-spok-domingo-pre-carnaval-pe-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518217,
+          -8.0156868
+        ]
+      },
+      "properties": {
+        "name": "Ensaios de Carnaval com SPOK &#8211; Pré-Carnaval",
+        "date": "2026-02-08",
+        "time": "15:00",
+        "datetime": "2026-02-08T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. Prudente de Morais, 313, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 110.0,
+        "price_formatted": "R$ 110,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaios de Carnaval com SPOK - Domingo Pré-Carnaval que acontecerá em 08/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ensaios-de-carnaval-com-spok-domingo-pre-carnaval-pe-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-8-pe-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-02-08",
+        "time": "16:00",
+        "datetime": "2026-02-08T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 8 que acontecerá em 08/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-8-pe-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "noite-para-os-tambores-silenciosos-de-olinda-pe-09-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8490134,
+          -8.0169124
+        ]
+      },
+      "properties": {
+        "name": "Noite Para os Tambores Silenciosos de Olinda",
+        "date": "2026-02-09",
+        "time": "19:00",
+        "datetime": "2026-02-09T19:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça de São Pedro, Carmo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Noite Para os Tambores Silenciosos de Olinda que acontecerá em 09/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/noite-para-os-tambores-silenciosos-de-olinda-pe-09-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circuito-da-cultura-popular-cortejo-9-pe-11-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8637718,
+          -8.0359211
+        ]
+      },
+      "properties": {
+        "name": "Circuito da Cultura Popular",
+        "date": "2026-02-11",
+        "time": "17:00",
+        "datetime": "2026-02-11T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Recife Antigo",
+        "address": "Cais da Alfândega, Recife Antigo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Circuito da Cultura Popular - Cortejo 9 que acontecerá em 11/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/circuito-da-cultura-popular-cortejo-9-pe-11-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "escuta-levino-pe-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8389881,
+          -7.9697924
+        ]
+      },
+      "properties": {
+        "name": "Escuta Levino",
+        "date": "2026-02-12",
+        "time": "20:00",
+        "datetime": "2026-02-12T20:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Boa Vista",
+        "address": "Praça Maciel Pinheiro, Boa Vista  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Escuta Levino que acontecerá em 12/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/escuta-levino-pe-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "olinda-frevo-e-folia-pe-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8549152,
+          -8.0109353
+        ]
+      },
+      "properties": {
+        "name": "Olinda Frevo &amp; Folia",
+        "date": "2026-02-13",
+        "time": "18:00",
+        "datetime": "2026-02-13T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "R. Ns. do Guadalupe, 15, Amparo, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Olinda Frevo &amp; Folia que acontecerá em 13/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/olinda-frevo-e-folia-pe-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-da-bateria-cabulosa-sexta-pe-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8523721,
+          -8.0183793
+        ]
+      },
+      "properties": {
+        "name": "Arrastão da Bateria Cabulosa",
+        "date": "2026-02-13",
+        "time": "21:00",
+        "datetime": "2026-02-13T21:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. de São Bento, 123, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão da Bateria Cabulosa - Sexta que acontecerá em 13/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-da-bateria-cabulosa-sexta-pe-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "o-lord-de-olinda-pe-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "O Lord de Olinda",
+        "date": "2026-02-13",
+        "time": "23:00",
+        "datetime": "2026-02-13T23:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre O Lord de Olinda que acontecerá em 13/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/o-lord-de-olinda-pe-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-la-casa-quatro-cantos-com-pura-paixao-pe-14-02-26-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8524263,
+          -8.0166122
+        ]
+      },
+      "properties": {
+        "name": "Carnaval La Casa Quatro Cantos com Pura Paixão",
+        "date": "2026-02-14",
+        "time": "09:00",
+        "datetime": "2026-02-14T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua de São Bento, 274, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 340.0,
+        "price_formatted": "R$ 340,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval La Casa Quatro Cantos com Pura Paixão que acontecerá em 14/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-la-casa-quatro-cantos-com-pura-paixao-pe-14-02-26-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-frei-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8480774,
+          -8.0155898
+        ]
+      },
+      "properties": {
+        "name": "Bloco do Frei",
+        "date": "2026-02-14",
+        "time": "09:00",
+        "datetime": "2026-02-14T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. de São Francisco, 280, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do Frei que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-do-frei-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eu-acho-e-pouco-sabado-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8526348,
+          -8.016302
+        ]
+      },
+      "properties": {
+        "name": "Eu Acho é Pouco",
+        "date": "2026-02-14",
+        "time": "09:00",
+        "datetime": "2026-02-14T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça Laura Nigro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Eu Acho é Pouco - Sábado que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/eu-acho-e-pouco-sabado-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "maracatu-kangoma-sabado-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8529555,
+          -8.0143068
+        ]
+      },
+      "properties": {
+        "name": "Maracatu Kangoma",
+        "date": "2026-02-14",
+        "time": "09:00",
+        "datetime": "2026-02-14T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do amparo, 236, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Maracatu Kangoma - Sábado que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/maracatu-kangoma-sabado-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "o-urso-cascudo-do-amparo-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "O Urso Cascudo do Amparo",
+        "date": "2026-02-14",
+        "time": "09:00",
+        "datetime": "2026-02-14T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre O Urso Cascudo do Amparo que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/o-urso-cascudo-do-amparo-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "alma-de-carnaval-pe-14-02-26-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8520178,
+          -8.0130323
+        ]
+      },
+      "properties": {
+        "name": "Alma de Carnaval",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Ladeira da Misericórdia, 106, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Alma de Carnaval que acontecerá em 14/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/alma-de-carnaval-pe-14-02-26-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-estacao-da-luz-com-coco-da-liberdade-e-mais-pe-14-02-26-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518217,
+          -8.0156868
+        ]
+      },
+      "properties": {
+        "name": "Carnaval Estação da Luz com Côco da Liberdade e mais",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua Prudente de Morais, 313, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 185.0,
+        "price_formatted": "R$ 185,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval Estação da Luz com Côco da Liberdade e mais que acontecerá em 14/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-estacao-da-luz-com-coco-da-liberdade-e-mais-pe-14-02-26-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-a-casa-de-vo-sabado-pe-14-02-26-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "Bloco a Casa de Vô",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "RUA 27 DE JANEIRO, Nº 27, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 205.0,
+        "price_formatted": "R$ 205,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco a Casa de Vô - Sábado que acontecerá em 14/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-a-casa-de-vo-sabado-pe-14-02-26-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "the-nas-ladeiras-sabado-pe-14-02-26-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8515256,
+          -8.0170334
+        ]
+      },
+      "properties": {
+        "name": "Thé nas Ladeiras",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua 7 de setembro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Thé nas Ladeiras - Sábado que acontecerá em 14/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/the-nas-ladeiras-sabado-pe-14-02-26-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fique-na-sombra-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8565273,
+          -8.0166128
+        ]
+      },
+      "properties": {
+        "name": "Fique na Sombra",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. da Boa Hora, 177, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Fique na Sombra que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/fique-na-sombra-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "soul-delas-sabado-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8522427,
+          -8.0191107
+        ]
+      },
+      "properties": {
+        "name": "Soul Delas",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. de São Bento, s/n, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Soul Delas - Sábado que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/soul-delas-sabado-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urso-congelado-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Urso Congelado",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Urso Congelado que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/urso-congelado-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tambores-dsaia-sabado-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Tambores D’Saia",
+        "date": "2026-02-14",
+        "time": "10:00",
+        "datetime": "2026-02-14T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Tambores D’Saia - Sábado que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/tambores-dsaia-sabado-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ta-calor-nessa-roupa-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "Tá Calor Nessa Roupa?",
+        "date": "2026-02-14",
+        "time": "10:30",
+        "datetime": "2026-02-14T10:30-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. 27 de Janeiro, 1, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Tá Calor Nessa Roupa? que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ta-calor-nessa-roupa-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "day-use-mansao-da-matuta-trinca-de-as-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506008,
+          -8.015009
+        ]
+      },
+      "properties": {
+        "name": "Day Use Mansão da Matuta &#8211; Trinca de Ás",
+        "date": "2026-02-14",
+        "time": "11:00",
+        "datetime": "2026-02-14T11:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do Bonfim, 82, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 200.0,
+        "price_formatted": "R$ 200,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Day Use Mansão da Matuta - Trinca de Ás que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/day-use-mansao-da-matuta-trinca-de-as-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "moidicuento-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8538975,
+          -8.0187267
+        ]
+      },
+      "properties": {
+        "name": "Moidicuento",
+        "date": "2026-02-14",
+        "time": "11:00",
+        "datetime": "2026-02-14T11:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Praça Cel João Lapa, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Moidicuento que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/moidicuento-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "se-me-der-eu-como-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506008,
+          -8.015009
+        ]
+      },
+      "properties": {
+        "name": "Se Me Der Eu Como",
+        "date": "2026-02-14",
+        "time": "11:30",
+        "datetime": "2026-02-14T11:30-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do Bonfim, 386, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Se Me Der Eu Como que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/se-me-der-eu-como-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ceroula-sabado-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8492935,
+          -8.0188488
+        ]
+      },
+      "properties": {
+        "name": "Ceroula",
+        "date": "2026-02-14",
+        "time": "12:00",
+        "datetime": "2026-02-14T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Av. Sigismundo Gonçalves, 375, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ceroula - Sábado que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ceroula-sabado-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hoje-a-mangueira-entra-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8541649,
+          -8.0166083
+        ]
+      },
+      "properties": {
+        "name": "Hoje a Mangueira Entra",
+        "date": "2026-02-14",
+        "time": "12:00",
+        "datetime": "2026-02-14T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. Coronel Joaquim Cavalcante, 487, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Hoje a Mangueira Entra que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/hoje-a-mangueira-entra-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sobrecu-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8510829,
+          -8.013999
+        ]
+      },
+      "properties": {
+        "name": "Sobrecú",
+        "date": "2026-02-14",
+        "time": "14:00",
+        "datetime": "2026-02-14T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. da Bertioga, 337, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Sobrecú que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/sobrecu-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bumba-meu-bowie-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8541721,
+          -8.019138
+        ]
+      },
+      "properties": {
+        "name": "Bumba meu Bowie",
+        "date": "2026-02-14",
+        "time": "15:00",
+        "datetime": "2026-02-14T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Praça do Jacaré, Varadouro  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bumba meu Bowie que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bumba-meu-bowie-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "afojuba-batuque-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8522427,
+          -8.0191107
+        ]
+      },
+      "properties": {
+        "name": "Afojubá Batuque",
+        "date": "2026-02-14",
+        "time": "16:00",
+        "datetime": "2026-02-14T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. de São Bento, s/n, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Afojubá Batuque que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/afojuba-batuque-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "menino-da-tarde-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "Menino da Tarde",
+        "date": "2026-02-14",
+        "time": "16:00",
+        "datetime": "2026-02-14T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Menino da Tarde que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/menino-da-tarde-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ta-bom-a-gente-freva-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8522427,
+          -8.0191107
+        ]
+      },
+      "properties": {
+        "name": "Tá Bom a Gente Freva",
+        "date": "2026-02-14",
+        "time": "16:00",
+        "datetime": "2026-02-14T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. de São Bento, s/n, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Tá Bom a Gente Freva que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ta-bom-a-gente-freva-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "papudinhos-do-bonsucesso-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518451,
+          -8.017809
+        ]
+      },
+      "properties": {
+        "name": "Papudinhos do Bonsucesso",
+        "date": "2026-02-14",
+        "time": "17:00",
+        "datetime": "2026-02-14T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. 27 de Janeiro, 181, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Papudinhos do Bonsucesso que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/papudinhos-do-bonsucesso-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "afoxe-alafin-oyo-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "Afoxé Alafin Oyó",
+        "date": "2026-02-14",
+        "time": "18:00",
+        "datetime": "2026-02-14T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Afoxé Alafin Oyó que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/afoxe-alafin-oyo-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "burra-do-rosario-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8552606,
+          -8.0071544
+        ]
+      },
+      "properties": {
+        "name": "Burra do Rosário",
+        "date": "2026-02-14",
+        "time": "18:00",
+        "datetime": "2026-02-14T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Segunda Travessa da Saudade, 61, Guadalupe, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Burra do Rosário que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/burra-do-rosario-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "john-travolta-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8549152,
+          -8.0109353
+        ]
+      },
+      "properties": {
+        "name": "John Travolta",
+        "date": "2026-02-14",
+        "time": "19:00",
+        "datetime": "2026-02-14T19:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "R. Ns. do Guadalupe, 15, Amparo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre John Travolta que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/john-travolta-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "homem-da-meia-noite-pe-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.852883,
+          -8.010603
+        ]
+      },
+      "properties": {
+        "name": "Homem da Meia Noite",
+        "date": "2026-02-14",
+        "time": "23:59",
+        "datetime": "2026-02-14T23:59-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Bonsucesso",
+        "address": "Estrada do Bonsucesso, 132, Bonsucesso, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Homem da Meia Noite que acontecerá em 14/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/homem-da-meia-noite-pe-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "patusco-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8582014,
+          -8.024092
+        ]
+      },
+      "properties": {
+        "name": "Patusco",
+        "date": "2026-02-15",
+        "time": "08:59",
+        "datetime": "2026-02-15T08:59-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Santa Tereza",
+        "address": "R. Santa Tereza, 119, Santa Tereza, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Patusco - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/patusco-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-rede-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "A Rede",
+        "date": "2026-02-15",
+        "time": "09:00",
+        "datetime": "2026-02-15T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre A Rede que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/a-rede-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mucha-lucha-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8502493,
+          -8.0136123
+        ]
+      },
+      "properties": {
+        "name": "Mucha Lucha",
+        "date": "2026-02-15",
+        "time": "09:00",
+        "datetime": "2026-02-15T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Alto da Sé, s/n, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Mucha Lucha que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/mucha-lucha-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "batadoni-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Batadoni",
+        "date": "2026-02-15",
+        "time": "09:00",
+        "datetime": "2026-02-15T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Batadoni - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/batadoni-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "batuques-de-pernambuco-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Batuques de Pernambuco",
+        "date": "2026-02-15",
+        "time": "09:00",
+        "datetime": "2026-02-15T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Batuques de Pernambuco – Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/batuques-de-pernambuco-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-la-casa-quatro-cantos-com-faringes-da-paixao-pe-15-02-26-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8524263,
+          -8.0166122
+        ]
+      },
+      "properties": {
+        "name": "Carnaval La Casa Quatro Cantos com Faringes da Paixão",
+        "date": "2026-02-15",
+        "time": "09:00",
+        "datetime": "2026-02-15T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua de São Bento, 274, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 340.0,
+        "price_formatted": "R$ 340,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval La Casa Quatro Cantos com Faringes da Paixão que acontecerá em 15/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-la-casa-quatro-cantos-com-faringes-da-paixao-pe-15-02-26-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-estacao-da-luz-com-mestre-ana-lucia-samba-soul-delas-e-mais-pe-15-02-26-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518217,
+          -8.0156868
+        ]
+      },
+      "properties": {
+        "name": "Carnaval Estação da Luz com Mestre Ana Lúcia, Samba Soul Delas e mais",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua Prudente de Morais, 313, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 185.0,
+        "price_formatted": "R$ 185,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval Estação da Luz com Mestre Ana Lúcia, Samba Soul Delas e mais que acontecerá em 15/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-estacao-da-luz-com-mestre-ana-lucia-samba-soul-delas-e-mais-pe-15-02-26-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-a-casa-de-vo-domingo-pe-15-02-26-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "Bloco a Casa de Vô &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "RUA 27 DE JANEIRO, Nº 27, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 205.0,
+        "price_formatted": "R$ 205,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco a Casa de Vô - Domingo que acontecerá em 15/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-a-casa-de-vo-domingo-pe-15-02-26-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "the-nas-ladeiras-domingo-pe-15-02-26-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8515256,
+          -8.0170334
+        ]
+      },
+      "properties": {
+        "name": "Thé nas Ladeiras &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua 7 de setembro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Thé nas Ladeiras - Domingo que acontecerá em 15/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/the-nas-ladeiras-domingo-pe-15-02-26-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mulher-na-vara-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8565273,
+          -8.0166128
+        ]
+      },
+      "properties": {
+        "name": "Mulher na Vara",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. da Boa Hora, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Mulher na Vara que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/mulher-na-vara-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "me-adota-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Me Adota",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Me Adota que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/me-adota-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grheia-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8498902,
+          -8.0165456
+        ]
+      },
+      "properties": {
+        "name": "Grheia",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Av. Liberdade, 258, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Grheia que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/grheia-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "enquanto-isso-na-sala-da-justica-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8502493,
+          -8.0136123
+        ]
+      },
+      "properties": {
+        "name": "Enquanto Isso na Sala da Justiça",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Alto da Sé, s/n, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Enquanto Isso na Sala da Justiça que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/enquanto-isso-na-sala-da-justica-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "congobloco-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8498902,
+          -8.0165456
+        ]
+      },
+      "properties": {
+        "name": "Congobloco",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Av. Liberdade, 258, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Congobloco - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/congobloco-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bateria-aue-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Bateria Auê",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bateria Auê - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bateria-aue-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-das-sambadeiras-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506366,
+          -8.0122809
+        ]
+      },
+      "properties": {
+        "name": "Arrastão das Sambadeiras &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Centro Histórico de Olinda",
+        "address": "Ladeira da Misericórdia, Centro Histórico de Olinda  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão das Sambadeiras - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-das-sambadeiras-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-da-bateria-cabulosa-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8523721,
+          -8.0183793
+        ]
+      },
+      "properties": {
+        "name": "Arrastão da Bateria Cabulosa",
+        "date": "2026-02-15",
+        "time": "10:00",
+        "datetime": "2026-02-15T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. de São Bento, 123, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão da Bateria Cabulosa - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-da-bateria-cabulosa-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-dos-desenrolados-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8505839,
+          -8.0199219
+        ]
+      },
+      "properties": {
+        "name": "Bloco dos Desenrolados",
+        "date": "2026-02-15",
+        "time": "11:00",
+        "datetime": "2026-02-15T11:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Av. Sigismundo Gonçalves, 375, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": 210.0,
+        "price_formatted": "R$ 210,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco dos Desenrolados que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-dos-desenrolados-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rebylleurias-domingo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506008,
+          -8.015009
+        ]
+      },
+      "properties": {
+        "name": "Rebylleurias",
+        "date": "2026-02-15",
+        "time": "11:30",
+        "datetime": "2026-02-15T11:30-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do Bonfim, 449, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Rebylleurias - Domingo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/rebylleurias-domingo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eternamente-sport-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.852883,
+          -8.010603
+        ]
+      },
+      "properties": {
+        "name": "Eternamente Sport",
+        "date": "2026-02-15",
+        "time": "12:00",
+        "datetime": "2026-02-15T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Bonsucesso",
+        "address": "Estrada do Bonsucesso, 132, Bonsucesso, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Eternamente Sport que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/eternamente-sport-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "umurama-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8552425,
+          -8.0207217
+        ]
+      },
+      "properties": {
+        "name": "Umurama",
+        "date": "2026-02-15",
+        "time": "12:30",
+        "datetime": "2026-02-15T12:30-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Santa Tereza",
+        "address": "R. Epitácio Pessoa Sobrinho, 91, Santa Tereza, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Umurama que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/umurama-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "marim-dos-caetes-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "Marim dos Caetés",
+        "date": "2026-02-15",
+        "time": "14:00",
+        "datetime": "2026-02-15T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Marim dos Caetés que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/marim-dos-caetes-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-dos-sujos-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8508512,
+          -8.0181302
+        ]
+      },
+      "properties": {
+        "name": "Bloco dos Sujos",
+        "date": "2026-02-15",
+        "time": "14:00",
+        "datetime": "2026-02-15T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. 10 de Novembro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco dos Sujos que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-dos-sujos-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-troca-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8480774,
+          -8.0155898
+        ]
+      },
+      "properties": {
+        "name": "A Troça",
+        "date": "2026-02-15",
+        "time": "15:00",
+        "datetime": "2026-02-15T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. de São Francisco, 280, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre A Troça que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/a-troca-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-cama-de-olinda-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8541649,
+          -8.0166083
+        ]
+      },
+      "properties": {
+        "name": "A Cama de Olinda",
+        "date": "2026-02-15",
+        "time": "15:00",
+        "datetime": "2026-02-15T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. Cel. Joaquim Cavalcante, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre A Cama de Olinda que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/a-cama-de-olinda-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fogo-na-bacurinha-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "Fogo na Bacurinha",
+        "date": "2026-02-15",
+        "time": "15:00",
+        "datetime": "2026-02-15T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. 27 de Janeiro, 111, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Fogo na Bacurinha que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/fogo-na-bacurinha-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-cimento-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8549152,
+          -8.0109353
+        ]
+      },
+      "properties": {
+        "name": "Bloco do Cimento",
+        "date": "2026-02-15",
+        "time": "15:00",
+        "datetime": "2026-02-15T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "R. Ns. do Guadalupe, 15, Amparo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do Cimento que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-do-cimento-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "unidos-pela-anseidade-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506008,
+          -8.015009
+        ]
+      },
+      "properties": {
+        "name": "Unidos pela Anseidade",
+        "date": "2026-02-15",
+        "time": "16:00",
+        "datetime": "2026-02-15T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do Bonfim, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Unidos pela Anseidade que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/unidos-pela-anseidade-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "o-dono-do-mundo-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8502493,
+          -8.0136123
+        ]
+      },
+      "properties": {
+        "name": "O Dono do Mundo",
+        "date": "2026-02-15",
+        "time": "16:30",
+        "datetime": "2026-02-15T16:30-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Alto da Sé",
+        "address": "R. Bispo Coutinho, s/n, Alto da Sé  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre O Dono do Mundo que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/o-dono-do-mundo-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "elefante-de-olinda-pe-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "Elefante de Olinda",
+        "date": "2026-02-15",
+        "time": "19:00",
+        "datetime": "2026-02-15T19:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Elefante de Olinda que acontecerá em 15/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/elefante-de-olinda-pe-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eu-acho-e-pouquinho-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8524263,
+          -8.0166122
+        ]
+      },
+      "properties": {
+        "name": "Eu Acho é Pouquinho",
+        "date": "2026-02-16",
+        "time": "08:00",
+        "datetime": "2026-02-16T08:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. de São Bento, 352, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Eu Acho é Pouquinho que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/eu-acho-e-pouquinho-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "comigo-e-assim-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518683,
+          -8.0138477
+        ]
+      },
+      "properties": {
+        "name": "Comigo é Assim",
+        "date": "2026-02-16",
+        "time": "09:00",
+        "datetime": "2026-02-16T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. da Bertioga, 243, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Comigo é Assim que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/comigo-e-assim-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-la-casa-quatro-cantos-com-malakoff-pe-16-02-26-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8524263,
+          -8.0166122
+        ]
+      },
+      "properties": {
+        "name": "Carnaval La Casa Quatro Cantos com Malakoff",
+        "date": "2026-02-16",
+        "time": "09:00",
+        "datetime": "2026-02-16T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua de São Bento, 274, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 340.0,
+        "price_formatted": "R$ 340,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval La Casa Quatro Cantos com Malakoff que acontecerá em 16/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-la-casa-quatro-cantos-com-malakoff-pe-16-02-26-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "minha-cobra-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.852712,
+          -8.0104212
+        ]
+      },
+      "properties": {
+        "name": "Minha Cobra",
+        "date": "2026-02-16",
+        "time": "09:13",
+        "datetime": "2026-02-16T09:13-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Bonsucesso",
+        "address": "Estr. do Bonsucesso, 159 A, Bonsucesso, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Minha Cobra que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/minha-cobra-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-mexicoperu-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8523637,
+          -8.013595
+        ]
+      },
+      "properties": {
+        "name": "Bloco MexicoPeru",
+        "date": "2026-02-16",
+        "time": "09:30",
+        "datetime": "2026-02-16T09:30-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "Ladeira da Misericórdia, 123, Amparo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco MexicoPeru que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-mexicoperu-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tambores-dsaia-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Tambores D’Saia",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Tambores D’Saia que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/tambores-dsaia-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "se-eu-flopar-me-beija-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8538975,
+          -8.0187267
+        ]
+      },
+      "properties": {
+        "name": "Se Eu Flopar Me Beija",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Praça Cel João Lapa, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Se Eu Flopar Me Beija que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/se-eu-flopar-me-beija-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "minhocao-de-olinda-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8513033,
+          -8.0168772
+        ]
+      },
+      "properties": {
+        "name": "Minhocão de Olinda",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Igreja de São Pedro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Minhocão de Olinda que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/minhocao-de-olinda-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "apoteose-dos-bonecos-gigantes-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518683,
+          -8.0138477
+        ]
+      },
+      "properties": {
+        "name": "Apoteose dos Bonecos Gigantes",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. da Bertioga, 243, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Apoteose dos Bonecos Gigantes que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/apoteose-dos-bonecos-gigantes-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-estacao-da-luz-com-samba-ze-pretinho-maestro-ozeas-e-mais-pe-16-02-26-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518217,
+          -8.0156868
+        ]
+      },
+      "properties": {
+        "name": "Carnaval Estação da Luz com Samba Zé Pretinho, Maestro Ozéas e mais",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua Prudente de Morais, 313, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 185.0,
+        "price_formatted": "R$ 185,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval Estação da Luz com Samba Zé Pretinho, Maestro Ozéas e mais que acontecerá em 16/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-estacao-da-luz-com-samba-ze-pretinho-maestro-ozeas-e-mais-pe-16-02-26-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-a-casa-de-vo-segunda-pe-16-02-26-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "Bloco a Casa de Vô",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "RUA 27 DE JANEIRO, Nº 27, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 205.0,
+        "price_formatted": "R$ 205,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco a Casa de Vô - Segunda que acontecerá em 16/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-a-casa-de-vo-segunda-pe-16-02-26-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "the-nas-ladeiras-segunda-pe-16-02-26-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8515256,
+          -8.0170334
+        ]
+      },
+      "properties": {
+        "name": "Thé nas Ladeiras",
+        "date": "2026-02-16",
+        "time": "10:00",
+        "datetime": "2026-02-16T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua 7 de setembro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Thé nas Ladeiras - Segunda que acontecerá em 16/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/the-nas-ladeiras-segunda-pe-16-02-26-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "metido-a-rico-porem-liso-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.848298,
+          -8.0164292
+        ]
+      },
+      "properties": {
+        "name": "Metido a Rico Porém Liso",
+        "date": "2026-02-16",
+        "time": "14:00",
+        "datetime": "2026-02-16T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. de São Francisco, 26, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Metido a Rico Porém Liso que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/metido-a-rico-porem-liso-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-pre-sal-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8541649,
+          -8.0166083
+        ]
+      },
+      "properties": {
+        "name": "Bloco Pré-Sal",
+        "date": "2026-02-16",
+        "time": "14:00",
+        "datetime": "2026-02-16T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. Cel. Joaquim Cavalcante, 426, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Pré-Sal que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-pre-sal-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vaca-profana-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8466879,
+          -8.0152618
+        ]
+      },
+      "properties": {
+        "name": "Vaca Profana",
+        "date": "2026-02-16",
+        "time": "14:00",
+        "datetime": "2026-02-16T14:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Tv. Do Farol, 459, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Vaca Profana que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/vaca-profana-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-da-ema-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8538975,
+          -8.0187267
+        ]
+      },
+      "properties": {
+        "name": "Bloco da Ema",
+        "date": "2026-02-16",
+        "time": "16:00",
+        "datetime": "2026-02-16T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Praça Cel. João Lapa, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco da Ema que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-da-ema-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "batucada-atomica-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518965,
+          -8.0155574
+        ]
+      },
+      "properties": {
+        "name": "Batucada Atômica",
+        "date": "2026-02-16",
+        "time": "16:00",
+        "datetime": "2026-02-16T16:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. Prudente de morais, 346, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Batucada Atômica que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/batucada-atomica-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "garoto-de-vassoura-pe-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8558195,
+          -8.0108894
+        ]
+      },
+      "properties": {
+        "name": "Garoto de Vassoura",
+        "date": "2026-02-16",
+        "time": "17:00",
+        "datetime": "2026-02-16T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "R. Antônio Luciano de Oliveira, 239, Amparo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Garoto de Vassoura que acontecerá em 16/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/garoto-de-vassoura-pe-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-corda-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8523637,
+          -8.013595
+        ]
+      },
+      "properties": {
+        "name": "A Corda",
+        "date": "2026-02-17",
+        "time": "07:00",
+        "datetime": "2026-02-17T07:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "Ladeira da Misericórdia, Amparo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre A Corda que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/a-corda-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "patusco-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8582014,
+          -8.024092
+        ]
+      },
+      "properties": {
+        "name": "Patusco",
+        "date": "2026-02-17",
+        "time": "08:59",
+        "datetime": "2026-02-17T08:59-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Santa Tereza",
+        "address": "R. Santa Tereza, 119, Santa Tereza, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Patusco - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/patusco-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dbreck-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506008,
+          -8.015009
+        ]
+      },
+      "properties": {
+        "name": "D’Breck",
+        "date": "2026-02-17",
+        "time": "09:00",
+        "datetime": "2026-02-17T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do Bonfim, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre D’Breck - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/dbreck-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "maracatu-kangoma-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8529555,
+          -8.0143068
+        ]
+      },
+      "properties": {
+        "name": "Maracatu Kangoma",
+        "date": "2026-02-17",
+        "time": "09:00",
+        "datetime": "2026-02-17T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "R. do amparo, 236, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Maracatu Kangoma que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/maracatu-kangoma-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "batuques-de-pernambuco-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Batuques de Pernambuco",
+        "date": "2026-02-17",
+        "time": "09:00",
+        "datetime": "2026-02-17T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Batuques de Pernambuco – Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/batuques-de-pernambuco-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "batadoni-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Batadoni",
+        "date": "2026-02-17",
+        "time": "09:00",
+        "datetime": "2026-02-17T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Batadoni - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/batadoni-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-la-casa-quatro-cantos-com-sambarrasta-pe-17-02-26-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8524263,
+          -8.0166122
+        ]
+      },
+      "properties": {
+        "name": "Carnaval La Casa Quatro Cantos com Sambarrasta",
+        "date": "2026-02-17",
+        "time": "09:00",
+        "datetime": "2026-02-17T09:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua de São Bento, 274, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 340.0,
+        "price_formatted": "R$ 340,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval La Casa Quatro Cantos com Sambarrasta que acontecerá em 17/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-la-casa-quatro-cantos-com-sambarrasta-pe-17-02-26-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-estacao-da-luz-com-maris-do-samba-maestro-baba-e-mais-pe-17-02-26-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8518217,
+          -8.0156868
+        ]
+      },
+      "properties": {
+        "name": "Carnaval Estação da Luz com Maris do Samba, Maestro Babá e mais",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua Prudente de Morais, 313, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 185.0,
+        "price_formatted": "R$ 185,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval Estação da Luz com Maris do Samba, Maestro Babá e mais que acontecerá em 17/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/carnaval-estacao-da-luz-com-maris-do-samba-maestro-baba-e-mais-pe-17-02-26-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-a-casa-de-vo-terca-pe-17-02-26-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8519911,
+          -8.0181697
+        ]
+      },
+      "properties": {
+        "name": "Bloco a Casa de Vô",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "RUA 27 DE JANEIRO, Nº 27, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 205.0,
+        "price_formatted": "R$ 205,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco a Casa de Vô - Terça que acontecerá em 17/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-a-casa-de-vo-terca-pe-17-02-26-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "the-nas-ladeira-terca-pe-17-02-26-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8515256,
+          -8.0170334
+        ]
+      },
+      "properties": {
+        "name": "Thé nas Ladeira",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Rua 7 de setembro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Thé nas Ladeira - Terça que acontecerá em 17/02/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/the-nas-ladeira-terca-pe-17-02-26-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-das-sambadeiras-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8506366,
+          -8.0122809
+        ]
+      },
+      "properties": {
+        "name": "Arrastão das Sambadeiras",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Centro Histórico de Olinda",
+        "address": "Ladeira da Misericórdia, Centro Histórico de Olinda  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão das Sambadeiras - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-das-sambadeiras-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ar-de-olinda-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8523721,
+          -8.0183793
+        ]
+      },
+      "properties": {
+        "name": "Ar de Olinda",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. de São Bento, 123, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ar de Olinda que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ar-de-olinda-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrastao-da-bateria-cabulosa-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8523637,
+          -8.013595
+        ]
+      },
+      "properties": {
+        "name": "Arrastão da Bateria Cabulosa",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "Ladeira da Misericórdia, Amparo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Arrastão da Bateria Cabulosa - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/arrastao-da-bateria-cabulosa-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bateria-aue-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8483559,
+          -8.0170337
+        ]
+      },
+      "properties": {
+        "name": "Bateria Auê",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Carmo, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bateria Auê - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bateria-aue-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "encontro-dos-bonecos-gigantes-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8549152,
+          -8.0109353
+        ]
+      },
+      "properties": {
+        "name": "Encontro dos Bonecos Gigantes",
+        "date": "2026-02-17",
+        "time": "10:00",
+        "datetime": "2026-02-17T10:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "R. Ns. do Guadalupe, Guadalupe, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Encontro dos Bonecos Gigantes que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/encontro-dos-bonecos-gigantes-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "zebra-das-olindas-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8588992,
+          -8.0228525
+        ]
+      },
+      "properties": {
+        "name": "Zebra das Olindas",
+        "date": "2026-02-17",
+        "time": "12:00",
+        "datetime": "2026-02-17T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Santa Tereza",
+        "address": "R. Maria Adalgisa Ferreira, 112, Santa Tereza  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Zebra das Olindas que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/zebra-das-olindas-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "os-abutres-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8530364,
+          -8.0189304
+        ]
+      },
+      "properties": {
+        "name": "Os Abutres",
+        "date": "2026-02-17",
+        "time": "12:00",
+        "datetime": "2026-02-17T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. 15 de Novembro, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Os Abutres que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/os-abutres-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quem-cola-entra-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8564136,
+          -8.010598
+        ]
+      },
+      "properties": {
+        "name": "Quem Cola Entra",
+        "date": "2026-02-17",
+        "time": "12:00",
+        "datetime": "2026-02-17T12:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "R. Orlando da Silva, 31, Guadalupe, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Quem Cola Entra que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/quem-cola-entra-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "caranguejo-papame-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8566456,
+          -8.0157741
+        ]
+      },
+      "properties": {
+        "name": "Caranguejo Papamé",
+        "date": "2026-02-17",
+        "time": "15:00",
+        "datetime": "2026-02-17T15:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "R. Jerônimo de Albuquerque, 112, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Caranguejo Papamé que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/caranguejo-papame-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eu-acho-e-pouco-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8526348,
+          -8.016302
+        ]
+      },
+      "properties": {
+        "name": "Eu Acho é Pouco &#8211; Terça",
+        "date": "2026-02-17",
+        "time": "17:00",
+        "datetime": "2026-02-17T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça Laura Nigro, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Eu Acho é Pouco - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/eu-acho-e-pouco-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ceroula-terca-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8505839,
+          -8.0199219
+        ]
+      },
+      "properties": {
+        "name": "Ceroula",
+        "date": "2026-02-17",
+        "time": "17:00",
+        "datetime": "2026-02-17T17:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Varadouro",
+        "address": "Av. Sigismundo Gonçalves, 375, Varadouro, Recife & Olinda, PE, Brasil",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ceroula - Terça que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/ceroula-terca-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vassourinhas-de-olinda-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8549152,
+          -8.0109353
+        ]
+      },
+      "properties": {
+        "name": "Vassourinhas de Olinda",
+        "date": "2026-02-17",
+        "time": "18:00",
+        "datetime": "2026-02-17T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "R. Nossa Senhora do Guadalupe, 15, Guadalupe, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Vassourinhas de Olinda que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/vassourinhas-de-olinda-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lenhadores-olidenses-pe-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8555142,
+          -8.0076592
+        ]
+      },
+      "properties": {
+        "name": "Lenhadores Olidenses",
+        "date": "2026-02-17",
+        "time": "19:00",
+        "datetime": "2026-02-17T19:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Guadalupe",
+        "address": "Largo do Guadalupe, Guadalupe  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Lenhadores Olidenses que acontecerá em 17/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/lenhadores-olidenses-pe-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-case-pe-18-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8545333,
+          -8.0120938
+        ]
+      },
+      "properties": {
+        "name": "Bloco do Case",
+        "date": "2026-02-18",
+        "time": "18:00",
+        "datetime": "2026-02-18T18:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Amparo",
+        "address": "Igreja de São Pedro, Amparo  - Recife - PE",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do Case que acontecerá em 18/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/bloco-do-case-pe-18-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "segura-a-coisa-pe-18-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8466906,
+          -8.0156838
+        ]
+      },
+      "properties": {
+        "name": "Segura a Coisa",
+        "date": "2026-02-18",
+        "time": "23:59",
+        "datetime": "2026-02-18T23:59-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Carmo",
+        "address": "Praça do Fortim, Carmo, Recife & Olinda, PE, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Segura a Coisa que acontecerá em 18/02/2026 em Recife, Olinda - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/segura-a-coisa-pe-18-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "as-vozes-pericles-e-ferrugem-pe-21-03-26-pe-21-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.8703703,
+          -8.0359655
+        ]
+      },
+      "properties": {
+        "name": "As Vozes Péricles e Ferrugem",
+        "date": "2026-03-21",
+        "time": "21:00",
+        "datetime": "2026-03-21T21:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Salgadinho",
+        "address": "Av. Governador Agamenon Magalhães, S/N, Salgadinho, Recife & Olinda, PE, Brasil",
+        "price": 90.0,
+        "price_formatted": "R$ 90,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre As Vozes Péricles e Ferrugem que acontecerá em 21/03/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/as-vozes-pericles-e-ferrugem-pe-21-03-26-pe-21-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "simplesmente-roupa-nova-pe-24-04-26-pe-24-04-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.865848,
+          -8.0261255
+        ]
+      },
+      "properties": {
+        "name": "Simplesmente Roupa Nova",
+        "date": "2026-04-24",
+        "time": "20:00",
+        "datetime": "2026-04-24T20:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Salgadinho",
+        "address": "Av. Gov. Agamenon Magalhães, S/N, Salgadinho  - Recife - PE",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Simplesmente Roupa Nova que acontecerá em 24/04/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/simplesmente-roupa-nova-pe-24-04-26-pe-24-04-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "alceu-valenca-turne-80-pe-15-05-26-pe-15-05-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.865848,
+          -8.0261255
+        ]
+      },
+      "properties": {
+        "name": "Alceu Valença Turnê 80",
+        "date": "2026-05-15",
+        "time": "20:00",
+        "datetime": "2026-05-15T20:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Salgadinho",
+        "address": "Av. Gov. Agamenon Magalhães, S/N, Salgadinho  - Recife - PE",
+        "price": 65.0,
+        "price_formatted": "R$ 65,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Alceu Valença Turnê 80 que acontecerá em 15/05/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/alceu-valenca-turne-80-pe-15-05-26-pe-15-05-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "micanga-festival-pe-30-05-26-pe-30-05-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.865848,
+          -8.0261255
+        ]
+      },
+      "properties": {
+        "name": "Miçanga Festival",
+        "date": "2026-05-30",
+        "time": "20:00",
+        "datetime": "2026-05-30T20:00-03:00",
+        "city": "Recife/Olinda",
+        "neighborhood": "Salgadinho",
+        "address": "Av. Gov. Agamenon Magalhães, S/N, Salgadinho  - Recife - PE",
+        "price": 45.0,
+        "price_formatted": "R$ 45,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Miçanga Festival que acontecerá em 30/05/2026 em Recife - Pernambuco",
+        "source_url": "https://www.blocosderua.com/recife-olinda/programacao/micanga-festival-pe-30-05-26-pe-30-05-26/"
+      }
+    }
+  ]
+}

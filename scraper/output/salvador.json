@@ -1,0 +1,1037 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Salvador",
+    "city_slug": "salvador",
+    "generated_at": "2026-01-27T16:43:58.959148Z",
+    "total_blocks": 41,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "bloquinho-bem-de-leve-ssa-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4483567,
+          -12.9802211
+        ]
+      },
+      "properties": {
+        "name": "Bloquinho Bem de Leve",
+        "date": "2026-01-31",
+        "time": "11:00",
+        "datetime": "2026-01-31T11:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Centro",
+        "address": "Rua Arthur Fraga, S/N - STIEP, Salvador - BA, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloquinho Bem de Leve que acontecerá em 31/01/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloquinho-bem-de-leve-ssa-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloquinho-do-agua-ssa-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4355516,
+          -12.9867787
+        ]
+      },
+      "properties": {
+        "name": "Bloquinho do Água",
+        "date": "2026-01-31",
+        "time": "14:00",
+        "datetime": "2026-01-31T14:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Jardim Armação",
+        "address": "Rua Rodrigues Dórea, Jardim Armação, Salvador, BA, Brasil",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloquinho do Água que acontecerá em 31/01/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloquinho-do-agua-ssa-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "35-lavagem-da-adelba-ssa-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.3937402,
+          -12.9511358
+        ]
+      },
+      "properties": {
+        "name": "35° Lavagem da Adelba",
+        "date": "2026-02-01",
+        "time": "11:00",
+        "datetime": "2026-02-01T11:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Patamares",
+        "address": "Avenida Tamburugy, sn, Salvador - BA",
+        "price": 90.0,
+        "price_formatted": "R$ 90,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre 35° Lavagem da Adelba que acontecerá em 01/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/35-lavagem-da-adelba-ssa-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-da-dri-ssa-01-02-26-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5090389,
+          -12.9737371
+        ]
+      },
+      "properties": {
+        "name": "Carnaval da Dri",
+        "date": "2026-02-01",
+        "time": "12:00",
+        "datetime": "2026-02-01T12:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Mata Escura",
+        "address": "Rua João Abdala, 35 - Mata Escura, Salvador - BA, Brasil",
+        "price": 10.0,
+        "price_formatted": "R$ 10,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval da Dri que acontecerá em 01/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/carnaval-da-dri-ssa-01-02-26-2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "enxaguada-de-yemanja-ssa-02-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4884376,
+          -13.0147806
+        ]
+      },
+      "properties": {
+        "name": "Enxaguada de Yemanjá",
+        "date": "2026-02-02",
+        "time": "16:00",
+        "datetime": "2026-02-02T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Rio Vermelho",
+        "address": "Pr. Caramuru, Salvador - BA",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Enxaguada de Yemanjá que acontecerá em 02/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/enxaguada-de-yemanja-ssa-02-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-xupisko-folia-com-fanfarra-timbalada-e-autorais-ssa-11-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Xupisko Folia com Fanfarra, Timbalada e Autorais",
+        "date": "2026-02-11",
+        "time": "19:00",
+        "datetime": "2026-02-11T19:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Barra, Salvador, BA, Brasil",
+        "price": 390.0,
+        "price_formatted": "R$ 390,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Xupisko Folia com Fanfarra, Timbalada e Autorais que acontecerá em 11/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-xupisko-folia-com-fanfarra-timbalada-e-autorais-ssa-11-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-pinguco-com-fanfarra-e-baile-com-o-kanalha-ssa-11-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Pinguço com Fanfarra e Baile com o Kanalha",
+        "date": "2026-02-11",
+        "time": "20:00",
+        "datetime": "2026-02-11T20:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Barra, Salvador, BA, Brasil",
+        "price": 190.0,
+        "price_formatted": "R$ 190,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Pinguço com Fanfarra e Baile com o Kanalha que acontecerá em 11/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-pinguco-com-fanfarra-e-baile-com-o-kanalha-ssa-11-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-da-quinta-com-bell-marques-2026-ssa-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco da Quinta com Bell Marques",
+        "date": "2026-02-12",
+        "time": "16:00",
+        "datetime": "2026-02-12T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco da Quinta com Bell Marques - 2026 que acontecerá em 12/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-da-quinta-com-bell-marques-2026-ssa-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-fissura-quinta-2026-ssa-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Fissura &#8211; Quinta",
+        "date": "2026-02-12",
+        "time": "16:00",
+        "datetime": "2026-02-12T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Fissura - Quinta - 2026 que acontecerá em 12/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-fissura-quinta-2026-ssa-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "uau-cha-da-alice-com-babado-novo-2026-ssa-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "UAU Chá da Alice com Babado Novo",
+        "date": "2026-02-12",
+        "time": "18:00",
+        "datetime": "2026-02-12T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre UAU Chá da Alice com Babado Novo - 2026 que acontecerá em 12/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/uau-cha-da-alice-com-babado-novo-2026-ssa-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sunset-boat-ssa-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5132029,
+          -12.9697453
+        ]
+      },
+      "properties": {
+        "name": "Sunset Boat",
+        "date": "2026-02-12",
+        "time": "09:00",
+        "datetime": "2026-02-12T09:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Comércio",
+        "address": "Avenida da França, 393,, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sunset Boat que acontecerá em 12/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/sunset-boat-ssa-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vumbora-com-bell-marques-sexta-ssa-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Vumbora com Bell Marques &#8211; Sexta",
+        "date": "2026-02-13",
+        "time": "15:45",
+        "datetime": "2026-02-13T15:45-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 990.0,
+        "price_formatted": "R$ 990,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Vumbora com Bell Marques - Sexta que acontecerá em 28/02/2025 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/vumbora-com-bell-marques-sexta-ssa-13-02-26"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-fissura-sexta-2026-ssa-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Fissura &#8211; Sexta &#8211; 2026",
+        "date": "2026-02-13",
+        "time": "16:00",
+        "datetime": "2026-02-13T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Fissura - Sexta - 2026 que acontecerá em 13/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-fissura-sexta-2026-ssa-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "timbalada-com-carlinhos-brown-sexta-2026-ssa-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Timbalada com Carlinhos Brown &#8211; Sexta",
+        "date": "2026-02-13",
+        "time": "16:15",
+        "datetime": "2026-02-13T16:15-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 450.0,
+        "price_formatted": "R$ 450,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Timbalada com Carlinhos Brown - Sexta - 2026 que acontecerá em 13/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/timbalada-com-carlinhos-brown-sexta-2026-ssa-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-nana-com-leo-santana-sexta-2026-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco do Nana com Léo Santana &#8211; Sexta",
+        "date": "2026-02-13",
+        "time": "17:15",
+        "datetime": "2026-02-13T17:15-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do Nana com Léo Santana - Sexta - 2026 que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-do-nana-com-leo-santana-sexta-2026-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-glamour-com-parangole-e-ludmilla-ssa-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5200101,
+          -13.0090606
+        ]
+      },
+      "properties": {
+        "name": "Camarote Glamour com Parangolé e Ludmilla",
+        "date": "2026-02-13",
+        "time": "18:00",
+        "datetime": "2026-02-13T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Ondina",
+        "address": "Av. Oceânica, 1404, Ondina, Salvador, BA, Brasil",
+        "price": 760.0,
+        "price_formatted": "R$ 760,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Glamour com Parangolé e Ludmilla que acontecerá em 13/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camarote-glamour-com-parangole-e-ludmilla-ssa-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-happy-com-tio-paulinho-e-filhos-de-jorge-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5215354,
+          -12.9891727
+        ]
+      },
+      "properties": {
+        "name": "Bloco Happy com Tio Paulinho e Filhos de Jorge",
+        "date": "2026-02-14",
+        "time": "11:00",
+        "datetime": "2026-02-14T11:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Campo Grande",
+        "address": "Praça Campo Grande, Salvador - BA",
+        "price": 350.0,
+        "price_formatted": "R$ 350,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Happy com Tio Paulinho e Filhos de Jorge que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-happy-com-tio-paulinho-e-filhos-de-jorge-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "coruja-com-ivete-sangalo-sabado-2026-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Coruja com Ivete Sangalo &#8211; Sábado",
+        "date": "2026-02-14",
+        "time": "15:00",
+        "datetime": "2026-02-14T15:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Coruja com Ivete Sangalo - Sábado - 2026 que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/coruja-com-ivete-sangalo-sabado-2026-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-fissura-sabado-2026-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Fissura &#8211; Sábado",
+        "date": "2026-02-14",
+        "time": "16:00",
+        "datetime": "2026-02-14T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Fissura - Sábado - 2026 que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-fissura-sabado-2026-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "timbalada-com-carlinhos-brown-sabado-2026-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Timbalada com Carlinhos Brown &#8211; Sábado",
+        "date": "2026-02-14",
+        "time": "16:15",
+        "datetime": "2026-02-14T16:15-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 450.0,
+        "price_formatted": "R$ 450,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Timbalada com Carlinhos Brown - Sábado - 2026 que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/timbalada-com-carlinhos-brown-sabado-2026-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-do-nana-com-leo-santana-sabado-2026-ssa-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco do Léo Santana &#8211; Sábado",
+        "date": "2026-02-14",
+        "time": "17:15",
+        "datetime": "2026-02-14T17:15-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco do Nana com Léo Santana - Sábado - 2026 que acontecerá em 15/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-do-nana-com-leo-santana-sabado-2026-ssa-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-glamour-com-tony-salles-e-belo-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5200101,
+          -13.0090606
+        ]
+      },
+      "properties": {
+        "name": "Camarote Glamour com Tony Salles e Belo",
+        "date": "2026-02-14",
+        "time": "18:00",
+        "datetime": "2026-02-14T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Ondina",
+        "address": "Av. Oceânica, 1404, Ondina, Salvador, BA, Brasil",
+        "price": 790.0,
+        "price_formatted": "R$ 790,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Glamour com Tony Salles e Belo que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camarote-glamour-com-tony-salles-e-belo-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-cheiro-2026-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Cheiro",
+        "date": "2026-02-14",
+        "time": "18:45",
+        "datetime": "2026-02-14T18:45-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Cheiro - 2026 que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-cheiro-2026-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "banda-olodum-ba-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5215354,
+          -12.9891727
+        ]
+      },
+      "properties": {
+        "name": "Banda Olodum",
+        "date": "2026-02-14",
+        "time": "19:00",
+        "datetime": "2026-02-14T19:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Campo Grande",
+        "address": "Praça Campo Grande, Salvador - BA",
+        "price": 550.0,
+        "price_formatted": "R$ 550,00",
+        "is_free": false,
+        "description": "Bloco de Carnaval Banda Olodum acontecerá em 14/02/2026 em Salvador, Bahia. Confira horário, endereço e mais informações",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/banda-olodum-ba-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-alerta-prime-ssa-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Alerta Prime",
+        "date": "2026-02-14",
+        "time": "21:00",
+        "datetime": "2026-02-14T21:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Barra, Salvador, BA, Brasil",
+        "price": 170.0,
+        "price_formatted": "R$ 170,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Alerta Prime que acontecerá em 14/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-alerta-prime-ssa-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camaleao-com-bel-marques-domingo-2026-ssa-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Camaleão com Bel Marques &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "16:00",
+        "datetime": "2026-02-15T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camaleão com Bel Marques - Domingo - 2026 que acontecerá em 15/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camaleao-com-bel-marques-domingo-2026-ssa-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "crocodilo-com-daniela-mercury-2026-ssa-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Crocodilo com Daniela Mercury",
+        "date": "2026-02-15",
+        "time": "16:00",
+        "datetime": "2026-02-15T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Crocodilo com Daniela Mercury - 2026 que acontecerá em 15/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/crocodilo-com-daniela-mercury-2026-ssa-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-daquele-jeito-com-xandy-harmonia-domingo-2026-ssa-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Daquele Jeito com Xandy Harmonia &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "16:00",
+        "datetime": "2026-02-15T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 250.0,
+        "price_formatted": "R$ 250,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Daquele Jeito com Xandy Harmonia - Domingo - 2026 que acontecerá em 15/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-daquele-jeito-com-xandy-harmonia-domingo-2026-ssa-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "largadinho-com-claudia-leite-domingo-2026-ssa-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Largadinho com Cláudia Leite &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "16:30",
+        "datetime": "2026-02-15T16:30-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Largadinho com Cláudia Leite - Domingo - 2026 que acontecerá em 15/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/largadinho-com-claudia-leite-domingo-2026-ssa-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-glamour-com-timbalada-e-pagodart-ssa-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5200101,
+          -13.0090606
+        ]
+      },
+      "properties": {
+        "name": "Camarote Glamour com Timbalada e Pagodart",
+        "date": "2026-02-15",
+        "time": "18:00",
+        "datetime": "2026-02-15T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Ondina",
+        "address": "Av. Oceânica, 1404, Ondina, Salvador, BA, Brasil",
+        "price": 760.0,
+        "price_formatted": "R$ 760,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Glamour com Timbalada e Pagodart que acontecerá em 15/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camarote-glamour-com-timbalada-e-pagodart-ssa-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "me-abraca-ba-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Me Abraça com Durval Lelys &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "18:00",
+        "datetime": "2026-02-15T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre o Bloco de Carnaval Me Abraça que acontecerá em 11/02/2024 em Salvador, Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/me-abraca-ba-15-02-26"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "coruja-com-ivete-sangalo-segunda-2026-ssa-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Coruja com Ivete Sangalo &#8211; Segunda",
+        "date": "2026-02-16",
+        "time": "15:00",
+        "datetime": "2026-02-16T15:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Coruja com Ivete Sangalo - Segunda - 2026 que acontecerá em 16/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/coruja-com-ivete-sangalo-segunda-2026-ssa-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camaleao-com-bel-marques-segunda-2026-ssa-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Camaleão com Bel Marques &#8211; Segunda",
+        "date": "2026-02-16",
+        "time": "16:00",
+        "datetime": "2026-02-16T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camaleão com Bel Marques - Segunda - 2026 que acontecerá em 16/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camaleao-com-bel-marques-segunda-2026-ssa-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-daquele-jeito-com-xandy-harmonia-segunda-2026-ssa-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Daquele Jeito com Xandy Harmonia &#8211; Segunda",
+        "date": "2026-02-16",
+        "time": "16:00",
+        "datetime": "2026-02-16T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 250.0,
+        "price_formatted": "R$ 250,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Daquele Jeito com Xandy Harmonia - Segunda - 2026 que acontecerá em 16/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-daquele-jeito-com-xandy-harmonia-segunda-2026-ssa-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-glamour-com-pericles-e-mumuzinho-ssa-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5200101,
+          -13.0090606
+        ]
+      },
+      "properties": {
+        "name": "Camarote Glamour com Péricles e Mumuzinho",
+        "date": "2026-02-16",
+        "time": "18:00",
+        "datetime": "2026-02-16T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Ondina",
+        "address": "Av. Oceânica, 1404, Ondina, Salvador, BA, Brasil",
+        "price": 720.0,
+        "price_formatted": "R$ 720,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Glamour com Péricles e Mumuzinho que acontecerá em 16/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camarote-glamour-com-pericles-e-mumuzinho-ssa-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-me-abraca-16-02-2026",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Bloco Me Abraça com Durval Lelys &#8211; Segunda",
+        "date": "2026-02-16",
+        "time": "18:30",
+        "datetime": "2026-02-16T18:30-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 780.0,
+        "price_formatted": "R$ 780,00",
+        "is_free": false,
+        "description": "Confira mais informações, horários, e endereço do Bloco Me Abraça em 16/02/2026",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/bloco-me-abraca-16-02-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vem-comigo-com-carla-cristina-2026-ssa-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Vem Comigo com Carla Cristina",
+        "date": "2026-02-16",
+        "time": "18:30",
+        "datetime": "2026-02-16T18:30-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Vem Comigo com Carla Cristina - 2026 que acontecerá em 16/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/vem-comigo-com-carla-cristina-2026-ssa-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camaleao-com-bel-marques-terca-2026-ssa-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Camaleão com Bel Marques &#8211; Terça",
+        "date": "2026-02-17",
+        "time": "16:00",
+        "datetime": "2026-02-17T16:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camaleão com Bel Marques - Terça - 2026 que acontecerá em 17/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camaleao-com-bel-marques-terca-2026-ssa-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "largadinho-com-claudia-leite-terca-2026-ssa-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Largadinho com Cláudia Leite &#8211; Terça",
+        "date": "2026-02-17",
+        "time": "16:30",
+        "datetime": "2026-02-17T16:30-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Largadinho com Cláudia Leite - Terça - 2026 que acontecerá em 17/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/largadinho-com-claudia-leite-terca-2026-ssa-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "praieiro-com-jammil-2026-ssa-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5329164,
+          -13.0103342
+        ]
+      },
+      "properties": {
+        "name": "Praieiro com Jammil",
+        "date": "2026-02-17",
+        "time": "17:15",
+        "datetime": "2026-02-17T17:15-03:00",
+        "city": "Salvador",
+        "neighborhood": "Barra",
+        "address": "Farol da Barra, Salvador - BA",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Praieiro com Jammil - 2026 que acontecerá em 17/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/praieiro-com-jammil-2026-ssa-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-glamour-com-sorriso-maroto-e-uel-ssa-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5200101,
+          -13.0090606
+        ]
+      },
+      "properties": {
+        "name": "Camarote Glamour com Sorriso Maroto e Uel",
+        "date": "2026-02-17",
+        "time": "18:00",
+        "datetime": "2026-02-17T18:00-03:00",
+        "city": "Salvador",
+        "neighborhood": "Ondina",
+        "address": "Av. Oceânica, 1404, Ondina, Salvador, BA, Brasil",
+        "price": 680.0,
+        "price_formatted": "R$ 680,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Glamour com Sorriso Maroto e Uel que acontecerá em 17/02/2026 em Salvador - Bahia",
+        "source_url": "https://www.blocosderua.com/salvador/programacao/camarote-glamour-com-sorriso-maroto-e-uel-ssa-17-02-26/"
+      }
+    }
+  ]
+}

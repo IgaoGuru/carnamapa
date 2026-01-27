@@ -1,0 +1,537 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Porto Alegre",
+    "city_slug": "porto-alegre",
+    "generated_at": "2026-01-27T16:44:30.674690Z",
+    "total_blocks": 21,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "baila-comigo-rs-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2127928,
+          -30.0345038
+        ]
+      },
+      "properties": {
+        "name": "Baila Comigo",
+        "date": "2026-01-31",
+        "time": "19:00",
+        "datetime": "2026-01-31T19:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Bom Fim",
+        "address": "Av. Osvaldo Aranha, 960, Bom Fim, Porto Alegre, RS, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baila Comigo que acontecerá em 31/01/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/baila-comigo-rs-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cristovao-bastos-e-mauro-senise-rs-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.212616,
+          -30.0380783
+        ]
+      },
+      "properties": {
+        "name": "Cristóvão Bastos &#038; Mauro Senise",
+        "date": "2026-01-31",
+        "time": "21:00",
+        "datetime": "2026-01-31T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Farroupilha",
+        "address": "Rua Vieira de Castro, 22, Farroupilha, Porto Alegre, RS, Brasil",
+        "price": 110.0,
+        "price_formatted": "R$ 110,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Cristóvão Bastos & Mauro Senise que acontecerá em 31/01/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/cristovao-bastos-e-mauro-senise-rs-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pagode-90-rs-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2209386,
+          -30.0417754
+        ]
+      },
+      "properties": {
+        "name": "Pagode 90",
+        "date": "2026-01-31",
+        "time": "23:00",
+        "datetime": "2026-01-31T23:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua José do Patrocínio, 834, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Pagode 90 que acontecerá em 31/01/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/pagode-90-rs-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "z1on-rs-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2029994,
+          -30.0013735
+        ]
+      },
+      "properties": {
+        "name": "Z1ON",
+        "date": "2026-02-07",
+        "time": "22:00",
+        "datetime": "2026-02-07T22:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Navegantes",
+        "address": "Rua Doutor João Inácio, 145, Navegantes, Porto Alegre, RS, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Z1ON que acontecerá em 07/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/z1on-rs-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-de-mascaras-rs-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2267355,
+          -30.0396167
+        ]
+      },
+      "properties": {
+        "name": "Baile de Máscaras",
+        "date": "2026-02-13",
+        "time": "23:00",
+        "datetime": "2026-02-13T23:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua João Alfredo, 483, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baile de Máscaras que acontecerá em 13/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/baile-de-mascaras-rs-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaglau-9-edicao-rs-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.212616,
+          -30.0380783
+        ]
+      },
+      "properties": {
+        "name": "CarnaGlau – 9ª Edição",
+        "date": "2026-02-14",
+        "time": "21:00",
+        "datetime": "2026-02-14T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Farroupilha",
+        "address": "Rua Vieira de Castro, 22, Farroupilha, Porto Alegre, RS, Brasil",
+        "price": 100.0,
+        "price_formatted": "R$ 100,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre CarnaGlau – 9ª Edição que acontecerá em 14/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/carnaglau-9-edicao-rs-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-infantil-2026-gn-gaucho-rs-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2285333,
+          -30.0558765
+        ]
+      },
+      "properties": {
+        "name": "Carnaval Infantil 2026 – GN Gaúcho",
+        "date": "2026-02-15",
+        "time": "16:00",
+        "datetime": "2026-02-15T16:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Menino Deus",
+        "address": "Av. Praia de Belas, 1948, Menino Deus, Porto Alegre, RS, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval Infantil 2026 – GN Gaúcho que acontecerá em 15/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/carnaval-infantil-2026-gn-gaucho-rs-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-da-nuvem-rs-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2267355,
+          -30.0396167
+        ]
+      },
+      "properties": {
+        "name": "Bloco da Nuvem",
+        "date": "2026-02-16",
+        "time": "23:00",
+        "datetime": "2026-02-16T23:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua João Alfredo, 483, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 39.0,
+        "price_formatted": "R$ 39,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco da Nuvem que acontecerá em 16/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/bloco-da-nuvem-rs-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tributo-a-tim-maia-com-tonho-crocco-rs-27-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2055756,
+          -30.0180155
+        ]
+      },
+      "properties": {
+        "name": "Tributo a Tim Maia com Tonho Crocco",
+        "date": "2026-02-27",
+        "time": "10:00",
+        "datetime": "2026-02-27T10:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Floresta",
+        "address": "Rua Almirante Barroso, 328, Floresta, Porto Alegre, RS, Brasil",
+        "price": 30.0,
+        "price_formatted": "R$ 30,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Tributo a Tim Maia com Tonho Crocco que acontecerá em 27/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/tributo-a-tim-maia-com-tonho-crocco-rs-27-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "orochi-rs-27-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.1749025,
+          -29.9756518
+        ]
+      },
+      "properties": {
+        "name": "Orochi",
+        "date": "2026-02-27",
+        "time": "22:30",
+        "datetime": "2026-02-27T22:30-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Anchieta",
+        "address": "Avenida Severo Dullius, 1995, Anchieta  - Porto Alegre - RS",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Orochi que acontecerá em 27/02/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/orochi-rs-27-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pool-party-urso-2026-rs-08-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.226618,
+          -29.9927605
+        ]
+      },
+      "properties": {
+        "name": "Pool Party Urso 2026",
+        "date": "2026-03-08",
+        "time": "14:00",
+        "datetime": "2026-03-08T14:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Arquipélago",
+        "address": "Ilha do Pavão, 2000, Casa 01, Arquipélago  - Porto Alegre - RS",
+        "price": 100.0,
+        "price_formatted": "R$ 100,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Pool Party Urso 2026 que acontecerá em 08/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/pool-party-urso-2026-rs-08-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "budah-em-porto-alegre-rs-13-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2209386,
+          -30.0417754
+        ]
+      },
+      "properties": {
+        "name": "Budah em Porto Alegre",
+        "date": "2026-03-13",
+        "time": "21:00",
+        "datetime": "2026-03-13T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua José do Patrocínio, 834, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Budah em Porto Alegre que acontecerá em 13/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/budah-em-porto-alegre-rs-13-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tribo-de-jah-em-porto-alegre-rs-14-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2209386,
+          -30.0417754
+        ]
+      },
+      "properties": {
+        "name": "Tribo de Jah em Porto Alegre",
+        "date": "2026-03-14",
+        "time": "21:00",
+        "datetime": "2026-03-14T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua José do Patrocínio, 834, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 75.0,
+        "price_formatted": "R$ 75,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Tribo de Jah em Porto Alegre que acontecerá em 14/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/tribo-de-jah-em-porto-alegre-rs-14-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "diogo-nogueira-em-porto-alegre-rs-20-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.212616,
+          -30.0380783
+        ]
+      },
+      "properties": {
+        "name": "Diogo Nogueira em Porto Alegre",
+        "date": "2026-03-20",
+        "time": "21:00",
+        "datetime": "2026-03-20T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Farroupilha",
+        "address": "Rua Vieira de Castro, 22, Farroupilha, Porto Alegre, RS, Brasil",
+        "price": 100.0,
+        "price_formatted": "R$ 100,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Diogo Nogueira em Porto Alegre que acontecerá em 20/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/diogo-nogueira-em-porto-alegre-rs-20-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "3030-em-porto-alegre-rs-20-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2209386,
+          -30.0417754
+        ]
+      },
+      "properties": {
+        "name": "3030 em Porto Alegre",
+        "date": "2026-03-20",
+        "time": "23:00",
+        "datetime": "2026-03-20T23:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua José do Patrocínio, 834, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 45.0,
+        "price_formatted": "R$ 45,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre 3030 em Porto Alegre que acontecerá em 20/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/3030-em-porto-alegre-rs-20-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "luiz-caldas-voz-e-violao-rs-22-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.1735106,
+          -30.0551712
+        ]
+      },
+      "properties": {
+        "name": "Luiz Caldas Voz e Violão",
+        "date": "2026-03-22",
+        "time": "21:00",
+        "datetime": "2026-03-22T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Partenon",
+        "address": "Av. Ipiranga, 6681, Partenon, Porto Alegre, RS, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Luiz Caldas Voz e Violão que acontecerá em 22/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/luiz-caldas-voz-e-violao-rs-22-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dani-black-uma-cidade-chamada-eu-mesmo-rs-27-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.190178,
+          -30.0079154
+        ]
+      },
+      "properties": {
+        "name": "Dani Black – Uma Cidade Chamada Eu Mesmo",
+        "date": "2026-03-27",
+        "time": "20:00",
+        "datetime": "2026-03-27T20:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "São João",
+        "address": "Rua Dom Pedro II, 861, São João, Porto Alegre, RS, Brasil",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Dani Black – Uma Cidade Chamada Eu Mesmo que acontecerá em 27/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/dani-black-uma-cidade-chamada-eu-mesmo-rs-27-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "os-garotin-em-porto-alegre-rs-28-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2209386,
+          -30.0417754
+        ]
+      },
+      "properties": {
+        "name": "Os Garotin em Porto Alegre",
+        "date": "2026-03-28",
+        "time": "23:00",
+        "datetime": "2026-03-28T23:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua José do Patrocínio, 834, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 135.0,
+        "price_formatted": "R$ 135,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Os Garotin em Porto Alegre que acontecerá em 28/03/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/os-garotin-em-porto-alegre-rs-28-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chico-cesar-e-orquestra-em-porto-alegre-rs-12-04-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2155872,
+          -30.0370316
+        ]
+      },
+      "properties": {
+        "name": "Chico César e Orquestra em Porto Alegre",
+        "date": "2026-04-12",
+        "time": "21:00",
+        "datetime": "2026-04-12T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Farroupilha",
+        "address": "Parque Farroupilha, 685, Farroupilha, Porto Alegre, RS, Brasil",
+        "price": 100.0,
+        "price_formatted": "R$ 100,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Chico César e Orquestra em Porto Alegre que acontecerá em 12/04/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/chico-cesar-e-orquestra-em-porto-alegre-rs-12-04-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "andre-frateschi-canta-legiao-urbana-rs-30-05-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.2209386,
+          -30.0417754
+        ]
+      },
+      "properties": {
+        "name": "André Frateschi canta Legião Urbana",
+        "date": "2026-05-30",
+        "time": "20:00",
+        "datetime": "2026-05-30T20:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Cidade Baixa",
+        "address": "Rua José do Patrocínio, 834, Cidade Baixa, Porto Alegre, RS, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre André Frateschi canta Legião Urbana que acontecerá em 30/05/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/andre-frateschi-canta-legiao-urbana-rs-30-05-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "martinho-da-vila-em-porto-alegre-rs-15-08-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.212616,
+          -30.0380783
+        ]
+      },
+      "properties": {
+        "name": "Martinho da Vila em Porto Alegre",
+        "date": "2026-08-15",
+        "time": "21:00",
+        "datetime": "2026-08-15T21:00-03:00",
+        "city": "Porto Alegre",
+        "neighborhood": "Farroupilha",
+        "address": "Rua Vieira de Castro, 22, Farroupilha, Porto Alegre, RS, Brasil",
+        "price": 130.0,
+        "price_formatted": "R$ 130,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Martinho da Vila em Porto Alegre que acontecerá em 15/08/2026 em Porto Alegre - RS",
+        "source_url": "https://www.blocosderua.com/porto-alegre/programacao/martinho-da-vila-em-porto-alegre-rs-15-08-26/"
+      }
+    }
+  ]
+}
