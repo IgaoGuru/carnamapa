@@ -17,13 +17,15 @@ export function FilterDrawer({ availableDates, filters, onFiltersChange }: Filte
   // Sort dates for calendar display
   const sortedDates = useMemo(() => [...availableDates].sort(), [availableDates]);
 
-  // Get date range for calendar
+  // Get date range for calendar (capped at March 1st)
   const dateRange = useMemo(() => {
     if (sortedDates.length === 0) return { start: new Date(), end: new Date() };
-    return {
-      start: parseISO(sortedDates[0]),
-      end: parseISO(sortedDates[sortedDates.length - 1]),
-    };
+    const start = parseISO(sortedDates[0]);
+    const lastDate = parseISO(sortedDates[sortedDates.length - 1]);
+    // Cap the calendar at March 1st of the same year as the start date
+    const march1st = new Date(start.getFullYear(), 2, 1); // Month is 0-indexed, so 2 = March
+    const end = lastDate > march1st ? march1st : lastDate;
+    return { start, end };
   }, [sortedDates]);
 
   // Generate calendar days
