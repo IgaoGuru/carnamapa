@@ -19,15 +19,27 @@ Interactive web application showing carnival blocks on a map, allowing users to 
 - **Map Display**: Full-screen interactive map centered on detected city
 - **Markers**: Pin for each carnival block at its location
 - **Default View**: Show all blocks for all dates initially
+- **Clean UI**: No zoom controls (+/-), no compass, no navigation buttons - pinch/scroll only
 
-### 4. Date Filter (Bottom Selector)
-- **Position**: Fixed at bottom of screen
-- **Type**: Horizontal scrollable date selector
-- **Options**:
-  - "Todos os dias" (show all dates)
-  - Individual dates (only dates that have events)
-- **Behavior**: Filter markers in real-time when date is selected
-- **Mobile**: Swipeable date list
+### 4. Filter Bar (Bottom of Screen)
+- **Position**: Fixed at bottom of screen, two horizontal layers
+- **Background**: Transparent (floats over map)
+- **Layer 1 (Top)**: Date Selector (aligned left)
+  - Left arrow `<` to go to previous day
+  - Center: Current selected date (tap to open calendar popup)
+  - Right arrow `>` to go to next day
+  - When no date selected, shows "Todos os dias"
+  - Buttons have white/translucent background with shadow
+- **Layer 2 (Bottom)**: Time & Price Filters
+  - Time-of-day multi-select: Three segments in rounded container
+    - "Manhã" (06:00 - 11:59)
+    - "Tarde" (12:00 - 17:59)
+    - "Noite" (18:00 - 05:59)
+  - "Só gratuitos" toggle button on the right (purple when active)
+- **Behavior**: Filters update markers in real-time, multiple filters combine with AND logic
+- **Calendar Popup**: Opens when center date is tapped
+  - Fixed date range: Feb 1 to Mar 1, 2026 (Carnaval period)
+  - Shows available dates highlighted, unavailable dates grayed out
 
 ### 5. Block Detail View
 - **Trigger**: User clicks on a map pin
@@ -80,15 +92,30 @@ Interactive web application showing carnival blocks on a map, allowing users to 
 ### Layout
 ```
 ┌─────────────────────────────────────┐
+│ [City ▼]                            │  ← City selector (top left)
 │                                     │
 │                                     │
 │              MAP                    │
-│         (with pins)                 │
+│    (full screen, no controls)       │
 │                                     │
 │                                     │
-├─────────────────────────────────────┤
-│  [Date Selector - Horizontal]      │
-│  Todos │ 27/Jan │ 28/Jan │ ...     │
+│  [<] 27 de Fevereiro [>]            │  ← Date selector (left-aligned, transparent bg)
+│  [Manhã|Tarde|Noite]  [Só gratuitos]│  ← Time multi-select + toggle button
+└─────────────────────────────────────┘
+
+Calendar Popup (when date tapped):
+┌─────────────────────────────────────┐
+│              MAP (dimmed)           │
+│   ┌─────────────────────────────┐   │
+│   │      Carnaval 2026          │   │
+│   │  D  S  T  Q  Q  S  S        │   │
+│   │  1  2  3  4  5  6  7  (Feb) │   │
+│   │  ...                        │   │
+│   │  1  (Mar 1 - end of range)  │   │
+│   │  [Todos os dias]            │   │
+│   └─────────────────────────────┘   │
+│  [<] 27 de Fevereiro [>]            │
+│  [Manhã|Tarde|Noite]  [Só gratuitos]│
 └─────────────────────────────────────┘
 ```
 
@@ -107,16 +134,19 @@ Interactive web application showing carnival blocks on a map, allowing users to 
 
 ### MVP (Version 1)
 - [x] Geolocation-based city detection
-- [x] Interactive map with block markers
-- [x] Date filter (bottom selector)
+- [x] Interactive map with block markers (clean UI, no controls)
+- [x] Bottom filter bar with transparent background
+- [x] Date selector with arrows and calendar popup (Feb 1 - Mar 1 range)
+- [x] Filter by time period (manhã/tarde/noite multi-select)
+- [x] Filter by price (free only toggle button)
 - [x] Click pin to see block details
 - [x] Link to blocosderua.com source
 - [x] "Get directions" button
+- [x] No automatic zoom on filter changes
 
 ### Future Enhancements (Post-MVP)
 - Search blocks by name
 - Filter by neighborhood
-- Filter by price (free only, paid only)
 - Save favorite blocks (localStorage)
 - Share specific blocks (URL with query params)
 - Show block routes/paths if available in future data
@@ -164,43 +194,31 @@ const cityCenters = {
 ## Map Configuration
 
 ### Initial View
-- **Zoom Level**: Auto-fit to show all blocks in city
-- **Min Zoom**: 11 (neighborhood level)
-- **Max Zoom**: 18 (street level)
+- **Zoom Level**: Fixed at 12 (city level), centered on city
+- **No automatic zoom**: Map does not zoom when filters change
+- **User controls zoom**: Only user interactions (pinch/scroll) change zoom level
+
+### Controls
+- **Navigation Controls**: Disabled (no +/- zoom buttons)
+- **Compass**: Disabled
+- **Geolocate Button**: Disabled
+- **User Interaction**: Pinch-to-zoom and scroll/drag only
 
 ### Marker Styling
-- **Default**: Standard pin icon
-- **Selected**: Highlighted/enlarged pin
-- **Clustered**: If many blocks in same location, show cluster with count
+- **Default**: Purple pin icon (#8A2BE2)
+- **Selected**: Opens detail modal on click
 
 ### Performance
 - Load only selected city data (not all cities at once)
 - Lazy load block details on click
-- Optimize marker rendering for 100+ pins
-
-## Accessibility
-- Keyboard navigation support
-- Screen reader compatible
-- High contrast mode for pins
-- Touch-friendly buttons (min 44x44px)
-
-## Analytics (Optional)
-- Track city selections
-- Most viewed blocks
-- Date filter usage
-- Navigation button clicks
+- Markers update without zoom changes when filters applied
 
 ## URL Structure
 - `/` - Landing page with city selection
 - `/?city=sao-paulo` - Direct link to specific city
 - `/?city=rio-de-janeiro&date=2026-03-14` - Deep link to city + date
+- `/?city=rio-de-janeiro&date=2026-03-14&free=1` - Deep link with free-only filter
 - `/?city=rio-de-janeiro&block=alcione-rj-14-03-26` - Deep link to specific block
-
-## SEO Considerations
-- Meta tags for each city page
-- Structured data (JSON-LD) for events
-- Sitemap with city URLs
-- Brazilian Portuguese content
 
 ## Browser Support
 - Modern browsers (Chrome, Firefox, Safari, Edge)

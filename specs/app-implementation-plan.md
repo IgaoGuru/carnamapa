@@ -1414,20 +1414,24 @@ railway up
 - All navigation controls disabled (no +/-, no compass, no geolocate button)
 - Users interact via pinch-to-zoom and drag/scroll only
 - Cleaner, more immersive mobile experience
+- **No automatic zoom**: Map stays at user's zoom level when filters change
 
 ### Filter Bar (Bottom of Screen)
-Two-layer horizontal bar fixed at bottom:
+Two-layer bar fixed at bottom with **transparent background**:
 
-**Layer 1 - Date Selector:**
+**Layer 1 - Date Selector (left-aligned):**
 - Rounded pill showing current date or "Todos os dias"
-- Left/right arrows to navigate between dates
+- Left/right arrows to navigate between dates (Feb 1 - Mar 1 only)
 - Tap center to open calendar popup
+- White/translucent buttons with shadows for visibility
 
 **Layer 2 - Time & Price Filters:**
 - Time period multi-select: Manhã | Tarde | Noite (segmented control style)
-- "Só gratuitos" checkbox on the right
+- "Só gratuitos" **toggle button** (purple when active, white when inactive)
 
 **Calendar Popup:**
 - Opens when date text is tapped
-- Shows month grid with available dates highlighted
+- **Fixed range**: Feb 1 to Mar 1, 2026 (Carnaval period)
+- Header shows "Carnaval 2026"
+- Available dates highlighted in yellow, unavailable dates grayed out
 - "Todos os dias" button to clear selection
