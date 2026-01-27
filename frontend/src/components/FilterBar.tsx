@@ -5,6 +5,10 @@ import { CalendarPopup } from './CalendarPopup';
 import { TimePeriodSelector } from './TimePeriodSelector';
 import type { FilterState } from '../lib/types';
 
+// Fixed carnival date range
+const CARNIVAL_START = '2026-02-01';
+const CARNIVAL_END = '2026-03-01';
+
 interface FilterBarProps {
   availableDates: string[];
   filters: FilterState;
@@ -14,8 +18,12 @@ interface FilterBarProps {
 export function FilterBar({ availableDates, filters, onFiltersChange }: FilterBarProps) {
   const [calendarOpen, setCalendarOpen] = useState(false);
 
-  // Sort dates
-  const sortedDates = useMemo(() => [...availableDates].sort(), [availableDates]);
+  // Sort dates and filter to carnival range (Feb 1 - Mar 1)
+  const sortedDates = useMemo(() => {
+    return [...availableDates]
+      .filter(date => date >= CARNIVAL_START && date <= CARNIVAL_END)
+      .sort();
+  }, [availableDates]);
 
   const handleDateChange = (date: string | null) => {
     onFiltersChange({ ...filters, selectedDate: date });

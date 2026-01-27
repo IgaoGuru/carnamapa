@@ -1,7 +1,10 @@
 import { useMemo } from 'react';
-import { format, parseISO, isSameDay, startOfMonth, endOfMonth, startOfWeek, endOfWeek, addDays } from 'date-fns';
-import { ptBR } from 'date-fns/locale';
+import { format, parseISO, isSameDay, startOfWeek, endOfWeek, addDays } from 'date-fns';
 import clsx from 'clsx';
+
+// Fixed carnival date range: Feb 1 to Mar 1, 2026
+const CARNIVAL_START = new Date(2026, 1, 1); // Feb 1, 2026
+const CARNIVAL_END = new Date(2026, 2, 1);   // Mar 1, 2026
 
 interface CalendarPopupProps {
   selectedDate: string | null;
@@ -16,19 +19,11 @@ export function CalendarPopup({
   onSelectDate,
   onClose,
 }: CalendarPopupProps) {
-  // Determine which month to show (first available date or selected date)
-  const displayMonth = useMemo(() => {
-    if (selectedDate) return parseISO(selectedDate);
-    if (availableDates.length > 0) return parseISO(availableDates[0]);
-    return new Date();
-  }, [selectedDate, availableDates]);
 
-  // Generate calendar grid
+  // Generate calendar grid for Feb 1 to Mar 1
   const calendarDays = useMemo(() => {
-    const monthStart = startOfMonth(displayMonth);
-    const monthEnd = endOfMonth(displayMonth);
-    const calStart = startOfWeek(monthStart);
-    const calEnd = endOfWeek(monthEnd);
+    const calStart = startOfWeek(CARNIVAL_START);
+    const calEnd = endOfWeek(CARNIVAL_END);
 
     const days: Date[] = [];
     let current = calStart;
@@ -37,16 +32,16 @@ export function CalendarPopup({
       current = addDays(current, 1);
     }
     return days;
-  }, [displayMonth]);
+  }, []);
 
   // Check if date has events
   const hasEvents = (date: Date) => {
     return availableDates.some(d => isSameDay(parseISO(d), date));
   };
 
-  // Check if date is in current month
-  const isCurrentMonth = (date: Date) => {
-    return date.getMonth() === displayMonth.getMonth();
+  // Check if date is within carnival range (Feb 1 to Mar 1)
+  const isInRange = (date: Date) => {
+    return date >= CARNIVAL_START && date <= CARNIVAL_END;
   };
 
   const handleSelect = (date: Date) => {
@@ -69,7 +64,7 @@ export function CalendarPopup({
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-lg font-semibold text-gray-900 capitalize">
-            {format(displayMonth, 'MMMM yyyy', { locale: ptBR })}
+            Carnaval 2026
           </h3>
           <button
             onClick={onClose}
@@ -95,7 +90,7 @@ export function CalendarPopup({
             const dateStr = format(date, 'yyyy-MM-dd');
             const isSelected = selectedDate === dateStr;
             const isAvailable = hasEvents(date);
-            const inMonth = isCurrentMonth(date);
+            const inRange = isInRange(date);
 
             return (
               <button
@@ -104,7 +99,7 @@ export function CalendarPopup({
                 disabled={!isAvailable}
                 className={clsx(
                   'py-2 rounded-lg transition-colors',
-                  !inMonth && 'opacity-30',
+                  !inRange && 'opacity-30',
                   isSelected && 'bg-carnival-purple text-white',
                   !isSelected && isAvailable && 'bg-carnival-yellow/20 text-gray-900 hover:bg-carnival-yellow/40',
                   !isAvailable && 'text-gray-300 cursor-not-allowed'
