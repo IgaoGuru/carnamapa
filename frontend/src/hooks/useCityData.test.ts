@@ -61,11 +61,14 @@ describe('useCityData', () => {
     ],
   };
 
+  const originalFetch = globalThis.fetch;
+
   beforeEach(() => {
     vi.clearAllMocks();
   });
 
   afterEach(() => {
+    globalThis.fetch = originalFetch;
     vi.restoreAllMocks();
   });
 
@@ -78,7 +81,7 @@ describe('useCityData', () => {
   });
 
   it('should set loading true when fetching data', () => {
-    global.fetch = vi.fn().mockImplementation(() => new Promise(() => {})); // Never resolves
+    globalThis.fetch = vi.fn().mockImplementation(() => new Promise(() => {})) as typeof fetch;
 
     const { result } = renderHook(() => useCityData('rio-de-janeiro'));
 
@@ -86,10 +89,10 @@ describe('useCityData', () => {
   });
 
   it('should load city data successfully', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: () => Promise.resolve(mockCityData),
-    });
+    }) as typeof fetch;
 
     const { result } = renderHook(() => useCityData('rio-de-janeiro'));
 
@@ -104,10 +107,10 @@ describe('useCityData', () => {
   });
 
   it('should filter out blocks without coordinates', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: () => Promise.resolve(mockCityData),
-    });
+    }) as typeof fetch;
 
     const { result } = renderHook(() => useCityData('rio-de-janeiro'));
 
@@ -121,10 +124,10 @@ describe('useCityData', () => {
   });
 
   it('should set error when fetch fails with non-ok response', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: false,
       status: 404,
-    });
+    }) as typeof fetch;
 
     const { result } = renderHook(() => useCityData('unknown-city'));
 
@@ -137,7 +140,7 @@ describe('useCityData', () => {
   });
 
   it('should set error when fetch throws', async () => {
-    global.fetch = vi.fn().mockRejectedValue(new Error('Network error'));
+    globalThis.fetch = vi.fn().mockRejectedValue(new Error('Network error')) as typeof fetch;
 
     const { result } = renderHook(() => useCityData('rio-de-janeiro'));
 
@@ -150,10 +153,10 @@ describe('useCityData', () => {
   });
 
   it('should clear data when citySlug changes to null', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: () => Promise.resolve(mockCityData),
-    });
+    }) as typeof fetch;
 
     const { result, rerender } = renderHook(
       ({ citySlug }) => useCityData(citySlug),
@@ -175,7 +178,7 @@ describe('useCityData', () => {
       metadata: { ...mockCityData.metadata, city: 'São Paulo', city_slug: 'sao-paulo' },
     };
 
-    global.fetch = vi.fn()
+    globalThis.fetch = vi.fn()
       .mockResolvedValueOnce({
         ok: true,
         json: () => Promise.resolve(mockCityData),
@@ -183,7 +186,7 @@ describe('useCityData', () => {
       .mockResolvedValueOnce({
         ok: true,
         json: () => Promise.resolve(spData),
-      });
+      }) as typeof fetch;
 
     const { result, rerender } = renderHook(
       ({ citySlug }) => useCityData(citySlug),

@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Map } from './components/Map';
-import { FilterDrawer } from './components/FilterDrawer';
+import { FilterBar } from './components/FilterBar';
 import { BlockDetailModal } from './components/BlockDetailModal';
 import { CitySelector } from './components/CitySelector';
 import { LandingScreen } from './components/LandingScreen';
@@ -159,8 +159,8 @@ export default function App() {
         onSelectBlock={setSelectedBlock}
       />
 
-      {/* Filter drawer (right-side pull tab) */}
-      <FilterDrawer
+      {/* Filter bar (bottom of screen) */}
+      <FilterBar
         availableDates={availableDates}
         filters={filters}
         onFiltersChange={handleFiltersChange}

@@ -1368,10 +1368,10 @@ railway up
 - [x] Build LoadingSpinner component
 - [x] Build LandingScreen component
 - [x] Build CitySelector component
-- [x] Build DateSelector component (arrows + date display)
-- [x] Build CalendarPopup component (date picker popup) - *merged into FilterDrawer*
-- [x] Build TimePeriodSelector component (manhã|tarde|noite multi-select) - *merged into FilterDrawer*
-- [x] Build FilterDrawer component (replaces FilterBar - right-side pull tab with calendar, time periods, free-only filter)
+- [x] Build DateSelector component (arrows + date display, opens calendar popup)
+- [x] Build CalendarPopup component (date picker popup)
+- [x] Build TimePeriodSelector component (manhã|tarde|noite multi-select)
+- [x] Build FilterBar component (bottom bar with two layers: date selector + time periods/free-only)
 - [x] Build BlockDetailModal component
 - [x] Update Map component (disable navigation controls for clean UI)
 
