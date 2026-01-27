@@ -71,17 +71,6 @@ export function Map({ cityCenter, filteredFeatures, onSelectBlock }: MapProps) {
 
       markersRef.current.push(marker);
     });
-
-    // Fit bounds to show all markers if there are any
-    if (filteredFeatures.length > 0) {
-      const bounds = new maptilersdk.LngLatBounds();
-      filteredFeatures.forEach(f => {
-        if (f.geometry.coordinates) {
-          bounds.extend(f.geometry.coordinates);
-        }
-      });
-      map.current.fitBounds(bounds, { padding: 50, maxZoom: 14 });
-    }
   }, [filteredFeatures, onSelectBlock]);
 
   return (
