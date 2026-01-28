@@ -93,6 +93,10 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
               {isGoing ? 'Não vou mais' : 'Eu vou!'}
             </button>
 
+            <p className="text-xs text-gray-500 text-center mt-2">
+              Guardamos um identificador anônimo no seu navegador para lembrar suas confirmações.
+            </p>
+
             <a
               href={p.source_url}
               target="_blank"
