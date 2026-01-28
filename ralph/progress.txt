@@ -1,10 +1,11 @@
 ## Codebase Patterns
 - This is a Python scraper project in the /scraper directory
 - Main scraping logic in scraper/src/scraper.py (CarnaMapaScraper class)
-- Geocoding in scraper/src/geocoder.py (GeocodingService class with caching)
+- Geocoding in scraper/src/geocoder.py (Geocoder class with fallback chain and caching)
+- Address normalization in scraper/src/address_normalizer.py (normalize_address, extract_landmark)
 - City configs in scraper/src/config.py (CITIES dict with name, url, slug)
 - Output files in scraper/output/{city-slug}.json (GeoJSON format)
-- Cache stored in scraper/cache/geocoding_cache.json
+- Cache stored in scraper/cache/geocoding_cache.json (new format: {coords, provider, timestamp})
 - Uses geopy library for geocoding (supports Nominatim and GoogleV3)
 - Uses beautifulsoup4 for HTML parsing
 - Uses requests for HTTP
@@ -14,6 +15,9 @@
 
 - Use python3 (not python) for Python commands on macOS
 - Typecheck for Python files: python3 -m py_compile <file>
+- Geocoder.geocode_with_fallback() is the main geocoding method (4-step fallback chain)
+- Geocoder.geocode_with_google_only() for retrying failed Nominatim lookups
+- GeocodingPool in scraper/src/geocoding_pool.py for parallel geocoding with rate limiting
 
 ---
 
@@ -38,5 +42,35 @@
   - extract_landmark() can extract landmarks like 'Praça da Sé', 'Parque Ibirapuera', etc. for fallback geocoding queries
   - Brazilian zip code formats: 04784-145, 04784145, 04784 145 (5 digits + optional separator + 3 digits)
   - Common patterns removed: 'próximo', 'perto', 'ao lado', 'em frente', 'esquina'
+---
+
+## 2026-01-28 - US-003
+- What was implemented: Refactored geocoder.py to support a 4-step fallback chain for maximum geocoding success rate
+- Files changed:
+  - scraper/src/geocoder.py (major refactor)
+- **Learnings for future iterations:**
+  - geocode_with_fallback() implements 4-step chain: Nominatim full → Google full → Nominatim simplified → Google simplified
+  - Cache format now includes provider metadata: {'coords': [lon, lat], 'provider': 'nominatim'|'google', 'timestamp': ISO}
+  - Legacy cache format (just [lon, lat] array) is still supported for backward compatibility
+  - _get_cached_result() handles both old and new cache formats
+  - geocode_with_google_only() is available for retry scenarios (US-008 will use this)
+  - Nominatim rate limiting (1 req/sec) is built into geocode_with_fallback via time.sleep(1)
+  - get_stats() now returns provider breakdown: nominatim_hits, google_hits, legacy_hits
+  - Legacy geocode() method delegates to geocode_with_fallback() for backward compatibility
+---
+
+## 2026-01-28 - US-004
+- What was implemented: Created GeocodingPool class for parallel geocoding with rate limiting
+- Files changed:
+  - scraper/src/geocoding_pool.py (new file)
+- **Learnings for future iterations:**
+  - GeocodingPool accepts List[Tuple[str, str]] of (address, city) pairs
+  - Uses ThreadPoolExecutor for parallel processing
+  - Nominatim rate limiting enforced via threading.Lock + time-based throttle (_throttle_nominatim method)
+  - Results keyed by "address|city" string format for thread-safe dict access
+  - Progress logging triggers at: every 10 addresses, every 10% completion, or final completion
+  - get_results_by_address() method available for (address, city) tuple keys
+  - Imports GEOCODING_NOMINATIM_CONCURRENCY and GEOCODING_GOOGLE_CONCURRENCY from config
+  - Max workers set to max(NOMINATIM_CONCURRENCY, GOOGLE_CONCURRENCY) for optimal parallelism
 ---
 

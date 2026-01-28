@@ -54,7 +54,7 @@
         "Typecheck passes (run: cd scraper && python -m py_compile src/geocoder.py)"
       ],
       "priority": 3,
-      "passes": false,
+      "passes": true,
       "notes": "Depends on US-001 for config and US-002 for address normalization"
     },
     {
@@ -73,7 +73,7 @@
         "Typecheck passes (run: cd scraper && python -m py_compile src/geocoding_pool.py)"
       ],
       "priority": 4,
-      "passes": false,
+      "passes": true,
       "notes": "Depends on US-003 for geocode_with_fallback"
     },
     {
