@@ -1,0 +1,1887 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "São Paulo",
+    "city_slug": "sao-paulo",
+    "generated_at": "2026-01-27T16:42:37.379325Z",
+    "total_blocks": 75,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-bloco-reciclar-sp-27-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.8584264,
+          -23.4647655
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto Bloco Reciclar",
+        "date": "2026-01-27",
+        "time": "19:00",
+        "datetime": "2026-01-27T19:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Interlagos",
+        "address": "Av. Inácio Cunha Leme, 140 - Jardim Ipanema (Zona Sul), São Paulo - SP, 04784-145, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto Bloco Reciclar que acontecerá em 27/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-bloco-reciclar-sp-27-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "afro-axe-com-natania-borges-sp-29-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8114263,
+          -21.1843303
+        ]
+      },
+      "properties": {
+        "name": "Afro Axé com Natania Borges",
+        "date": "2026-01-29",
+        "time": "19:30",
+        "datetime": "2026-01-29T19:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva,22, Centro, São Paulo, SP, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Afro Axé com Natania Borges que acontecerá em 29/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/afro-axe-com-natania-borges-sp-29-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quintas-de-carnaval-calor-da-rua-no-mundo-pensante-sp-29-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Quintas de Carnaval &#8211; Calor da Rua no Mundo Pensante",
+        "date": "2026-01-29",
+        "time": "21:00",
+        "datetime": "2026-01-29T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Quintas de Carnaval - Calor da Rua no Mundo Pensante que acontecerá em 29/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/quintas-de-carnaval-calor-da-rua-no-mundo-pensante-sp-29-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-pagu-10-anos-sp-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Bloco Pagu na Casa Natura &#8211; 10 anos",
+        "date": "2026-01-30",
+        "time": "20:00",
+        "datetime": "2026-01-30T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134,  Pinheiros - São Paulo - SP",
+        "price": 36.0,
+        "price_formatted": "R$ 36,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Pagu - 10 anos que acontecerá em 30/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-pagu-10-anos-sp-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jorge-aragao-e-xande-de-pilares-sp-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6680132,
+          -23.5280411
+        ]
+      },
+      "properties": {
+        "name": "Jorge Aragão e Xande de Pilares",
+        "date": "2026-01-30",
+        "time": "20:00",
+        "datetime": "2026-01-30T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Rua Tagipurú, 795,  Barra Funda - São Paulo - SP",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Jorge Aragão e Xande de Pilares que acontecerá em 30/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/jorge-aragao-e-xande-de-pilares-sp-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "unidos-do-swing-no-cineclube-cortina-sp-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6445139,
+          -23.5444417
+        ]
+      },
+      "properties": {
+        "name": "Unidos do Swing no Cineclube Cortina",
+        "date": "2026-01-30",
+        "time": "21:00",
+        "datetime": "2026-01-30T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "República",
+        "address": "Rua Araújo, 62, República, São Paulo, SP, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Unidos do Swing no Cineclube Cortina que acontecerá em 30/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/unidos-do-swing-no-cineclube-cortina-sp-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaween-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6749858,
+          -23.6100024
+        ]
+      },
+      "properties": {
+        "name": "Carnaween",
+        "date": "2026-01-31",
+        "time": "11:00",
+        "datetime": "2026-01-31T11:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Moema",
+        "address": "Praça David Nasser - Moema, São Paulo - SP, 04518-020, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Carnaween que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/carnaween-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grito-de-carnaval-piraja-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6964325,
+          -23.5599836
+        ]
+      },
+      "properties": {
+        "name": "Grito de Carnaval Pirajá",
+        "date": "2026-01-31",
+        "time": "12:00",
+        "datetime": "2026-01-31T12:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Avenida Brigadeiro Faria Lima, 64, Pinheiros, São Paulo, SP, Brasil",
+        "price": 110.0,
+        "price_formatted": "R$ 110,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Grito de Carnaval Pirajá que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/grito-de-carnaval-piraja-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "apresentacao-akio-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.681087,
+          -23.467146
+        ]
+      },
+      "properties": {
+        "name": "Apresentação Akió",
+        "date": "2026-01-31",
+        "time": "13:00",
+        "datetime": "2026-01-31T13:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Brasilândia",
+        "address": "Av. Guilherme de Almeida, 493 - Vila Penteado, São Paulo - SP, 02866-150, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Apresentação Akió que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/apresentacao-akio-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-final-balatubloco-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6728561,
+          -23.521034
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Final Balatubloco",
+        "date": "2026-01-31",
+        "time": "13:00",
+        "datetime": "2026-01-31T13:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Rua Robert Bosch, 277 - Barra Funda, São Paulo - SP, 05003-020, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Final Balatubloco que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-final-balatubloco-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "festival-saidera-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6879959,
+          -23.5102436
+        ]
+      },
+      "properties": {
+        "name": "Festival Saidera",
+        "date": "2026-01-31",
+        "time": "14:00",
+        "datetime": "2026-01-31T14:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Avenida Presidente Castelo Branco, 7683, Barra Funda, São Paulo, SP, Brasil",
+        "price": 45.0,
+        "price_formatted": "R$ 45,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Festival Saidera que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/festival-saidera-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "concurso-de-marchinhas-bloco-nois-trupica-mais-nao-cai-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6874311,
+          -23.5598066
+        ]
+      },
+      "properties": {
+        "name": "Concurso de Marchinhas Bloco Nóis Trupica Mais Não Cai",
+        "date": "2026-01-31",
+        "time": "14:30",
+        "datetime": "2026-01-31T14:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Belmiro Braga, 119 - Pinheiros, São Paulo - SP, 05432-020, Brasil",
+        "price": 30.0,
+        "price_formatted": "R$ 30,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Concurso de Marchinhas Bloco Nóis Trupica Mais Não Cai que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/concurso-de-marchinhas-bloco-nois-trupica-mais-nao-cai-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-bloco-da-nanda-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6399228,
+          -23.4865234
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto Bloco da Nanda",
+        "date": "2026-01-31",
+        "time": "15:00",
+        "datetime": "2026-01-31T15:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Lauzane Paulista",
+        "address": "Av. Eng. Caetano Álvares, 7200 - Imirim, São Paulo - SP, 02413-200, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto Bloco da Nanda que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-bloco-da-nanda-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "samba-pros-orixas-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8114263,
+          -21.1843303
+        ]
+      },
+      "properties": {
+        "name": "Samba pros Orixás",
+        "date": "2026-01-31",
+        "time": "15:00",
+        "datetime": "2026-01-31T15:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva,22, Centro, São Paulo, SP, Brasil",
+        "price": 26.0,
+        "price_formatted": "R$ 26,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Samba pros Orixás que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/samba-pros-orixas-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-bunytos-de-corpo-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6948044,
+          -23.5422018
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Bunytos de Corpo",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Vila Anglo",
+        "address": "R. Pedro Soares de Almeida, 104 - Vila Anglo Brasileira, São Paulo - SP, 05029-030, Brasil",
+        "price": 20.0,
+        "price_formatted": "R$ 20,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Bunytos de Corpo que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-bunytos-de-corpo-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "esquenta-bloco-agrada-gregos-com-pocah-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6567224,
+          -23.5122711
+        ]
+      },
+      "properties": {
+        "name": "Esquenta Bloco Agrada Gregos com Pocah",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Casa Verde",
+        "address": "Rua João Rudge, 115, Casa Verde, São Paulo, SP, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Esquenta Bloco Agrada Gregos com Pocah que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/esquenta-bloco-agrada-gregos-com-pocah-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "filhos-de-gil-e-benjores-na-tarantino-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6831404,
+          -23.5083983
+        ]
+      },
+      "properties": {
+        "name": "Filhos de Gil &#038; Benjores na Tarantino",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Limão",
+        "address": "Rua Miguel Nelson Bechara, 316, Limão, São Paulo, SP, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Filhos de Gil & Benjores na Tarantino que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/filhos-de-gil-e-benjores-na-tarantino-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-cordao-do-sanatorio-geral-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6900149,
+          -23.5560891
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto Cordão do Sanatório Geral",
+        "date": "2026-01-31",
+        "time": "16:00",
+        "datetime": "2026-01-31T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Vila Madalena",
+        "address": "R. Fidalga, 396 - Vila Madalena, São Paulo - SP, 05432-000, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto Cordão do Sanatório Geral que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-cordao-do-sanatorio-geral-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cecilias-e-buarques-na-gomo-coop-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6471741,
+          -23.5427244
+        ]
+      },
+      "properties": {
+        "name": "Cecílias e Buarques na GOMO Coop",
+        "date": "2026-01-31",
+        "time": "19:00",
+        "datetime": "2026-01-31T19:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Santa Cecília",
+        "address": "R. Santa Isabel, 172 - Vila Buarque, São Paulo - SP, 01221-010, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Cecílias e Buarques na GOMO Coop que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/cecilias-e-buarques-na-gomo-coop-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-monobloco-dia-2-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.669524,
+          -23.5285353
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Monobloco &#8211; Dia 2",
+        "date": "2026-01-31",
+        "time": "21:00",
+        "datetime": "2026-01-31T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Av. Francisco Matarazzo, 694, Barra Funda, São Paulo, SP, Brasil",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Monobloco - Dia 2 que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-monobloco-dia-2-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bicho-de-pe-no-canto-da-ema-dia-2-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6948483,
+          -23.5619164
+        ]
+      },
+      "properties": {
+        "name": "Bicho de Pé no Canto da Ema &#8211; Dia 2",
+        "date": "2026-01-31",
+        "time": "22:00",
+        "datetime": "2026-01-31T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Avenida Brigadeiro Faria Lima , 364, Pinheiros, São Paulo, SP, Brasil",
+        "price": 27.0,
+        "price_formatted": "R$ 27,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bicho de Pé no Canto da Ema - Dia 2 que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bicho-de-pe-no-canto-da-ema-dia-2-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "confraria-do-pasmado-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Confraria do Pasmado na Casa Natura",
+        "date": "2026-01-31",
+        "time": "22:00",
+        "datetime": "2026-01-31T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134,  Pinheiros - São Paulo - SP",
+        "price": 84.0,
+        "price_formatted": "R$ 84,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Confraria do Pasmado que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/confraria-do-pasmado-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cecilias-e-buarques-no-al-janiah-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6452074,
+          -23.5574738
+        ]
+      },
+      "properties": {
+        "name": "Cecílias e Buarques no Al Janiah",
+        "date": "2026-01-31",
+        "time": "22:00",
+        "datetime": "2026-01-31T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "R. Rui Barbosa, 269 - Bela Vista, São Paulo - SP, 01326-010, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Cecílias e Buarques no Al Janiah que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/cecilias-e-buarques-no-al-janiah-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-sheela-pre-carnaval-com-bloco-cornucopia-desvairada-sp-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8114263,
+          -21.1843303
+        ]
+      },
+      "properties": {
+        "name": "Baile Sheela &#8211; Pré-Carnaval com bloco Cornucópia Desvairada",
+        "date": "2026-01-31",
+        "time": "23:00",
+        "datetime": "2026-01-31T23:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva,22, Centro, São Paulo, SP, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baile Sheela - Pré-Carnaval com bloco Cornucópia Desvairada que acontecerá em 31/01/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/baile-sheela-pre-carnaval-com-bloco-cornucopia-desvairada-sp-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-bloco-elastico-sp-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6433439,
+          -23.6038736
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto Bloco Elástico",
+        "date": "2026-02-01",
+        "time": "14:00",
+        "datetime": "2026-02-01T14:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Vila Mariana",
+        "address": "Rua Luís Góis, 1604 - Mirandópolis, São Paulo - SP, 04043-200, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto Bloco Elástico que acontecerá em 01/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-bloco-elastico-sp-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-bloco-vou-de-taxi-dia-3-sp-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6928809,
+          -23.5638785
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto Bloco Vou de Taxi &#8211; Dia 3",
+        "date": "2026-02-01",
+        "time": "14:00",
+        "datetime": "2026-02-01T14:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Cunha Gago, 581 - Pinheiros, São Paulo - SP, 05421-001, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto Bloco Vou de Taxi - Dia 3 que acontecerá em 01/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-bloco-vou-de-taxi-dia-3-sp-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-bloco-nu-interessa-ultimo-ensaio-sp-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6940908,
+          -23.5618726
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Bloco Nu Interessa &#8211; Último ensaio",
+        "date": "2026-02-01",
+        "time": "15:00",
+        "datetime": "2026-02-01T15:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Cunha Gago, 832 - Pinheiros, São Paulo - SP, 05421-001, Brasil",
+        "price": 250.0,
+        "price_formatted": "R$ 250,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Bloco Nu Interessa - Último ensaio que acontecerá em 01/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-bloco-nu-interessa-ultimo-ensaio-sp-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "borbulhas-de-amor-mistura-brasileira-sp-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6874311,
+          -23.5598066
+        ]
+      },
+      "properties": {
+        "name": "Borbulhas de Amor + Mistura Brasileira",
+        "date": "2026-02-01",
+        "time": "16:00",
+        "datetime": "2026-02-01T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Belmiro Braga, 119 - Pinheiros, São Paulo - SP, 05432-020, Brasil",
+        "price": 20.0,
+        "price_formatted": "R$ 20,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Borbulhas de Amor + Mistura Brasileira que acontecerá em 01/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/borbulhas-de-amor-mistura-brasileira-sp-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tardezinha-paraense-sp-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6335943,
+          -23.5602695
+        ]
+      },
+      "properties": {
+        "name": "Tardezinha Paraense",
+        "date": "2026-02-01",
+        "time": "16:00",
+        "datetime": "2026-02-01T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Liberdade",
+        "address": "Rua São Joaquim, 571, Liberdade, São Paulo, SP, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Tardezinha Paraense que acontecerá em 01/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/tardezinha-paraense-sp-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "orquestra-mundana-refugi-sp-03-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.8114263,
+          -21.1843303
+        ]
+      },
+      "properties": {
+        "name": "Orquestra Mundana Refugi",
+        "date": "2026-02-03",
+        "time": "19:30",
+        "datetime": "2026-02-03T19:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva,22, Centro, São Paulo, SP, Brasil",
+        "price": 44.0,
+        "price_formatted": "R$ 44,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Orquestra Mundana Refugi que acontecerá em 03/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/orquestra-mundana-refugi-sp-03-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-charanga-do-franca-no-mundo-pensante-sp-03-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto &#8211; Charanga do França no Mundo Pensante",
+        "date": "2026-02-03",
+        "time": "21:00",
+        "datetime": "2026-02-03T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto - Charanga do França no Mundo Pensante que acontecerá em 03/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-charanga-do-franca-no-mundo-pensante-sp-03-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-da-eddie-na-casa-de-francisca-sp-05-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "Carnaval da Eddie na Casa de Francisca",
+        "date": "2026-02-05",
+        "time": "19:30",
+        "datetime": "2026-02-05T19:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Sé",
+        "address": "Rua Quintino Bocaiúva, 22, Sé, São Paulo, SP, Brasil",
+        "price": 53.0,
+        "price_formatted": "R$ 53,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval da Eddie na Casa de Francisca que acontecerá em 05/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/carnaval-da-eddie-na-casa-de-francisca-sp-05-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quintas-de-carnaval-cerca-frango-no-mundo-pensante-sp-05-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Quintas de Carnaval &#8211; Cerca Frango no Mundo Pensante",
+        "date": "2026-02-05",
+        "time": "21:00",
+        "datetime": "2026-02-05T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Quintas de Carnaval - Cerca Frango no Mundo Pensante que acontecerá em 05/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/quintas-de-carnaval-cerca-frango-no-mundo-pensante-sp-05-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-da-eddie-no-mundo-pensante-sp-06-02-26-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Carnaval da Eddie no Mundo Pensante",
+        "date": "2026-02-06",
+        "time": "22:00",
+        "datetime": "2026-02-06T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval da Eddie no Mundo Pensante que acontecerá em 06/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/carnaval-da-eddie-no-mundo-pensante-sp-06-02-26-2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-da-eddie-no-mundo-pensante-sp-06-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Carnaval da Eddie no Mundo Pensante",
+        "date": "2026-02-06",
+        "time": "22:00",
+        "datetime": "2026-02-06T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval da Eddie no Mundo Pensante que acontecerá em 06/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/carnaval-da-eddie-no-mundo-pensante-sp-06-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "luv-party-sp-06-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6886248,
+          -23.5594044
+        ]
+      },
+      "properties": {
+        "name": "LUV Party",
+        "date": "2026-02-06",
+        "time": "23:00",
+        "datetime": "2026-02-06T23:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Vila Madalena",
+        "address": "Rua Inácio Pereira da Rocha, 170, Vila Madalena, São Paulo, SP, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre LUV Party que acontecerá em 06/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/luv-party-sp-06-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carna-forro-do-bloco-praieira-sp-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.686406,
+          -23.5576579
+        ]
+      },
+      "properties": {
+        "name": "Carna Forró do Bloco Praieira",
+        "date": "2026-02-07",
+        "time": "12:00",
+        "datetime": "2026-02-07T12:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Luís Murat, 370 - Pinheiros, São Paulo - SP, 05436-050, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carna Forró do Bloco Praieira que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/carna-forro-do-bloco-praieira-sp-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "festa-bloco-nu-interessa-sp-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6880457,
+          -23.552213
+        ]
+      },
+      "properties": {
+        "name": "Festa Bloco Nu&#8217;Interessa",
+        "date": "2026-02-07",
+        "time": "12:27",
+        "datetime": "2026-02-07T12:27-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Filinto de Almeida, 57, Pinheiros, São Paulo, SP, Brasil",
+        "price": 200.0,
+        "price_formatted": "R$ 200,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Festa Bloco Nu'Interessa que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/festa-bloco-nu-interessa-sp-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "after-do-ressaca-do-diabo-sp-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6764658,
+          -23.5977904
+        ]
+      },
+      "properties": {
+        "name": "After do Ressaca do Diabo",
+        "date": "2026-02-07",
+        "time": "14:00",
+        "datetime": "2026-02-07T14:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Vila Olímpia",
+        "address": "Rua Cavazzola, 92, Vila Olímpia, São Paulo, SP, Brasil",
+        "price": 180.0,
+        "price_formatted": "R$ 180,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre After do Ressaca do Diabo que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/after-do-ressaca-do-diabo-sp-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "explode-coracao-10-anos-sp-07-02-26-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Explode Coração &#8211; 10 anos",
+        "date": "2026-02-07",
+        "time": "20:00",
+        "datetime": "2026-02-07T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Artur de Azevedo, 2134 - Pinheiros, São Paulo - SP, 05404-005, Brasil",
+        "price": 36.0,
+        "price_formatted": "R$ 36,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Explode Coração - 10 anos que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/explode-coracao-10-anos-sp-07-02-26-2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "explode-coracao-10-anos-sp-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Explode Coração: 10 anos",
+        "date": "2026-02-07",
+        "time": "20:00",
+        "datetime": "2026-02-07T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134,  Pinheiros - São Paulo - SP",
+        "price": 30.0,
+        "price_formatted": "R$ 30,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Explode Coração: 10 anos que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/explode-coracao-10-anos-sp-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "edson-cordeiro-canta-carmen-miranda-sp-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6750257,
+          -23.5188893
+        ]
+      },
+      "properties": {
+        "name": "Edson Cordeiro canta Carmen Miranda",
+        "date": "2026-02-07",
+        "time": "21:00",
+        "datetime": "2026-02-07T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Rua Josef Kryss, 318,  Barra Funda - São Paulo - SP",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Edson Cordeiro canta Carmen Miranda que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/edson-cordeiro-canta-carmen-miranda-sp-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-santa-no-soy-sp-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6523049,
+          -23.5489592
+        ]
+      },
+      "properties": {
+        "name": "Bloco Santa no Soy",
+        "date": "2026-02-07",
+        "time": "23:30",
+        "datetime": "2026-02-07T23:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Higienópolis",
+        "address": "Higienópolis, São Paulo - SP, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Santa no Soy que acontecerá em 07/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-santa-no-soy-sp-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-bloco-batunta-sp-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6874311,
+          -23.5598066
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Bloco Batuntã",
+        "date": "2026-02-08",
+        "time": "13:00",
+        "datetime": "2026-02-08T13:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Belmiro Braga, 119 - Pinheiros, São Paulo - SP, 05432-020, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Bloco Batuntã que acontecerá em 08/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-bloco-batunta-sp-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ensaio-aberto-bloco-vou-de-taxi-dia-4-sp-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6928809,
+          -23.5638785
+        ]
+      },
+      "properties": {
+        "name": "Ensaio Aberto Bloco Vou de Taxi &#8211; Dia 4",
+        "date": "2026-02-08",
+        "time": "14:00",
+        "datetime": "2026-02-08T14:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Cunha Gago, 581 - Pinheiros, São Paulo - SP, 05421-001, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Ensaio Aberto Bloco Vou de Taxi - Dia 4 que acontecerá em 08/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/ensaio-aberto-bloco-vou-de-taxi-dia-4-sp-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-carnamauri-festa-sp-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6898214,
+          -23.5790778
+        ]
+      },
+      "properties": {
+        "name": "Bloco CarnAmauri &#8211; Festa",
+        "date": "2026-02-08",
+        "time": "16:00",
+        "datetime": "2026-02-08T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Angelina Maffei Vita, 103, Pinheiros, São Paulo, SP, Brasil",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco CarnAmauri - Festa que acontecerá em 08/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-carnamauri-festa-sp-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-beatles-para-criancas-sp-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Bloco Beatles Para Crianças",
+        "date": "2026-02-08",
+        "time": "17:00",
+        "datetime": "2026-02-08T17:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134,  Pinheiros - São Paulo - SP",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Beatles Para Crianças que acontecerá em 08/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-beatles-para-criancas-sp-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-do-bloco-do-papai-sp-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "Baile do Bloco do Papai",
+        "date": "2026-02-12",
+        "time": "19:30",
+        "datetime": "2026-02-12T19:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baile do Bloco do Papai que acontecerá em 12/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/baile-do-bloco-do-papai-sp-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-espetacular-charanga-do-franca-na-casa-de-francisca-sp-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "A Espetacular Charanga do França na Casa de Francisca",
+        "date": "2026-02-12",
+        "time": "19:30",
+        "datetime": "2026-02-12T19:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre A Espetacular Charanga do França na Casa de Francisca que acontecerá em 12/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/a-espetacular-charanga-do-franca-na-casa-de-francisca-sp-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quintas-de-carnaval-cornucopia-desvairada-no-mp-sp-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Quintas de Carnaval &#8211; Cornucópia Desvairada no Mp",
+        "date": "2026-02-12",
+        "time": "21:00",
+        "datetime": "2026-02-12T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Quintas de Carnaval - Cornucópia Desvairada no Mp que acontecerá em 12/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/quintas-de-carnaval-cornucopia-desvairada-no-mp-sp-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a-espetacular-charanga-do-franca-na-casa-de-francisca-sexta-sp-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "A Espetacular Charanga do França na Casa de Francisca &#8211; Sexta",
+        "date": "2026-02-13",
+        "time": "19:30",
+        "datetime": "2026-02-13T19:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 98.0,
+        "price_formatted": "R$ 98,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre A Espetacular Charanga do França na Casa de Francisca - Sexta que acontecerá em 13/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/a-espetacular-charanga-do-franca-na-casa-de-francisca-sexta-sp-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-nmnd-sp-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6364018,
+          -23.5851205
+        ]
+      },
+      "properties": {
+        "name": "Carnaval NMND",
+        "date": "2026-02-13",
+        "time": "22:00",
+        "datetime": "2026-02-13T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Vila Mariana",
+        "address": "Rua Vergueiro, 2676, Vila Mariana, São Paulo, SP, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval NMND que acontecerá em 13/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/carnaval-nmnd-sp-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-ano-passado-eu-morri-mas-esse-ano-eu-nao-morro-sp-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "Bloco Ano Passado Eu Morri Mas Esse Ano Eu Não Morro",
+        "date": "2026-02-14",
+        "time": "16:00",
+        "datetime": "2026-02-14T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Ano Passado Eu Morri Mas Esse Ano Eu Não Morro que acontecerá em 14/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-ano-passado-eu-morri-mas-esse-ano-eu-nao-morro-sp-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sidney-magal-baile-do-magal-sp-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Sidney Magal &#8211; Baile do Magal",
+        "date": "2026-02-14",
+        "time": "20:00",
+        "datetime": "2026-02-14T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134,  Pinheiros - São Paulo - SP",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sidney Magal - Baile do Magal que acontecerá em 14/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/sidney-magal-baile-do-magal-sp-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "after-bloco-emo-sp-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6949663,
+          -23.5693038
+        ]
+      },
+      "properties": {
+        "name": "After Bloco Emo",
+        "date": "2026-02-14",
+        "time": "23:00",
+        "datetime": "2026-02-14T23:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Cardeal Arcoverde, 2899 - Pinheiros, São Paulo - SP, 05407-004, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre After Bloco Emo que acontecerá em 14/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/after-bloco-emo-sp-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bigger-carnaval-sp-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6466524,
+          -23.5461902
+        ]
+      },
+      "properties": {
+        "name": "Bigger Carnaval",
+        "date": "2026-02-14",
+        "time": "23:00",
+        "datetime": "2026-02-14T23:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Consolação",
+        "address": "R. Rego Freitas, 470 - República, São Paulo - SP, 01220-010, Brasil",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bigger Carnaval que acontecerá em 14/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bigger-carnaval-sp-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-da-sempre-foi-baile-sp-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.9165682,
+          -23.4450666
+        ]
+      },
+      "properties": {
+        "name": "Bloco da Sempre Foi Baile",
+        "date": "2026-02-15",
+        "time": "23:00",
+        "datetime": "2026-02-15T23:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. São Bento, 405 - Centro Histórico de São Paulo, São Paulo - SP, 01011-100, Brasil",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco da Sempre Foi Baile que acontecerá em 15/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-da-sempre-foi-baile-sp-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-jegue-eletrico-na-casa-francisca-sp-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "Bloco Jegue Elétrico na Casa Francisca",
+        "date": "2026-02-16",
+        "time": "16:00",
+        "datetime": "2026-02-16T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Jegue Elétrico na Casa Francisca que acontecerá em 16/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-jegue-eletrico-na-casa-francisca-sp-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "high-club-edicao-work-bitch-sp-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6567224,
+          -23.5122711
+        ]
+      },
+      "properties": {
+        "name": "High Club &#8211; Edição Work Bitch",
+        "date": "2026-02-16",
+        "time": "22:00",
+        "datetime": "2026-02-16T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Casa Verde",
+        "address": "R. João Rudge, 115, Casa Verde, São Paulo, SP, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre High Club - Edição Work Bitch que acontecerá em 16/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/high-club-edicao-work-bitch-sp-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "terca-de-carnaval-na-palma-da-mao-na-vila-do-samba-sp-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6557661,
+          -23.5141751
+        ]
+      },
+      "properties": {
+        "name": "Terça de Carnaval na Palma da mão na Vila do Samba",
+        "date": "2026-02-17",
+        "time": "16:00",
+        "datetime": "2026-02-17T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Casa Verde",
+        "address": "Rua João Rudge, 340, Casa Verde, São Paulo, SP, Brasil",
+        "price": 20.0,
+        "price_formatted": "R$ 20,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Terça de Carnaval na Palma da mão na Vila do Samba que acontecerá em 17/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/terca-de-carnaval-na-palma-da-mao-na-vila-do-samba-sp-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fanfarra-obscenicas-sp-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "Fanfarra Obscênicas",
+        "date": "2026-02-17",
+        "time": "16:00",
+        "datetime": "2026-02-17T16:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Fanfarra Obscênicas que acontecerá em 17/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/fanfarra-obscenicas-sp-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "quintas-de-carnaval-calor-da-rua-no-mundo-pensante-sp-19-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6463614,
+          -23.5605631
+        ]
+      },
+      "properties": {
+        "name": "Quintas de Carnaval &#8211; Calor da Rua no Mundo Pensante",
+        "date": "2026-02-19",
+        "time": "21:00",
+        "datetime": "2026-02-19T21:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Bela Vista",
+        "address": "Rua Treze de Maio, 830, Bela Vista, São Paulo, SP, Brasil",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Quintas de Carnaval - Calor da Rua no Mundo Pensante que acontecerá em 19/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/quintas-de-carnaval-calor-da-rua-no-mundo-pensante-sp-19-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-agora-vai-na-casa-de-francisca-sp-20-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6348513,
+          -23.548791
+        ]
+      },
+      "properties": {
+        "name": "Bloco Agora Vai na Casa de Francisca",
+        "date": "2026-02-20",
+        "time": "20:00",
+        "datetime": "2026-02-20T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Centro",
+        "address": "R. Quintino Bocaiúva, 22 - Sé, São Paulo - SP, 01004-010, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Agora Vai na Casa de Francisca que acontecerá em 20/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bloco-agora-vai-na-casa-de-francisca-sp-20-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bruna-alimonda-baile-do-diabo-louro-sp-20-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Bruna Alimonda &#8211; Baile do Diabo Louro",
+        "date": "2026-02-20",
+        "time": "22:00",
+        "datetime": "2026-02-20T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134, Pinheiros, São Paulo, SP, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bruna Alimonda - Baile do Diabo Louro que acontecerá em 20/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bruna-alimonda-baile-do-diabo-louro-sp-20-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jau-sp-20-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6622655,
+          -23.5560945
+        ]
+      },
+      "properties": {
+        "name": "Jau",
+        "date": "2026-02-20",
+        "time": "22:30",
+        "datetime": "2026-02-20T22:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Consolação",
+        "address": "Av. Paulista, 2073,  Consolação - São Paulo - SP",
+        "price": 80.0,
+        "price_formatted": "R$ 80,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Jau que acontecerá em 20/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/jau-sp-20-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gala-profana-com-jaloo-sp-21-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Gala Profana com Jaloo",
+        "date": "2026-02-21",
+        "time": "22:00",
+        "datetime": "2026-02-21T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134, Pinheiros, São Paulo, SP, Brasil",
+        "price": 48.0,
+        "price_formatted": "R$ 48,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Gala Profana com Jaloo que acontecerá em 21/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/gala-profana-com-jaloo-sp-21-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "previa-do-bloco-olha-o-sucesso-sp-24-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6886248,
+          -23.5594044
+        ]
+      },
+      "properties": {
+        "name": "Prévia do Bloco Olha O Sucesso",
+        "date": "2026-02-24",
+        "time": "17:30",
+        "datetime": "2026-02-24T17:30-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "R. Inácio Pereira da Rocha, 170 - Pinheiros, São Paulo - SP, 05432-010, Brasil",
+        "price": 75.0,
+        "price_formatted": "R$ 75,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Prévia do Bloco Olha O Sucesso que acontecerá em 24/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/previa-do-bloco-olha-o-sucesso-sp-24-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "na-palma-da-mao-na-vila-do-samba-sp-24-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6557661,
+          -23.5141751
+        ]
+      },
+      "properties": {
+        "name": "Na palma da mão na Vila do Samba",
+        "date": "2026-02-24",
+        "time": "20:00",
+        "datetime": "2026-02-24T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Casa Verde",
+        "address": "Rua João Rudge, 340, Casa Verde, São Paulo, SP, Brasil",
+        "price": 20.0,
+        "price_formatted": "R$ 20,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Na palma da mão na Vila do Samba que acontecerá em 24/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/na-palma-da-mao-na-vila-do-samba-sp-24-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fabio-jr-bem-mais-que-os-meus-20-e-poucos-anos-sp-28-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6680132,
+          -23.5280411
+        ]
+      },
+      "properties": {
+        "name": "Fábio Jr. &#8211; Bem mais que os meus 20 e poucos anos",
+        "date": "2026-02-28",
+        "time": "20:00",
+        "datetime": "2026-02-28T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Rua Tagipuru, 795,  Barra Funda - São Paulo - SP",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Fábio Jr. - Bem mais que os meus 20 e poucos anos que acontecerá em 28/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/fabio-jr-bem-mais-que-os-meus-20-e-poucos-anos-sp-28-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fat-family-estreia-da-turne-baile-charme-sp-28-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6907617,
+          -23.5679343
+        ]
+      },
+      "properties": {
+        "name": "Fat Family &#8211; Estreia da Turnê Baile Charme",
+        "date": "2026-02-28",
+        "time": "22:00",
+        "datetime": "2026-02-28T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Rua Artur de Azevedo, 2134,  Pinheiros - São Paulo - SP",
+        "price": 48.0,
+        "price_formatted": "R$ 48,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Fat Family - Estreia da Turnê Baile Charme que acontecerá em 28/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/fat-family-estreia-da-turne-baile-charme-sp-28-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bicho-de-pe-no-canto-da-ema-dia-3-sp-28-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6948483,
+          -23.5619164
+        ]
+      },
+      "properties": {
+        "name": "Bicho de Pé no Canto da Ema &#8211; Dia 3",
+        "date": "2026-02-28",
+        "time": "22:00",
+        "datetime": "2026-02-28T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Pinheiros",
+        "address": "Avenida Brigadeiro Faria Lima , 364, Pinheiros, São Paulo, SP, Brasil",
+        "price": 27.0,
+        "price_formatted": "R$ 27,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bicho de Pé no Canto da Ema - Dia 3 que acontecerá em 28/02/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/bicho-de-pe-no-canto-da-ema-dia-3-sp-28-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "alcione-sp-14-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6680132,
+          -23.5280411
+        ]
+      },
+      "properties": {
+        "name": "Alcione",
+        "date": "2026-03-14",
+        "time": "20:00",
+        "datetime": "2026-03-14T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Rua Tagipurú, 795,  Barra Funda - São Paulo - SP",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Alcione que acontecerá em 14/03/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/alcione-sp-14-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "joao-taubkin-sp-17-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6622655,
+          -23.5560945
+        ]
+      },
+      "properties": {
+        "name": "João Taubkin",
+        "date": "2026-03-17",
+        "time": "20:00",
+        "datetime": "2026-03-17T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Consolação",
+        "address": "Av. Paulista, 2073,  Consolação - São Paulo - SP",
+        "price": 70.0,
+        "price_formatted": "R$ 70,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre João Taubkin que acontecerá em 17/03/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/joao-taubkin-sp-17-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cidade-negra-de-agora-em-diante-sp-28-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6990615,
+          -23.6803083
+        ]
+      },
+      "properties": {
+        "name": "Cidade Negra &#8211; De Agora em Diante",
+        "date": "2026-03-28",
+        "time": "22:00",
+        "datetime": "2026-03-28T22:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Jurubatuba",
+        "address": "Av. das Nações Unidas, 22540,  Jurubatuba - São Paulo - SP",
+        "price": 90.0,
+        "price_formatted": "R$ 90,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Cidade Negra - De Agora em Diante que acontecerá em 28/03/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/cidade-negra-de-agora-em-diante-sp-28-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "leonardo-uma-historia-sem-fim-sp-11-04-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6680132,
+          -23.5280411
+        ]
+      },
+      "properties": {
+        "name": "Leonardo &#8211; Uma História sem Fim",
+        "date": "2026-04-11",
+        "time": "20:00",
+        "datetime": "2026-04-11T20:00-03:00",
+        "city": "São Paulo",
+        "neighborhood": "Barra Funda",
+        "address": "Rua Tagipurú, 795,  Barra Funda - São Paulo - SP",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Leonardo - Uma História sem Fim que acontecerá em 11/04/2026 em São Paulo - SP",
+        "source_url": "https://www.blocosderua.com/programacao/leonardo-uma-historia-sem-fim-sp-11-04-26/"
+      }
+    }
+  ]
+}

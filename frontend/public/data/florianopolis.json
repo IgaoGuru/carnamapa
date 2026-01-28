@@ -1,0 +1,1662 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Florianópolis",
+    "city_slug": "florianopolis",
+    "generated_at": "2026-01-27T16:46:42.045697Z",
+    "total_blocks": 66,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "meet-day-kevin-di-serna-sc-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Meet Day – Kevin di Serna",
+        "date": "2026-01-30",
+        "time": "12:00",
+        "datetime": "2026-01-30T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 130.0,
+        "price_formatted": "R$ 130,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Meet Day – Kevin di Serna que acontecerá em 30/01/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/meet-day-kevin-di-serna-sc-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sexta-feira-isso-e-pagode-dia-3-sc-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5458849,
+          -27.5915993
+        ]
+      },
+      "properties": {
+        "name": "Sexta Feira &#8211; Isso É Pagode",
+        "date": "2026-01-30",
+        "time": "23:00",
+        "datetime": "2026-01-30T23:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "R. Almirante Alvim, 312, Centro, Florianópolis, SC, Brasil",
+        "price": 10.0,
+        "price_formatted": "R$ 10,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sexta Feira - Isso É Pagode - Dia 3 que acontecerá em 30/01/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/sexta-feira-isso-e-pagode-dia-3-sc-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cidade-negra-sc-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Cidade Negra",
+        "date": "2026-01-31",
+        "time": "12:00",
+        "datetime": "2026-01-31T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Cidade Negra que acontecerá em 31/01/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/cidade-negra-sc-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pre-carnaval-floripa-com-banda-eva-e-xanddy-harmonia",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4786581,
+          -27.6649636
+        ]
+      },
+      "properties": {
+        "name": "Pré-Carnaval Floripa com Banda Eva e Xanddy Harmonia",
+        "date": "2026-01-31",
+        "time": "13:00",
+        "datetime": "2026-01-31T13:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Balneário",
+        "address": "Beiramar Estreito - Balneario, Florianópolis - SC, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "O Pré-Carnaval Floripa promete arrastar foliões pela Beira-Mar do Estreito com atrações de peso! A festa conta com entrada gratuita, mas opções pagas para quem quiser desfrutar da folia com espaço exclusivo ou até open bar.",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/pre-carnaval-floripa-com-banda-eva-e-xanddy-harmonia/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sabado-i-love-quiqui-dia-3-sc-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5458849,
+          -27.5915993
+        ]
+      },
+      "properties": {
+        "name": "Sábado &#8211; I Love Quiqui",
+        "date": "2026-01-31",
+        "time": "23:00",
+        "datetime": "2026-01-31T23:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "R. Almirante Alvim, 312, Centro, Florianópolis, SC, Brasil",
+        "price": 10.0,
+        "price_formatted": "R$ 10,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sábado - I Love Quiqui - Dia 3 que acontecerá em 31/01/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/sabado-i-love-quiqui-dia-3-sc-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pre-carnaval-floripa-com-monobloco-e-dazaranha",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4786581,
+          -27.6649636
+        ]
+      },
+      "properties": {
+        "name": "Pré-Carnaval Floripa com Monobloco e Dazaranha",
+        "date": "2026-02-01",
+        "time": "13:00",
+        "datetime": "2026-02-01T13:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Balneário",
+        "address": "Beiramar Estreito - Balneario, Florianópolis - SC, Brasil",
+        "price": 350.0,
+        "price_formatted": "R$ 350,00",
+        "is_free": false,
+        "description": "O Pré-Carnaval Floripa promete arrastar foliões pela Beira-Mar do Estreito com atrações de peso! A festa conta com entrada gratuita, mas opções pagas para quem quiser desfrutar da folia com espaço exclusivo ou até open bar.",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/pre-carnaval-floripa-com-monobloco-e-dazaranha/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pagonejo-bao-alexandre-pires-sc-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Pagonejo Bão: Alexandre Pires",
+        "date": "2026-02-01",
+        "time": "14:00",
+        "datetime": "2026-02-01T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 160.0,
+        "price_formatted": "R$ 160,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Pagonejo Bão: Alexandre Pires que acontecerá em 01/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/pagonejo-bao-alexandre-pires-sc-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "partiu-sambinha-sc-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.497026,
+          -27.7041134
+        ]
+      },
+      "properties": {
+        "name": "Partiu Sambinha",
+        "date": "2026-02-01",
+        "time": "15:00",
+        "datetime": "2026-02-01T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Campeche",
+        "address": "R. Aroeira do Campo, 25, Campeche, Florianópolis, SC, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Partiu Sambinha que acontecerá em 01/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/partiu-sambinha-sc-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "berbigao-do-boca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Berbigão do Boca",
+        "date": "2026-02-06",
+        "time": "12:00",
+        "datetime": "2026-02-06T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega - Centro, Florianópolis - SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Abrindo o Carnaval de Floripa, o Berbigão do Boca chega com o melhor da música, gastronomia e manifestações culturais.",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/berbigao-do-boca/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "meet-day-com-kolombo-no-p12-sc-06-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Meet Day com Kolombo No P12",
+        "date": "2026-02-06",
+        "time": "12:00",
+        "datetime": "2026-02-06T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 180.0,
+        "price_formatted": "R$ 180,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Meet Day com Kolombo No P12 que acontecerá em 06/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/meet-day-com-kolombo-no-p12-sc-06-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pagodin-na-sixx-sc-06-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.6247834,
+          -27.5741259
+        ]
+      },
+      "properties": {
+        "name": "Pagodin na Sixx",
+        "date": "2026-02-06",
+        "time": "21:00",
+        "datetime": "2026-02-06T21:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Bela Vista",
+        "address": "R. Itaguaçu, 38, Bela Vista, Florianópolis, SC, Brasil",
+        "price": 20.0,
+        "price_formatted": "R$ 20,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Pagodin na Sixx que acontecerá em 06/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/pagodin-na-sixx-sc-06-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-do-rancho-sc-07-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5745862,
+          -27.7734114
+        ]
+      },
+      "properties": {
+        "name": "Carnaval do Rancho",
+        "date": "2026-02-07",
+        "time": "15:00",
+        "datetime": "2026-02-07T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Ribeirão da Ilha",
+        "address": "Rodovia Baldicero Filomeno, 3410, Ribeirão da Ilha, Florianópolis, SC, Brasil",
+        "price": 62.0,
+        "price_formatted": "R$ 62,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval do Rancho que acontecerá em 07/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/carnaval-do-rancho-sc-07-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "samba-de-macumba-para-yemanja-sc-08-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5900084,
+          -27.5973329
+        ]
+      },
+      "properties": {
+        "name": "Samba de Macumba para Yemanja",
+        "date": "2026-02-08",
+        "time": "15:00",
+        "datetime": "2026-02-08T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Capoeiras",
+        "address": "R. Pref. Dib Cherem, 2974, Capoeiras  - Florianópolis - SC",
+        "price": 15.0,
+        "price_formatted": "R$ 15,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Samba de Macumba para Yemanja que acontecerá em 08/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/samba-de-macumba-para-yemanja-sc-08-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-dos-idosos-sc-11-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Baile dos Idosos",
+        "date": "2026-02-11",
+        "time": "15:00",
+        "datetime": "2026-02-11T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega, Centro, Florianópolis, SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Baile dos Idosos que acontecerá em 11/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/baile-dos-idosos-sc-11-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "concurso-de-marchinhas-sc-11-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Concurso de Marchinhas",
+        "date": "2026-02-11",
+        "time": "19:00",
+        "datetime": "2026-02-11T19:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega, Centro, Florianópolis, SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Concurso de Marchinhas que acontecerá em 11/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/concurso-de-marchinhas-sc-11-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "meet-day-loulou-players-no-p12-sc-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Meet Day: Loulou Players no P12",
+        "date": "2026-02-12",
+        "time": "12:00",
+        "datetime": "2026-02-12T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Meet Day: Loulou Players no P12 que acontecerá em 12/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/meet-day-loulou-players-no-p12-sc-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "enterro-da-tristeza-sc-12-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5442569,
+          -27.5843752
+        ]
+      },
+      "properties": {
+        "name": "Enterro da Tristeza",
+        "date": "2026-02-12",
+        "time": "14:00",
+        "datetime": "2026-02-12T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Avenida Mauro Ramos, 1970, Centro, Florianópolis, SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Enterro da Tristeza que acontecerá em 12/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/enterro-da-tristeza-sc-12-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "marisco-da-maria-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Marisco da Maria",
+        "date": "2026-02-13",
+        "time": "11:00",
+        "datetime": "2026-02-13T11:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega, Centro, Florianópolis, SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Marisco da Maria que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/marisco-da-maria-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "festa-a-fantasia-do-p12-com-dubdogz-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Festa à Fantasia do P12 com Dubdogz",
+        "date": "2026-02-13",
+        "time": "14:00",
+        "datetime": "2026-02-13T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 180.0,
+        "price_formatted": "R$ 180,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Festa à Fantasia do P12 com Dubdogz que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/festa-a-fantasia-do-p12-com-dubdogz-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnaval-balburdia-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.560023,
+          -27.5897854
+        ]
+      },
+      "properties": {
+        "name": "Carnaval Balbúrdia",
+        "date": "2026-02-13",
+        "time": "17:00",
+        "datetime": "2026-02-13T17:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "R. Alm. Lamego, 425, Centro, Florianópolis, SC, Brasil",
+        "price": 10.0,
+        "price_formatted": "R$ 10,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnaval Balbúrdia que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/carnaval-balburdia-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "em-cima-da-hora-e-ferrugem-na-arena-central",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Em Cima da Hora e Ferrugem na Arena Central",
+        "date": "2026-02-13",
+        "time": "19:00",
+        "datetime": "2026-02-13T19:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega - Centro, Florianópolis - SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Em Cima da Hora e Ferrugem promovem um encontro inesquecível entre a tradição do samba de enredo e o pagode romântico que conquista multidões. O palco recebe a energia contagiante da agremiação carioca unida ao talento de uma das vozes mais queridas do país, garantindo uma noite de muita cantoria e emoção. É a oportunidade [&hellip;]",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/em-cima-da-hora-e-ferrugem-na-arena-central/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "blocos-afro-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.549858,
+          -27.5976387
+        ]
+      },
+      "properties": {
+        "name": "Blocos Afro",
+        "date": "2026-02-13",
+        "time": "19:00",
+        "datetime": "2026-02-13T19:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Praça XV de Novembro, Centro, Florianópolis, SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Blocos Afro que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/blocos-afro-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-que-beleza-dia-1-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Que Beleza!",
+        "date": "2026-02-13",
+        "time": "20:00",
+        "datetime": "2026-02-13T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 530.0,
+        "price_formatted": "R$ 530,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Que Beleza! - Dia 1 que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-que-beleza-dia-1-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-se-tu-dix-dia-1-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Se Tu Dix",
+        "date": "2026-02-13",
+        "time": "20:00",
+        "datetime": "2026-02-13T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 340.0,
+        "price_formatted": "R$ 340,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Se Tu Dix - Dia 1 que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-se-tu-dix-dia-1-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nossa-frisa-dia-1-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Nossa Frisa",
+        "date": "2026-02-13",
+        "time": "20:00",
+        "datetime": "2026-02-13T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Nossa Frisa - Dia 1 que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/nossa-frisa-dia-1-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-verde-e-rosa-dia-1-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Verde e Rosa",
+        "date": "2026-02-13",
+        "time": "20:00",
+        "datetime": "2026-02-13T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 270.0,
+        "price_formatted": "R$ 270,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Verde e Rosa - Dia 1 que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-verde-e-rosa-dia-1-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-premium-dia-1-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Premium",
+        "date": "2026-02-13",
+        "time": "20:00",
+        "datetime": "2026-02-13T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 280.0,
+        "price_formatted": "R$ 280,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Premium - Dia 1 que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-premium-dia-1-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-mo-quirido-dia-1-sc-13-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Mô Quirido",
+        "date": "2026-02-13",
+        "time": "20:30",
+        "datetime": "2026-02-13T20:30-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 250.0,
+        "price_formatted": "R$ 250,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Mô Quirido - Dia 1 que acontecerá em 13/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-mo-quirido-dia-1-sc-13-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mochakk-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Mochakk",
+        "date": "2026-02-14",
+        "time": "12:00",
+        "datetime": "2026-02-14T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 180.0,
+        "price_formatted": "R$ 180,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Mochakk que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/mochakk-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloquete-e-calma-beth-2026-nao-era-amor-2026-open-bar-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Bloquete &#038; Calma Beth 2026 | Não Era Amor 2026 &#8211; Open Bar",
+        "date": "2026-02-14",
+        "time": "13:00",
+        "datetime": "2026-02-14T13:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega, Centro, Florianópolis, SC, Brasil",
+        "price": 250.0,
+        "price_formatted": "R$ 250,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloquete & Calma Beth 2026 | Não Era Amor 2026 - Open Bar que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloquete-e-calma-beth-2026-nao-era-amor-2026-open-bar-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-dos-sujos-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.549858,
+          -27.5976387
+        ]
+      },
+      "properties": {
+        "name": "Bloco dos Sujos",
+        "date": "2026-02-14",
+        "time": "14:00",
+        "datetime": "2026-02-14T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Praça XV de Novembro - Centro, Florianópolis - SC, Brasil",
+        "price": 207.0,
+        "price_formatted": "R$ 207,00",
+        "is_free": false,
+        "description": "O Bloco dos Sujos é o mais famoso entre os foliões e toma o centro de Florianópolis. Em 2026, o bloco traz uma novidade: a área VIP open bar. Os foliões que optarem por curtir o bloco nesse espaço podem desfrutar de shows exclusivos, bebida boa e conforto para ir e voltar da pipoca.",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloco-dos-sujos-2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-nunke-de-boa-com-natanzinho-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.549858,
+          -27.5976387
+        ]
+      },
+      "properties": {
+        "name": "Bloco NUNKÉ DE BOA com Natanzinho",
+        "date": "2026-02-14",
+        "time": "14:00",
+        "datetime": "2026-02-14T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Praça XV de Novembro, Centro, Florianópolis, SC, Brasil",
+        "price": 20160.0,
+        "price_formatted": "R$ 20160,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco NUNKÉ DE BOA com Natanzinho que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloco-nunke-de-boa-com-natanzinho-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-seu-cookie-brilha-2026-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.549858,
+          -27.5976387
+        ]
+      },
+      "properties": {
+        "name": "Bloco Seu Cookie Brilha 2026",
+        "date": "2026-02-14",
+        "time": "15:00",
+        "datetime": "2026-02-14T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Praça XV de Novembro, Centro, Florianópolis, SC, Brasil",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Seu Cookie Brilha 2026 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloco-seu-cookie-brilha-2026-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jammil-e-diana-dias-na-arena-central",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Jammil e Diana Dias na Arena Central",
+        "date": "2026-02-14",
+        "time": "16:30",
+        "datetime": "2026-02-14T16:30-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega - Centro, Florianópolis - SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Jammil e Diana Dias trazem o melhor do axé e do ritmo das micaretas para agitar o público em uma celebração que é a cara do verão. Com muita disposição e melodias que convidam à dança, os artistas comandam uma verdadeira festa ao ar livre, espalhando sorrisos e boas vibrações por todo o espaço. Prepare [&hellip;]",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/jammil-e-diana-dias-na-arena-central/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-se-tu-dix-dia-2-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Se Tu Dix",
+        "date": "2026-02-14",
+        "time": "20:00",
+        "datetime": "2026-02-14T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 340.0,
+        "price_formatted": "R$ 340,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Se Tu Dix - Dia 2 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-se-tu-dix-dia-2-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-premium-dia-2-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Premium",
+        "date": "2026-02-14",
+        "time": "20:00",
+        "datetime": "2026-02-14T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 400.0,
+        "price_formatted": "R$ 400,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Premium - Dia 2 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-premium-dia-2-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-que-beleza-dia-2-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Que Beleza!",
+        "date": "2026-02-14",
+        "time": "20:00",
+        "datetime": "2026-02-14T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 530.0,
+        "price_formatted": "R$ 530,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Que Beleza! - Dia 2 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-que-beleza-dia-2-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nossa-frisa-dia-2-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Nossa Frisa",
+        "date": "2026-02-14",
+        "time": "20:00",
+        "datetime": "2026-02-14T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Nossa Frisa - Dia 2 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/nossa-frisa-dia-2-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-verde-e-rosa-dia-2-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Verde e Rosa",
+        "date": "2026-02-14",
+        "time": "20:00",
+        "datetime": "2026-02-14T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 270.0,
+        "price_formatted": "R$ 270,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Verde e Rosa - Dia 2 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-verde-e-rosa-dia-2-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-mo-quirido-dia-2-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Camarote Mô Quirido",
+        "date": "2026-02-14",
+        "time": "20:30",
+        "datetime": "2026-02-14T20:30-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 280.0,
+        "price_formatted": "R$ 280,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Mô Quirido - Dia 2 que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-mo-quirido-dia-2-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "concarnaval-sc-14-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5539938,
+          -27.5919067
+        ]
+      },
+      "properties": {
+        "name": "Concarnaval",
+        "date": "2026-02-14",
+        "time": "23:59",
+        "datetime": "2026-02-14T23:59-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Av. Rio Branco, 729, Centro, Florianópolis, SC, Brasil",
+        "price": 35.0,
+        "price_formatted": "R$ 35,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Concarnaval que acontecerá em 14/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/concarnaval-sc-14-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vintage-culture-no-p12-sc-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Vintage Culture no P12",
+        "date": "2026-02-15",
+        "time": "14:00",
+        "datetime": "2026-02-15T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 210.0,
+        "price_formatted": "R$ 210,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Vintage Culture no P12 que acontecerá em 15/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/vintage-culture-no-p12-sc-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-quesh-ketchup-sc-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.549858,
+          -27.5976387
+        ]
+      },
+      "properties": {
+        "name": "Bloco Quesh Ketchup?",
+        "date": "2026-02-15",
+        "time": "15:00",
+        "datetime": "2026-02-15T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Praça XV de Novembro, Centro, Florianópolis, SC, Brasil",
+        "price": 130.0,
+        "price_formatted": "R$ 130,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Quesh Ketchup? que acontecerá em 15/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloco-quesh-ketchup-sc-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-de-carnaval-infantil-do-lira-domingo-sc-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5616246,
+          -27.5906956
+        ]
+      },
+      "properties": {
+        "name": "Baile de Carnaval Infantil do Lira &#8211; Domingo",
+        "date": "2026-02-15",
+        "time": "16:00",
+        "datetime": "2026-02-15T16:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Rua Felipe Schmidt, 636, Centro, Florianópolis, SC, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baile de Carnaval Infantil do Lira - Domingo que acontecerá em 15/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/baile-de-carnaval-infantil-do-lira-domingo-sc-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloquinho-de-carnaval-na-balburdia-cervejeira-sc-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.560023,
+          -27.5897854
+        ]
+      },
+      "properties": {
+        "name": "Bloquinho de Carnaval na Balbúrdia Cervejeira",
+        "date": "2026-02-15",
+        "time": "17:00",
+        "datetime": "2026-02-15T17:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "R. Alm. Lamego, 425, Centro, Florianópolis, SC, Brasil",
+        "price": 10.0,
+        "price_formatted": "R$ 10,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloquinho de Carnaval na Balbúrdia Cervejeira que acontecerá em 15/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloquinho-de-carnaval-na-balburdia-cervejeira-sc-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "camarote-freguesia-bar-sc-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5207972,
+          -27.5057644
+        ]
+      },
+      "properties": {
+        "name": "Camarote Freguesia Bar",
+        "date": "2026-02-15",
+        "time": "18:00",
+        "datetime": "2026-02-15T18:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Santo Antonio de Lisboa",
+        "address": "Rua Cônego Serpa, 57, Santo Antonio de Lisboa, Florianópolis, SC, Brasil",
+        "price": 400.0,
+        "price_formatted": "R$ 400,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Camarote Freguesia Bar que acontecerá em 15/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/camarote-freguesia-bar-sc-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mc-davi-e-mc-pedrinho-na-arena-central",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Mc Davi e Mc Pedrinho na Arena Central",
+        "date": "2026-02-15",
+        "time": "18:00",
+        "datetime": "2026-02-15T18:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega - Centro, Florianópolis - SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Mc Davi e Mc Pedrinho elevam a temperatura com o melhor do funk, trazendo batidas envolventes e rimas que dominam as pistas de todo o país. A dupla garante uma performance cheia de atitude e movimento, transformando o local em um ponto de encontro dinâmico para quem busca diversão e muita animação. Deixe-se guiar pelo [&hellip;]",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/mc-davi-e-mc-pedrinho-na-arena-central/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dhun-carnaval-fatsync-juicce-volkoder-sc-15-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.62694,
+          -27.537173
+        ]
+      },
+      "properties": {
+        "name": "Dhun Carnaval &#8211; Fatsync + Juicce + Volkoder",
+        "date": "2026-02-15",
+        "time": "20:00",
+        "datetime": "2026-02-15T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "São José",
+        "address": "R. Heriberto Hulse, 3536, São José, Florianópolis, SC, Brasil",
+        "price": 45.0,
+        "price_formatted": "R$ 45,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Dhun Carnaval - Fatsync + Juicce + Volkoder que acontecerá em 15/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/dhun-carnaval-fatsync-juicce-volkoder-sc-15-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "livinho-e-kayblack-sc-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Livinho e Kayblack",
+        "date": "2026-02-16",
+        "time": "12:00",
+        "datetime": "2026-02-16T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Livinho e Kayblack que acontecerá em 16/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/livinho-e-kayblack-sc-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bloco-se-sorrir-te-agarro-sc-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5146953,
+          -27.7777862
+        ]
+      },
+      "properties": {
+        "name": "Bloco Se Sorrir Te Agarro",
+        "date": "2026-02-16",
+        "time": "16:00",
+        "datetime": "2026-02-16T16:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Pântano do Sul",
+        "address": "Estr. João Belarmino da Silva, 450, Pântano do Sul, Florianópolis, SC, Brasil",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bloco Se Sorrir Te Agarro que acontecerá em 16/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bloco-se-sorrir-te-agarro-sc-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "gloria-groove-na-arena-central",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5518612,
+          -27.597897
+        ]
+      },
+      "properties": {
+        "name": "Glória Groove na Arena Central",
+        "date": "2026-02-16",
+        "time": "22:00",
+        "datetime": "2026-02-16T22:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Largo da Alfândega - Centro, Florianópolis - SC, Brasil",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Glória Groove apresenta um espetáculo de talento e versatilidade, unindo performances icônicas a uma voz potente que transita por diversos gêneros musicais. O show celebra a diversidade e a liberdade, proporcionando uma experiência visual e auditiva marcante que inspira a participação de todos os presentes. Venha viver momentos de pura euforia em uma noite onde [&hellip;]",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/gloria-groove-na-arena-central/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-de-carnaval-folira-sc-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5616246,
+          -27.5906956
+        ]
+      },
+      "properties": {
+        "name": "Baile de Carnaval Folira",
+        "date": "2026-02-16",
+        "time": "22:00",
+        "datetime": "2026-02-16T22:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Rua Felipe Schmidt, 636, Centro, Florianópolis, SC, Brasil",
+        "price": 95.0,
+        "price_formatted": "R$ 95,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baile de Carnaval Folira que acontecerá em 16/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/baile-de-carnaval-folira-sc-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "meet-day-night-edition-agents-of-time-no-p12-sc-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Meet Day: Night Edition Agents Of Time no P12",
+        "date": "2026-02-16",
+        "time": "23:00",
+        "datetime": "2026-02-16T23:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 180.0,
+        "price_formatted": "R$ 180,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Meet Day: Night Edition Agents Of Time no P12 que acontecerá em 16/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/meet-day-night-edition-agents-of-time-no-p12-sc-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dando-em-cima-sc-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5539938,
+          -27.5919067
+        ]
+      },
+      "properties": {
+        "name": "Dando Em Cima",
+        "date": "2026-02-16",
+        "time": "23:00",
+        "datetime": "2026-02-16T23:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Av. Rio Branco, 729, Centro, Florianópolis, SC, Brasil",
+        "price": 70.0,
+        "price_formatted": "R$ 70,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Dando Em Cima que acontecerá em 16/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/dando-em-cima-sc-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnajuicy-sc-16-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4681718,
+          -27.5994127
+        ]
+      },
+      "properties": {
+        "name": "Carnajuicy",
+        "date": "2026-02-16",
+        "time": "23:00",
+        "datetime": "2026-02-16T23:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Lagoa da Conceição",
+        "address": "R. João Pachêco da Costa, 31, Lagoa da Conceição, Florianópolis, SC, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnajuicy que acontecerá em 16/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/carnajuicy-sc-16-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peixada-do-gui-2026-com-grupo-revelacao-sc-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5504022,
+          -27.6039127
+        ]
+      },
+      "properties": {
+        "name": "Peixada do Gui 2026 Com Grupo Revelação",
+        "date": "2026-02-17",
+        "time": "12:00",
+        "datetime": "2026-02-17T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Passarela Nego Quirido, Centro, Florianópolis, SC, Brasil",
+        "price": 300.0,
+        "price_formatted": "R$ 300,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Peixada do Gui 2026 Com Grupo Revelação que acontecerá em 17/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/peixada-do-gui-2026-com-grupo-revelacao-sc-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "turma-do-pagode-sc-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Turma do Pagode",
+        "date": "2026-02-17",
+        "time": "12:00",
+        "datetime": "2026-02-17T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Turma do Pagode que acontecerá em 17/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/turma-do-pagode-sc-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bailinho-carnaval-infantil-sc-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.511257,
+          -27.5601512
+        ]
+      },
+      "properties": {
+        "name": "Bailinho Carnaval Infantil",
+        "date": "2026-02-17",
+        "time": "15:00",
+        "datetime": "2026-02-17T15:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "João Paulo",
+        "address": "Rod. João Paulo, 75, João Paulo  - Florianópolis - SC",
+        "price": null,
+        "price_formatted": "Gratuito",
+        "is_free": true,
+        "description": "Confira horário, endereço e mais informações sobre Bailinho Carnaval Infantil que acontecerá em 17/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bailinho-carnaval-infantil-sc-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baile-de-carnaval-infantil-do-lira-terca-sc-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5616246,
+          -27.5906956
+        ]
+      },
+      "properties": {
+        "name": "Baile de Carnaval Infantil do Lira &#8211; Terça",
+        "date": "2026-02-17",
+        "time": "16:00",
+        "datetime": "2026-02-17T16:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Rua Felipe Schmidt, 636, Centro, Florianópolis, SC, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Baile de Carnaval Infantil do Lira - Terça que acontecerá em 17/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/baile-de-carnaval-infantil-do-lira-terca-sc-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "carnasol-sc-17-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5539938,
+          -27.5919067
+        ]
+      },
+      "properties": {
+        "name": "Carnasol",
+        "date": "2026-02-17",
+        "time": "23:00",
+        "datetime": "2026-02-17T23:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Centro",
+        "address": "Av. Rio Branco, 729, Centro, Florianópolis, SC, Brasil",
+        "price": 30.0,
+        "price_formatted": "R$ 30,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Carnasol que acontecerá em 17/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/carnasol-sc-17-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "meet-day-fran-bortolossi-no-p12-sc-20-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Meet Day: Fran Bortolossi no P12",
+        "date": "2026-02-20",
+        "time": "12:00",
+        "datetime": "2026-02-20T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 150.0,
+        "price_formatted": "R$ 150,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Meet Day: Fran Bortolossi no P12 que acontecerá em 20/02/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/meet-day-fran-bortolossi-no-p12-sc-20-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "viver-e-melhor-que-sonhar-celebracao-a-belchior-sc-05-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.453926,
+          -27.608376
+        ]
+      },
+      "properties": {
+        "name": "Viver é Melhor que Sonhar &#8211; Celebração a Belchior",
+        "date": "2026-03-05",
+        "time": "19:00",
+        "datetime": "2026-03-05T19:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Lagoa da Conceição",
+        "address": "Av. das Rendeiras, 1046, Lagoa da Conceição, Florianópolis, SC, Brasil",
+        "price": 8960.0,
+        "price_formatted": "R$ 8960,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Viver é Melhor que Sonhar - Celebração a Belchior que acontecerá em 05/03/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/viver-e-melhor-que-sonhar-celebracao-a-belchior-sc-05-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "garotos-podres-e-replicantes-sc-13-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.453926,
+          -27.608376
+        ]
+      },
+      "properties": {
+        "name": "Garotos Podres e Replicantes",
+        "date": "2026-03-13",
+        "time": "20:00",
+        "datetime": "2026-03-13T20:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Lagoa da Conceição",
+        "address": "Av. das Rendeiras, 1046, Lagoa da Conceição, Florianópolis, SC, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Garotos Podres e Replicantes que acontecerá em 13/03/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/garotos-podres-e-replicantes-sc-13-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "matine-da-saude-jump-e-dance-sc-14-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.6276491,
+          -27.6157733
+        ]
+      },
+      "properties": {
+        "name": "Matinê da Saúde &#8211; Jump e Dance",
+        "date": "2026-03-14",
+        "time": "17:00",
+        "datetime": "2026-03-14T17:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "São José",
+        "address": "Beira Mar de São José, s/n, São José  - Florianópolis - SC",
+        "price": 65.0,
+        "price_formatted": "R$ 65,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Matinê da Saúde - Jump e Dance que acontecerá em 14/03/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/matine-da-saude-jump-e-dance-sc-14-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bruno-e-marrone-sc-26-03-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Bruno e Marrone",
+        "date": "2026-03-26",
+        "time": "14:00",
+        "datetime": "2026-03-26T14:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 140.0,
+        "price_formatted": "R$ 140,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bruno e Marrone que acontecerá em 26/03/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/bruno-e-marrone-sc-26-03-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jorge-e-mateus-sc-28-12-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.5027484,
+          -27.4402665
+        ]
+      },
+      "properties": {
+        "name": "Jorge e Mateus",
+        "date": "2026-12-28",
+        "time": "12:00",
+        "datetime": "2026-12-28T12:00-03:00",
+        "city": "Florianópolis",
+        "neighborhood": "Jurerê Internacional",
+        "address": "Serv. José Cardoso de Oliveira, 762, Jurerê Internacional  - Florianópolis - SC",
+        "price": 320.0,
+        "price_formatted": "R$ 320,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Jorge e Mateus que acontecerá em 28/12/2026 em Florianópolis - SC",
+        "source_url": "https://www.blocosderua.com/florianopolis/programacao/jorge-e-mateus-sc-28-12-26/"
+      }
+    }
+  ]
+}

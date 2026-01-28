@@ -1,0 +1,212 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "city": "Fortaleza",
+    "city_slug": "fortaleza",
+    "generated_at": "2026-01-27T16:45:07.738697Z",
+    "total_blocks": 8,
+    "source": "blocosderua.com"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "show-foto-em-grupo-ce-29-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5201742,
+          -3.7216677
+        ]
+      },
+      "properties": {
+        "name": "Show &#8211; Foto em Grupo",
+        "date": "2026-01-29",
+        "time": "21:00",
+        "datetime": "2026-01-29T21:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Praia de Iracema",
+        "address": "Rua Dragão do Mar, 81, Praia de Iracema, Fortaleza, CE, Brasil",
+        "price": 125.0,
+        "price_formatted": "R$ 125,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Show - Foto em Grupo que acontecerá em 29/01/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/show-foto-em-grupo-ce-29-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sana-2026-parte-1-sexta-ce-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4804211,
+          -3.764532
+        ]
+      },
+      "properties": {
+        "name": "Sana 2026 &#8211; Parte 1 &#8211; Sexta",
+        "date": "2026-01-30",
+        "time": "12:00",
+        "datetime": "2026-01-30T12:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Edson Queiroz",
+        "address": "Av. Washington Soares, 999, Edson Queiroz, Fortaleza, CE, Brasil",
+        "price": 50.0,
+        "price_formatted": "R$ 50,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sana 2026 - Parte 1 - Sexta que acontecerá em 30/01/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/sana-2026-parte-1-sexta-ce-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dj-cleiton-rasta-em-fortaleza-ce-30-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5222933,
+          -3.7221942
+        ]
+      },
+      "properties": {
+        "name": "DJ Cleiton Rasta em Fortaleza",
+        "date": "2026-01-30",
+        "time": "20:00",
+        "datetime": "2026-01-30T20:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Centro",
+        "address": "Rua José Avelino, 508, Centro, Fortaleza, CE, Brasil",
+        "price": 40.0,
+        "price_formatted": "R$ 40,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre DJ Cleiton Rasta em Fortaleza que acontecerá em 30/01/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/dj-cleiton-rasta-em-fortaleza-ce-30-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sana-2026-parte-1-sabado-ce-31-01-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4804211,
+          -3.764532
+        ]
+      },
+      "properties": {
+        "name": "Sana 2026 &#8211; Parte 1 &#8211; Sábado",
+        "date": "2026-01-31",
+        "time": "10:00",
+        "datetime": "2026-01-31T10:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Edson Queiroz",
+        "address": "Av. Washington Soares, 999, Edson Queiroz, Fortaleza, CE, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sana 2026 - Parte 1 - Sábado que acontecerá em 31/01/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/sana-2026-parte-1-sabado-ce-31-01-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sana-2026-parte-1-domingo-ce-01-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4804211,
+          -3.764532
+        ]
+      },
+      "properties": {
+        "name": "Sana 2026 &#8211; Parte 1 &#8211; Domingo",
+        "date": "2026-02-01",
+        "time": "10:00",
+        "datetime": "2026-02-01T10:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Edson Queiroz",
+        "address": "Av. Washington Soares, 999, Edson Queiroz, Fortaleza, CE, Brasil",
+        "price": 60.0,
+        "price_formatted": "R$ 60,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Sana 2026 - Parte 1 - Domingo que acontecerá em 01/02/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/sana-2026-parte-1-domingo-ce-01-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bailao-nerd-fortaleza-ressaca-de-carnaval-ce-20-02-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5153098,
+          -3.7200053
+        ]
+      },
+      "properties": {
+        "name": "Bailão Nerd Fortaleza – Ressaca de Carnaval",
+        "date": "2026-02-20",
+        "time": "21:00",
+        "datetime": "2026-02-20T21:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Praia de Iracema",
+        "address": "Av. Almirante Barroso, 877, Praia de Iracema, Fortaleza, CE, Brasil",
+        "price": 25.0,
+        "price_formatted": "R$ 25,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bailão Nerd Fortaleza – Ressaca de Carnaval que acontecerá em 20/02/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/bailao-nerd-fortaleza-ressaca-de-carnaval-ce-20-02-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bea-duarte-acustico-ce-11-04-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.4978612,
+          -3.7261759
+        ]
+      },
+      "properties": {
+        "name": "Bea Duarte Acústico",
+        "date": "2026-04-11",
+        "time": "20:00",
+        "datetime": "2026-04-11T20:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Meireles",
+        "address": "Av. da Abolição, 2323, Meireles, Fortaleza, CE, Brasil",
+        "price": 120.0,
+        "price_formatted": "R$ 120,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Bea Duarte Acústico que acontecerá em 11/04/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/bea-duarte-acustico-ce-11-04-26/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "churrasquinho-menos-e-mais-ce-02-05-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5346061,
+          -3.7187126
+        ]
+      },
+      "properties": {
+        "name": "Churrasquinho Menos é Mais",
+        "date": "2026-05-02",
+        "time": "14:00",
+        "datetime": "2026-05-02T14:00-03:00",
+        "city": "Fortaleza",
+        "neighborhood": "Moura Brasil",
+        "address": "Av. Pres. Castelo Branco, 400, Moura Brasil  - Fortaleza - CE",
+        "price": 160.0,
+        "price_formatted": "R$ 160,00",
+        "is_free": false,
+        "description": "Confira horário, endereço e mais informações sobre Churrasquinho Menos é Mais que acontecerá em 02/05/2026 em Fortaleza - Ceará",
+        "source_url": "https://www.blocosderua.com/fortaleza/programacao/churrasquinho-menos-e-mais-ce-02-05-26/"
+      }
+    }
+  ]
+}
