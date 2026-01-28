@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import '@maptiler/sdk/dist/maptiler-sdk.css';
 import type { BlockFeature } from '../lib/types';
+import { createEventMarkerElement } from './EventMarker';
 
 interface MapProps {
   cityCenter: [number, number];
@@ -61,11 +62,17 @@ export function Map({ cityCenter, filteredFeatures, onSelectBlock }: MapProps) {
     filteredFeatures.forEach(feature => {
       if (!feature.geometry.coordinates) return;
 
-      const marker = new maptilersdk.Marker({ color: '#8A2BE2' })
+      // Create custom marker element with time and free/paid indicator
+      const markerElement = createEventMarkerElement({
+        time: feature.properties.time,
+        isFree: feature.properties.is_free,
+      });
+
+      const marker = new maptilersdk.Marker({ element: markerElement })
         .setLngLat(feature.geometry.coordinates)
         .addTo(map.current!);
 
-      marker.getElement().addEventListener('click', () => {
+      markerElement.addEventListener('click', () => {
         onSelectBlock(feature);
       });
 
