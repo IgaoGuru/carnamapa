@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@maptiler/sdk": "^3.10.2",
+    "@supabase/supabase-js": "^2.93.2",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "react": "^19.2.0",
