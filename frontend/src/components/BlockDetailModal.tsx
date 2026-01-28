@@ -32,7 +32,7 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
       {/* Modal */}
       <div className="relative bg-white w-full sm:w-96 sm:rounded-xl rounded-t-xl max-h-[80vh] overflow-y-auto">
         {/* Header */}
-        <div className="sticky top-0 bg-white border-b p-4 flex justify-between items-start">
+        <div className="sticky top-0 bg-white p-4 flex justify-between items-start">
           <h2 className="text-xl font-bold text-gray-900 pr-8">{blockName}</h2>
           <button
             onClick={onClose}
@@ -46,14 +46,12 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
         <div className="p-4 space-y-4">
           {/* Date & Time */}
           <div className="flex items-center gap-2 text-gray-700">
-            <span className="text-lg">📅</span>
-            <span className="capitalize">{dateFormatted}</span>
-            <span className="text-carnival-purple font-semibold">{p.time}</span>
+            <span className="font-bold capitalize">{dateFormatted}</span>
+            <span className="text-carnival-black font-semibold">{p.time}</span>
           </div>
 
           {/* Location */}
           <div className="flex items-start gap-2 text-gray-700">
-            <span className="text-lg">📍</span>
             <div>
               <p className="font-medium">{p.neighborhood}</p>
               {p.address && <p className="text-sm text-gray-500">{p.address}</p>}
@@ -62,7 +60,6 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
 
           {/* Price */}
           <div className="flex items-center gap-2">
-            <span className="text-lg">🎟️</span>
             {p.is_free ? (
               <span className="text-green-600 font-medium">Gratuito</span>
             ) : (
@@ -87,10 +84,10 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
               } ${
                 isGoing
                   ? 'border-2 border-carnival-blue text-carnival-blue bg-transparent hover:bg-carnival-blue/10'
-                  : 'bg-carnival-blue text-white hover:bg-blue-600'
+                  : 'bg-carnival-green text-white hover:bg-blue-600'
               }`}
             >
-              {isGoing ? 'Não vou mais' : 'Eu vou!'}
+              {isGoing ? 'Não vou mais!' : 'Eu vou!'}
             </button>
 
             <a
