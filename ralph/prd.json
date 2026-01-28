@@ -1,18 +1,19 @@
 {
   "project": "Carnamapa",
-  "branchName": "ralph/event-rsvp",
-  "description": "Event RSVP (Eu vou!) - Replace directions button with RSVP toggle, persisted via Supabase with device-based identification",
+  "branchName": "ralph/robust-blocosderua-scraper",
+  "description": "Robust Blocosderua.com Scraper - Multi-threaded pipeline with Nominatim→Google geocoding fallback for 100% event coverage",
   "userStories": [
     {
       "id": "US-001",
-      "title": "Create device ID management utility",
-      "description": "As a developer, I need a way to generate and persist a unique device identifier so RSVPs can be tied to a device.",
+      "title": "Update configuration for Google Maps API",
+      "description": "As a developer, I need the configuration to support Google Maps API credentials so that the fallback geocoder works.",
       "acceptanceCriteria": [
-        "Create utility file frontend/src/lib/deviceId.ts",
-        "Export function getDeviceId(): string that returns existing UUID from localStorage key 'carnamapa_device_id' if present",
-        "If no UUID exists, generate new UUID v4, store in localStorage, and return it",
-        "Use crypto.randomUUID() for UUID generation",
-        "Typecheck passes"
+        "Add GOOGLE_MAPS_API_KEY to scraper/.env.example with documentation comment",
+        "Add GEOCODING_GOOGLE_ENABLED (default true) to config.py",
+        "Add GEOCODING_NOMINATIM_CONCURRENCY (default 1) to config.py",
+        "Add GEOCODING_GOOGLE_CONCURRENCY (default 10) to config.py",
+        "Load these from environment variables with sensible defaults",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/config.py)"
       ],
       "priority": 1,
       "passes": true,
@@ -20,117 +21,164 @@
     },
     {
       "id": "US-002",
-      "title": "Set up Supabase client configuration",
-      "description": "As a developer, I need the Supabase client configured so the app can interact with the backend.",
+      "title": "Implement address normalization improvements",
+      "description": "As a developer, I want better address normalization so that geocoding success rate improves before hitting APIs.",
       "acceptanceCriteria": [
-        "Install @supabase/supabase-js package (npm install @supabase/supabase-js)",
-        "Create frontend/src/lib/supabase.ts with initialized Supabase client",
-        "Client reads VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY from environment variables",
-        "Export the supabase client instance",
-        "Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to .env.example (create if needed) with placeholder values",
-        "Typecheck passes"
+        "Create or update scraper/src/address_normalizer.py",
+        "Function normalize_address(address: str, city: str) -> str that cleans addresses",
+        "Remove parenthetical notes like '(Zona Sul)' or '(próximo ao metrô)'",
+        "Remove zip codes (5-8 digit patterns like 04784-145 or 04784145)",
+        "Remove 'Brasil' suffix",
+        "Handle 's/n' and 'S/N' (sem número) - remove them",
+        "Normalize common variations: 'Centro Histórico' -> 'Centro'",
+        "Function extract_landmark(address: str) -> Optional[str] for backup queries",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/address_normalizer.py)"
       ],
       "priority": 2,
       "passes": true,
-      "notes": "PREREQUISITE: Supabase project must be created manually with rsvps table (id uuid, device_id text, event_id text, created_at timestamp) and unique constraint on (device_id, event_id). RLS policies: allow INSERT/SELECT/DELETE where device_id matches request header or param."
+      "notes": ""
     },
     {
       "id": "US-003",
-      "title": "Create RSVP service layer",
-      "description": "As a developer, I need a service layer to interact with the RSVPs table in Supabase.",
+      "title": "Implement geocoding fallback chain",
+      "description": "As a developer, I want geocoding to try multiple providers in sequence so that we maximize success rate.",
       "acceptanceCriteria": [
-        "Create frontend/src/services/rsvpService.ts",
-        "Export getUserRsvps(): Promise<string[]> - returns array of event_ids for current device",
-        "Export createRsvp(eventId: string): Promise<void> - inserts RSVP for current device and event",
-        "Export deleteRsvp(eventId: string): Promise<void> - removes RSVP for current device and event",
-        "All functions use getDeviceId() to get current device identifier",
-        "Handle errors gracefully (log to console, throw for caller to handle)",
-        "Typecheck passes"
+        "Refactor scraper/src/geocoder.py to support fallback chain",
+        "Method geocode_with_fallback(address: str, city: str) -> tuple[float, float] | None",
+        "Step 1: Try Nominatim with normalized full address",
+        "Step 2: If Nominatim fails, try Google Maps API with normalized full address",
+        "Step 3: If both fail, try Nominatim with simplified query (neighborhood + city)",
+        "Step 4: If still failing, try Google Maps with simplified query",
+        "Cache results with provider metadata: {'coords': [lon, lat], 'provider': 'nominatim'|'google', 'timestamp': ISO}",
+        "Log which provider succeeded for each address",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/geocoder.py)"
       ],
       "priority": 3,
-      "passes": true,
-      "notes": ""
+      "passes": false,
+      "notes": "Depends on US-001 for config and US-002 for address normalization"
     },
     {
       "id": "US-004",
-      "title": "Create RSVP context for app-wide state",
-      "description": "As a developer, I need a React context to cache RSVP state and avoid repeated fetches when opening different event modals.",
+      "title": "Implement parallel geocoding with rate limiting",
+      "description": "As a developer, I want geocoding to run in parallel while respecting API rate limits.",
       "acceptanceCriteria": [
-        "Create frontend/src/contexts/RsvpContext.tsx",
-        "Context provides: rsvpEventIds (Set<string>), isLoading (boolean), addRsvp(eventId), removeRsvp(eventId), refreshRsvps()",
-        "On mount, fetch all user RSVPs and populate the Set",
-        "addRsvp/removeRsvp update local state optimistically AND call the service",
-        "Export RsvpProvider component and useRsvpContext hook",
-        "Typecheck passes"
+        "Create scraper/src/geocoding_pool.py with GeocodingPool class",
+        "Constructor accepts list of addresses to geocode",
+        "Method geocode_all() -> dict[str, tuple[float, float] | None]",
+        "Use ThreadPoolExecutor for parallel processing",
+        "Nominatim requests limited to 1/second (OSM policy) using threading.Semaphore or time-based throttle",
+        "Google requests use configurable concurrency from config (default 10)",
+        "Progress logging every 10 addresses or 10% completion",
+        "Return dict mapping address -> coordinates (or None if failed)",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/geocoding_pool.py)"
       ],
       "priority": 4,
-      "passes": true,
-      "notes": ""
+      "passes": false,
+      "notes": "Depends on US-003 for geocode_with_fallback"
     },
     {
       "id": "US-005",
-      "title": "Wrap App with RsvpProvider",
-      "description": "As a developer, I need the RsvpProvider to wrap the app so RSVP state is available throughout.",
+      "title": "Implement skip-if-scraped logic",
+      "description": "As a developer, I want the scraper to skip events that have already been successfully processed.",
       "acceptanceCriteria": [
-        "Import RsvpProvider in frontend/src/main.tsx or frontend/src/App.tsx",
-        "Wrap the app component tree with RsvpProvider",
-        "Typecheck passes"
+        "Create scraper/src/skip_checker.py",
+        "Function load_existing_event_ids(city_slug: str) -> set[str] reads output/{city}.json",
+        "Returns set of event IDs that have valid coordinates (geometry.coordinates is not null)",
+        "Function should_skip_event(event_id: str, existing_ids: set) -> bool",
+        "Handle missing output files gracefully (return empty set)",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/skip_checker.py)"
       ],
       "priority": 5,
-      "passes": true,
+      "passes": false,
       "notes": ""
     },
     {
       "id": "US-006",
-      "title": "Create useRsvp hook for individual events",
-      "description": "As a developer, I need a hook to manage RSVP state for a specific event with date validation.",
+      "title": "Implement parallel city scraping",
+      "description": "As a developer, I want to scrape multiple cities concurrently so that total scraping time is minimized.",
       "acceptanceCriteria": [
-        "Create frontend/src/hooks/useRsvp.ts",
-        "Hook signature: useRsvp(eventId: string, eventDate: string)",
-        "Returns: isGoing (boolean), isLoading (boolean), toggleRsvp (function), canRsvp (boolean)",
-        "isGoing reads from RsvpContext (checks if eventId is in rsvpEventIds Set)",
-        "toggleRsvp calls context's addRsvp or removeRsvp based on current state",
-        "canRsvp returns false if eventDate is before today (use date-fns isBefore and startOfDay)",
-        "isLoading reflects context's loading state or local toggle-in-progress state",
-        "Typecheck passes"
+        "Create scraper/src/city_scraper.py with CityScraper class",
+        "Constructor accepts city config (name, url, slug)",
+        "Method scrape() -> list[dict] returns list of event dicts for that city",
+        "Use ThreadPoolExecutor for concurrent event page fetches (max 5 workers per city)",
+        "Integrate skip_checker to skip already-processed events",
+        "Thread-safe logging with city prefix",
+        "Return partial results on error (don't fail entire city for one bad event)",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/city_scraper.py)"
       ],
       "priority": 6,
-      "passes": true,
-      "notes": ""
+      "passes": false,
+      "notes": "Depends on US-005 for skip logic. Refactors logic from existing scraper.py"
     },
     {
       "id": "US-007",
-      "title": "Replace directions button with RSVP button",
-      "description": "As a user, I want to tap 'Eu vou!' to indicate I'm attending an event, and see 'Nao vou mais' if I've already RSVP'd.",
+      "title": "Create pipeline orchestrator",
+      "description": "As a developer, I want a single entry point that orchestrates all scraping steps.",
       "acceptanceCriteria": [
-        "In BlockDetailModal.tsx, remove the 'Obter direcoes' button and its handleGetDirections function",
-        "Add RSVP button using useRsvp hook with event's id and date",
-        "Button shows 'Eu vou!' with blue/primary style (bg-carnival-blue) when not RSVP'd",
-        "Button shows 'Nao vou mais' with outline style (border, text color, no fill) when RSVP'd",
-        "Button is disabled with opacity-50 and cursor-not-allowed when isLoading or !canRsvp",
-        "Button onClick calls toggleRsvp",
-        "Typecheck passes",
-        "Verify in browser using dev-browser skill"
+        "Create scraper/src/pipeline.py as main entry point",
+        "CLI accepts: --cities (comma-separated slugs, default all), --dry-run, --force-refresh, --retry-failed",
+        "Step 1: Scrape all cities in parallel using ThreadPoolExecutor (one thread per city)",
+        "Step 2: Collect all unique addresses needing geocoding",
+        "Step 3: Batch geocode using GeocodingPool",
+        "Step 4: Generate output JSON files per city",
+        "Print summary: cities scraped, events found, geocoded success/fail counts",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/pipeline.py)"
       ],
       "priority": 7,
-      "passes": true,
-      "notes": ""
+      "passes": false,
+      "notes": "Depends on US-004 (geocoding pool) and US-006 (city scraper)"
     },
     {
       "id": "US-008",
-      "title": "Add privacy notice to event modal",
-      "description": "As a user, I want to understand how my RSVP data is handled so I can make an informed choice.",
+      "title": "Implement geocoding retry for failed entries",
+      "description": "As a developer, I want to retry previously failed geocoding attempts using Google API.",
       "acceptanceCriteria": [
-        "Add small text below the RSVP button in BlockDetailModal",
-        "Text: 'Guardamos um identificador anonimo no seu navegador para lembrar suas confirmacoes.'",
-        "Style: text-xs, text-gray-500, centered, with top margin",
-        "No consent popup or blocking banner required",
-        "Typecheck passes",
-        "Verify in browser using dev-browser skill"
+        "Add --retry-failed flag handling to pipeline.py",
+        "Scan all output/*.json files for entries with needs_geocoding: true",
+        "Collect their geocoding_query values",
+        "Retry with Google Maps API only (skip Nominatim since it already failed)",
+        "Update output files in-place with new coordinates on success",
+        "Clear needs_geocoding flag and geocoding_query on success",
+        "Print retry report: total retried, succeeded, still failing",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/pipeline.py)"
       ],
       "priority": 8,
-      "passes": true,
-      "notes": ""
+      "passes": false,
+      "notes": "Depends on US-007 for pipeline structure"
+    },
+    {
+      "id": "US-009",
+      "title": "Implement comprehensive logging and reporting",
+      "description": "As a developer, I want detailed logs and a final summary report.",
+      "acceptanceCriteria": [
+        "Create scraper/src/reporter.py with PipelineReporter class",
+        "Track per-city stats: events_found, events_scraped, events_skipped, events_geocoded",
+        "Track geocoding stats: nominatim_hits, google_hits, cache_hits, failures",
+        "Track timing: start_time, end_time, duration_seconds",
+        "Method save_report() writes JSON to logs/pipeline-run-{timestamp}.json",
+        "Method print_summary() outputs formatted stats to console",
+        "Integrate reporter into pipeline.py",
+        "Typecheck passes (run: cd scraper && python -m py_compile src/reporter.py)"
+      ],
+      "priority": 9,
+      "passes": false,
+      "notes": "Depends on US-007 for pipeline integration"
+    },
+    {
+      "id": "US-010",
+      "title": "Run pipeline and verify all cities scraped",
+      "description": "As a developer, I want to verify that all 9 cities have complete data.",
+      "acceptanceCriteria": [
+        "Run: cd scraper && python src/pipeline.py (scrape all 9 cities)",
+        "Verify output files exist for all cities: sao-paulo.json, rio-de-janeiro.json, belo-horizonte.json, salvador.json, florianopolis.json, recife-olinda.json, brasilia.json, porto-alegre.json, fortaleza.json",
+        "Run --retry-failed to attempt remaining geocoding failures",
+        "Check each output file: count of needs_geocoding: true should be 0 or minimal (<5 per city)",
+        "Pipeline summary shows 0 errors",
+        "All output files have valid GeoJSON structure with metadata"
+      ],
+      "priority": 10,
+      "passes": false,
+      "notes": "Final verification story - run after all code is complete"
     }
   ]
 }
