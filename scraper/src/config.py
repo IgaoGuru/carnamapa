@@ -3,6 +3,38 @@ Configuration file for CarnaMapa scraper.
 Contains city URLs and constants.
 """
 
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+
+def get_bool_env(key: str, default: bool) -> bool:
+    """Get boolean value from environment variable."""
+    value = os.getenv(key)
+    if value is None:
+        return default
+    return value.lower() in ('true', '1', 'yes', 'on')
+
+
+def get_int_env(key: str, default: int) -> int:
+    """Get integer value from environment variable."""
+    value = os.getenv(key)
+    if value is None:
+        return default
+    try:
+        return int(value)
+    except ValueError:
+        return default
+
+
+# Geocoding configuration
+GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
+GEOCODING_GOOGLE_ENABLED = get_bool_env('GEOCODING_GOOGLE_ENABLED', True)
+GEOCODING_NOMINATIM_CONCURRENCY = get_int_env('GEOCODING_NOMINATIM_CONCURRENCY', 1)
+GEOCODING_GOOGLE_CONCURRENCY = get_int_env('GEOCODING_GOOGLE_CONCURRENCY', 10)
+
 # City configuration: slug -> (name, base_url)
 CITIES = {
     'sao-paulo': {
