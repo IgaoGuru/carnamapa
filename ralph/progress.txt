@@ -19,6 +19,8 @@
 - Geocoder.geocode_with_google_only() for retrying failed Nominatim lookups
 - GeocodingPool in scraper/src/geocoding_pool.py for parallel geocoding with rate limiting
 - Skip checker in scraper/src/skip_checker.py (load_existing_event_ids, should_skip_event)
+- Pipeline orchestrator in scraper/src/pipeline.py (Pipeline class, main entry point)
+- Run pipeline: cd scraper && python3 src/pipeline.py [--cities X,Y] [--dry-run] [--retry-failed]
 
 ---
 
@@ -105,5 +107,22 @@
   - Partial results preserved on error: try/except around each event, errors logged but don't stop city
   - Stats tracking: events_found, events_skipped, events_scraped, errors
   - Events have needs_geocoding=True and geocoding_query set for later pipeline batch geocoding
+---
+
+## 2026-01-28 - US-007
+- What was implemented: Created pipeline.py as the main entry point for orchestrating all scraping steps
+- Files changed:
+  - scraper/src/pipeline.py (new file)
+- **Learnings for future iterations:**
+  - Pipeline class orchestrates 4 steps: scrape cities -> collect addresses -> batch geocode -> generate output
+  - CLI flags: --cities (comma-separated), --dry-run, --force-refresh, --retry-failed
+  - Step 1 uses ThreadPoolExecutor with one thread per city for parallel scraping
+  - Step 2 collects unique (address, city) tuples needing geocoding using a Set
+  - Step 3 uses GeocodingPool for batch geocoding with shared Geocoder instance for cache reuse
+  - Step 4 applies geocoding results to events and generates GeoJSON output per city
+  - Geocode results keyed by "address|city" string for matching back to events
+  - print_summary() shows cities scraped, events found/scraped/skipped, geocoding stats
+  - Logs go to logs/pipeline.log via setup_logging()
+  - Events that fail geocoding retain needs_geocoding=True in output for later retry
 ---
 

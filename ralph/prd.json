@@ -125,7 +125,7 @@
         "Typecheck passes (run: cd scraper && python -m py_compile src/pipeline.py)"
       ],
       "priority": 7,
-      "passes": false,
+      "passes": true,
       "notes": "Depends on US-004 (geocoding pool) and US-006 (city scraper)"
     },
     {
