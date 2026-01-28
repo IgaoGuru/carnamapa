@@ -19,7 +19,7 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
   const { properties: p } = block;
   const dateFormatted = format(parseISO(p.date), "EEEE, d 'de' MMMM", { locale: ptBR });
   const blockName = decodeHtmlEntities(p.name);
-  const { isGoing, isLoading, toggleRsvp, canRsvp } = useRsvp(p.id, p.date);
+  const { isGoing, isLoading, toggleRsvp, canRsvp } = useRsvp(block.id, p.date);
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
@@ -93,10 +93,6 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
               {isGoing ? 'Não vou mais' : 'Eu vou!'}
             </button>
 
-            <p className="text-xs text-gray-500 text-center mt-2">
-              Guardamos um identificador anônimo no seu navegador para lembrar suas confirmações.
-            </p>
-
             <a
               href={p.source_url}
               target="_blank"
@@ -105,6 +101,10 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
             >
               Ver no blocosderua.com
             </a>
+            <p className="text-xs text-gray-400 text-center mt-2">
+              Guardamos um identificador anônimo no seu navegador para lembrar suas confirmações.
+            </p>
+
           </div>
         </div>
       </div>

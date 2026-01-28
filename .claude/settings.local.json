@@ -13,7 +13,9 @@
       "Bash(done)",
       "Bash(pnpm add:*)",
       "Bash(npx tailwindcss:*)",
-      "Bash(pnpm dlx tailwindcss:*)"
+      "Bash(pnpm dlx tailwindcss:*)",
+      "WebSearch",
+      "WebFetch(domain:usercentrics.com)"
     ]
   }
 }

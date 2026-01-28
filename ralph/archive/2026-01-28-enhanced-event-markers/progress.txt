@@ -1,0 +1,40 @@
+## Codebase Patterns
+- EventMarker component returns HTMLElement (not React component) for MapTiler custom markers
+- Use `createEventMarkerElement()` function to create marker HTML elements
+- Event properties available via `feature.properties.time` (HH:MM format) and `feature.properties.is_free` (boolean)
+- Map markers are cleaned up in useEffect when filteredFeatures changes (stored in markersRef)
+- Pre-existing lint errors in App.tsx, useCityData.ts (setState in effects) - these are known issues
+
+---
+
+## 2026-01-28 - US-002
+- What was implemented:
+  - Integrated EventMarker component into Map.tsx
+  - Replaced default `maptilersdk.Marker({ color: '#8A2BE2' })` with custom marker elements
+  - Custom markers display event start times with free/paid accent colors
+- Files changed:
+  - frontend/src/components/Map.tsx
+- **Learnings for future iterations:**
+  - MapTiler Marker accepts `{ element: HTMLElement }` option for custom markers
+  - Click handler should be attached to the markerElement, not `marker.getElement()` when using custom elements
+  - Pre-existing lint errors in the codebase should not block commits if they existed before changes
+  - TypeScript checking can be done with `npx tsc --noEmit` (no typecheck script exists)
+---
+
+## 2026-01-28 - US-003
+- What was implemented:
+  - Refined EventMarker styling for modern, polished carnival aesthetic
+  - Added gradient background (purple tones) instead of flat color
+  - Changed accent indicator from rectangular stripe to circular pip with glow effect
+  - Added layered box-shadow for depth and visibility against map tiles
+  - Added hover effect with subtle scale transform
+  - Fixed compact sizing (min-width: 52px, height: 26px)
+  - Improved typography with bolder weight (700), letter-spacing, and text shadow
+- Files changed:
+  - frontend/src/components/EventMarker.tsx
+- **Learnings for future iterations:**
+  - Use `box-shadow` with multiple layers for depth: one for color glow, one for shadow, one inset for highlight
+  - `transform: translateZ(0)` forces GPU acceleration for smoother hover transitions
+  - No browser testing tools (Playwright/Puppeteer/Cypress) are configured - manual verification needed
+  - The frontend-design skill provides good guidance for aesthetic direction and implementation
+---

@@ -1,21 +1,17 @@
 {
   "project": "Carnamapa",
-  "branchName": "ralph/enhanced-event-markers",
-  "description": "Enhanced Event Markers - Replace simple purple pins with informative rounded rectangle markers showing start times and free/paid status",
+  "branchName": "ralph/event-rsvp",
+  "description": "Event RSVP (Eu vou!) - Replace directions button with RSVP toggle, persisted via Supabase with device-based identification",
   "userStories": [
     {
       "id": "US-001",
-      "title": "Create EventMarker component with time and accent colors",
-      "description": "As a developer, I need a reusable EventMarker component that renders a rounded rectangle displaying the event start time with an accent color indicating free (white) or paid (red) status.",
+      "title": "Create device ID management utility",
+      "description": "As a developer, I need a way to generate and persist a unique device identifier so RSVPs can be tied to a device.",
       "acceptanceCriteria": [
-        "Create a new EventMarker component in frontend/src/components/EventMarker.tsx",
-        "Component generates an HTML element for use with MapTiler's custom marker API",
-        "Marker displays as a rounded rectangle (pill shape) with carnival purple (#8A2BE2) background",
-        "Accepts time (string) and isFree (boolean) as props",
-        "Time is displayed in HH:MM format (e.g., '18:30') with white text",
-        "Free events have a white accent color (left border or stripe)",
-        "Paid events have a red accent color (#DC2626 or similar)",
-        "Component exports a function that returns an HTMLElement (not a React component)",
+        "Create utility file frontend/src/lib/deviceId.ts",
+        "Export function getDeviceId(): string that returns existing UUID from localStorage key 'carnamapa_device_id' if present",
+        "If no UUID exists, generate new UUID v4, store in localStorage, and return it",
+        "Use crypto.randomUUID() for UUID generation",
         "Typecheck passes"
       ],
       "priority": 1,
@@ -24,38 +20,115 @@
     },
     {
       "id": "US-002",
-      "title": "Integrate EventMarker into Map component",
-      "description": "As a developer, I need to replace the default MapTiler markers with the new EventMarker component in Map.tsx so users see the enhanced markers on the map.",
+      "title": "Set up Supabase client configuration",
+      "description": "As a developer, I need the Supabase client configured so the app can interact with the backend.",
       "acceptanceCriteria": [
-        "Remove usage of default maptilersdk.Marker({ color: '#8A2BE2' }) in Map.tsx",
-        "Import and use EventMarker component to create marker elements",
-        "Pass time from feature.properties.time and isFree from feature.properties.is_free to each marker",
-        "Create markers using new maptilersdk.Marker({ element: markerElement })",
-        "Markers are positioned correctly at event coordinates",
-        "Click handler still opens BlockDetailModal with correct event data",
-        "Markers are properly cleaned up when filters change (existing cleanup logic preserved)",
-        "Typecheck passes",
-        "Verify in browser using dev-browser skill"
+        "Install @supabase/supabase-js package (npm install @supabase/supabase-js)",
+        "Create frontend/src/lib/supabase.ts with initialized Supabase client",
+        "Client reads VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY from environment variables",
+        "Export the supabase client instance",
+        "Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to .env.example (create if needed) with placeholder values",
+        "Typecheck passes"
       ],
       "priority": 2,
+      "passes": true,
+      "notes": "PREREQUISITE: Supabase project must be created manually with rsvps table (id uuid, device_id text, event_id text, created_at timestamp) and unique constraint on (device_id, event_id). RLS policies: allow INSERT/SELECT/DELETE where device_id matches request header or param."
+    },
+    {
+      "id": "US-003",
+      "title": "Create RSVP service layer",
+      "description": "As a developer, I need a service layer to interact with the RSVPs table in Supabase.",
+      "acceptanceCriteria": [
+        "Create frontend/src/services/rsvpService.ts",
+        "Export getUserRsvps(): Promise<string[]> - returns array of event_ids for current device",
+        "Export createRsvp(eventId: string): Promise<void> - inserts RSVP for current device and event",
+        "Export deleteRsvp(eventId: string): Promise<void> - removes RSVP for current device and event",
+        "All functions use getDeviceId() to get current device identifier",
+        "Handle errors gracefully (log to console, throw for caller to handle)",
+        "Typecheck passes"
+      ],
+      "priority": 3,
       "passes": true,
       "notes": ""
     },
     {
-      "id": "US-003",
-      "title": "Style markers for modern visual polish",
-      "description": "As a user, I want the markers to look modern, sleek, approachable, and fun with proper visual hierarchy against the map.",
+      "id": "US-004",
+      "title": "Create RSVP context for app-wide state",
+      "description": "As a developer, I need a React context to cache RSVP state and avoid repeated fetches when opening different event modals.",
       "acceptanceCriteria": [
-        "Marker has subtle drop shadow for depth and visibility against map tiles",
-        "Marker size is fixed and compact (approximately 50-60px wide, 24-28px tall)",
-        "Text is bold and readable at default zoom level",
-        "Design feels modern and polished, not generic",
-        "Markers can overlap naturally in dense areas",
-        "Use the frontend-design skill to refine the marker styling",
+        "Create frontend/src/contexts/RsvpContext.tsx",
+        "Context provides: rsvpEventIds (Set<string>), isLoading (boolean), addRsvp(eventId), removeRsvp(eventId), refreshRsvps()",
+        "On mount, fetch all user RSVPs and populate the Set",
+        "addRsvp/removeRsvp update local state optimistically AND call the service",
+        "Export RsvpProvider component and useRsvpContext hook",
+        "Typecheck passes"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "Wrap App with RsvpProvider",
+      "description": "As a developer, I need the RsvpProvider to wrap the app so RSVP state is available throughout.",
+      "acceptanceCriteria": [
+        "Import RsvpProvider in frontend/src/main.tsx or frontend/src/App.tsx",
+        "Wrap the app component tree with RsvpProvider",
+        "Typecheck passes"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-006",
+      "title": "Create useRsvp hook for individual events",
+      "description": "As a developer, I need a hook to manage RSVP state for a specific event with date validation.",
+      "acceptanceCriteria": [
+        "Create frontend/src/hooks/useRsvp.ts",
+        "Hook signature: useRsvp(eventId: string, eventDate: string)",
+        "Returns: isGoing (boolean), isLoading (boolean), toggleRsvp (function), canRsvp (boolean)",
+        "isGoing reads from RsvpContext (checks if eventId is in rsvpEventIds Set)",
+        "toggleRsvp calls context's addRsvp or removeRsvp based on current state",
+        "canRsvp returns false if eventDate is before today (use date-fns isBefore and startOfDay)",
+        "isLoading reflects context's loading state or local toggle-in-progress state",
+        "Typecheck passes"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-007",
+      "title": "Replace directions button with RSVP button",
+      "description": "As a user, I want to tap 'Eu vou!' to indicate I'm attending an event, and see 'Nao vou mais' if I've already RSVP'd.",
+      "acceptanceCriteria": [
+        "In BlockDetailModal.tsx, remove the 'Obter direcoes' button and its handleGetDirections function",
+        "Add RSVP button using useRsvp hook with event's id and date",
+        "Button shows 'Eu vou!' with blue/primary style (bg-carnival-blue) when not RSVP'd",
+        "Button shows 'Nao vou mais' with outline style (border, text color, no fill) when RSVP'd",
+        "Button is disabled with opacity-50 and cursor-not-allowed when isLoading or !canRsvp",
+        "Button onClick calls toggleRsvp",
         "Typecheck passes",
         "Verify in browser using dev-browser skill"
       ],
-      "priority": 3,
+      "priority": 7,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-008",
+      "title": "Add privacy notice to event modal",
+      "description": "As a user, I want to understand how my RSVP data is handled so I can make an informed choice.",
+      "acceptanceCriteria": [
+        "Add small text below the RSVP button in BlockDetailModal",
+        "Text: 'Guardamos um identificador anonimo no seu navegador para lembrar suas confirmacoes.'",
+        "Style: text-xs, text-gray-500, centered, with top margin",
+        "No consent popup or blocking banner required",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 8,
       "passes": true,
       "notes": ""
     }
