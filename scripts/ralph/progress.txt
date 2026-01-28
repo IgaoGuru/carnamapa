@@ -1,0 +1,22 @@
+# Ralph Progress Log
+Started: Wed Jan 28 14:34:54 -03 2026
+
+## Codebase Patterns
+- Use Tailwind CSS with custom carnival colors defined in `frontend/src/index.css` via CSS variables
+- Carnival purple is `#8A2BE2` (--color-carnival-purple)
+- For map markers, use `createEventMarkerElement()` from `EventMarker.tsx` to create HTMLElement for MapTiler
+- TypeScript check: run `npx tsc --noEmit` in frontend directory
+- ESLint: run `npm run lint` (some pre-existing lint errors exist in App.tsx and useCityData.ts)
+
+---
+
+## 2026-01-28 14:36 - US-001
+- What was implemented: Created EventMarker component that generates HTMLElement for MapTiler custom markers
+- Files changed:
+  - `frontend/src/components/EventMarker.tsx` (new file)
+- **Learnings for future iterations:**
+  - MapTiler markers accept an `element` option with a custom HTMLElement
+  - The component uses inline styles since it creates raw DOM elements, not React components
+  - Free events use white accent (#FFFFFF), paid events use red (#DC2626)
+  - Pill shape achieved with `border-radius: 9999px`
+---

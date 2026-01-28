@@ -1,0 +1,63 @@
+{
+  "project": "Carnamapa",
+  "branchName": "ralph/enhanced-event-markers",
+  "description": "Enhanced Event Markers - Replace simple purple pins with informative rounded rectangle markers showing start times and free/paid status",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Create EventMarker component with time and accent colors",
+      "description": "As a developer, I need a reusable EventMarker component that renders a rounded rectangle displaying the event start time with an accent color indicating free (white) or paid (red) status.",
+      "acceptanceCriteria": [
+        "Create a new EventMarker component in frontend/src/components/EventMarker.tsx",
+        "Component generates an HTML element for use with MapTiler's custom marker API",
+        "Marker displays as a rounded rectangle (pill shape) with carnival purple (#8A2BE2) background",
+        "Accepts time (string) and isFree (boolean) as props",
+        "Time is displayed in HH:MM format (e.g., '18:30') with white text",
+        "Free events have a white accent color (left border or stripe)",
+        "Paid events have a red accent color (#DC2626 or similar)",
+        "Component exports a function that returns an HTMLElement (not a React component)",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Integrate EventMarker into Map component",
+      "description": "As a developer, I need to replace the default MapTiler markers with the new EventMarker component in Map.tsx so users see the enhanced markers on the map.",
+      "acceptanceCriteria": [
+        "Remove usage of default maptilersdk.Marker({ color: '#8A2BE2' }) in Map.tsx",
+        "Import and use EventMarker component to create marker elements",
+        "Pass time from feature.properties.time and isFree from feature.properties.is_free to each marker",
+        "Create markers using new maptilersdk.Marker({ element: markerElement })",
+        "Markers are positioned correctly at event coordinates",
+        "Click handler still opens BlockDetailModal with correct event data",
+        "Markers are properly cleaned up when filters change (existing cleanup logic preserved)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "Style markers for modern visual polish",
+      "description": "As a user, I want the markers to look modern, sleek, approachable, and fun with proper visual hierarchy against the map.",
+      "acceptanceCriteria": [
+        "Marker has subtle drop shadow for depth and visibility against map tiles",
+        "Marker size is fixed and compact (approximately 50-60px wide, 24-28px tall)",
+        "Text is bold and readable at default zoom level",
+        "Design feels modern and polished, not generic",
+        "Markers can overlap naturally in dense areas",
+        "Use the frontend-design skill to refine the marker styling",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": ""
+    }
+  ]
+}
