@@ -26,9 +26,9 @@ export function createEventMarkerElement({ time, isFree }: EventMarkerOptions): 
   // Inner box - apply all visual styles and hover effects here
   const inner = document.createElement('div');
   inner.style.cssText = `
-    display: flex
+    display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
     background: #FFFFFF;
     cursor: pointer;
     box-shadow: ${boxShadow};
