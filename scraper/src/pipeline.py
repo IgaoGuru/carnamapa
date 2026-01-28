@@ -6,9 +6,16 @@ Main entry point that orchestrates all scraping steps:
 2. Collect addresses needing geocoding
 3. Batch geocode using GeocodingPool
 4. Generate output JSON files per city
+
+Or, with --retry-failed:
+1. Scan output files for entries with needs_geocoding: true
+2. Retry geocoding using Google Maps API only
+3. Update output files in-place
 """
 
 import argparse
+import glob
+import json
 import logging
 import os
 import sys
@@ -279,6 +286,109 @@ class Pipeline:
         print(f"  Hit rate:           {geocoding_stats['hit_rate']}")
         print("="*60)
 
+    def run_retry_failed(self) -> None:
+        """
+        Retry previously failed geocoding attempts using Google API only.
+
+        Scans all output/*.json files for entries with needs_geocoding: true,
+        retries them with Google Maps API, and updates files in-place.
+        """
+        logger.info("="*60)
+        logger.info("RETRY FAILED GEOCODING")
+        logger.info("="*60)
+
+        output_dir = 'output'
+        if not os.path.exists(output_dir):
+            logger.warning(f"Output directory does not exist: {output_dir}")
+            return
+
+        # Find all output files
+        output_files = glob.glob(os.path.join(output_dir, '*.json'))
+        if not output_files:
+            logger.warning("No output files found to retry")
+            return
+
+        total_retried = 0
+        total_succeeded = 0
+        total_still_failing = 0
+
+        for filepath in output_files:
+            city_slug = os.path.basename(filepath).replace('.json', '')
+            logger.info(f"Processing {city_slug}...")
+
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    geojson = json.load(f)
+            except Exception as e:
+                logger.error(f"Failed to read {filepath}: {e}")
+                self.stats['errors'] += 1
+                continue
+
+            features = geojson.get('features', [])
+            city_retried = 0
+            city_succeeded = 0
+            modified = False
+
+            for feature in features:
+                properties = feature.get('properties', {})
+
+                # Check if this entry needs geocoding
+                if not properties.get('needs_geocoding', False):
+                    continue
+
+                geocoding_query = properties.get('geocoding_query')
+                city = properties.get('city')
+
+                if not geocoding_query or not city:
+                    logger.warning(f"Missing geocoding_query or city for feature: {feature.get('id')}")
+                    continue
+
+                city_retried += 1
+                total_retried += 1
+
+                # Retry with Google only
+                logger.info(f"Retrying: {geocoding_query}")
+                coords = self.geocoder.geocode_with_google_only(geocoding_query, city)
+
+                if coords:
+                    # Update feature with new coordinates
+                    feature['geometry']['coordinates'] = list(coords)
+                    properties['needs_geocoding'] = False
+                    properties['geocoding_query'] = None
+                    city_succeeded += 1
+                    total_succeeded += 1
+                    modified = True
+                    logger.info(f"✓ Geocoded: {geocoding_query} -> {coords}")
+                else:
+                    total_still_failing += 1
+                    logger.warning(f"✗ Still failing: {geocoding_query}")
+
+            # Save updated file if modified
+            if modified and not self.dry_run:
+                try:
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        json.dump(geojson, f, ensure_ascii=False, indent=2)
+                    logger.info(f"Updated {filepath}")
+                except Exception as e:
+                    logger.error(f"Failed to write {filepath}: {e}")
+                    self.stats['errors'] += 1
+
+            if city_retried > 0:
+                logger.info(f"  {city_slug}: {city_succeeded}/{city_retried} succeeded")
+
+        # Update stats
+        self.stats['geocoded_success'] = total_succeeded
+        self.stats['geocoded_failed'] = total_still_failing
+
+        # Print retry report
+        print("\n" + "="*60)
+        print("RETRY REPORT")
+        print("="*60)
+        print(f"Total retried:        {total_retried}")
+        print(f"Succeeded:            {total_succeeded}")
+        print(f"Still failing:        {total_still_failing}")
+        print("="*60)
+
     def run(self) -> None:
         """
         Run the complete pipeline.
@@ -287,6 +397,13 @@ class Pipeline:
 
         if self.dry_run:
             logger.info("DRY RUN mode enabled - no files will be written")
+
+        # If retry_failed is set, run retry mode instead of normal scraping
+        if self.retry_failed:
+            logger.info("RETRY FAILED mode enabled - retrying failed geocoding with Google API")
+            self.run_retry_failed()
+            logger.info("Retry complete!")
+            return
 
         if self.force_refresh:
             logger.info("FORCE REFRESH mode enabled - ignoring existing data")

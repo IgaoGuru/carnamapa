@@ -126,3 +126,17 @@
   - Events that fail geocoding retain needs_geocoding=True in output for later retry
 ---
 
+## 2026-01-28 - US-008
+- What was implemented: Added --retry-failed flag handling to pipeline.py for retrying failed geocoding
+- Files changed:
+  - scraper/src/pipeline.py (updated with run_retry_failed method)
+- **Learnings for future iterations:**
+  - run_retry_failed() scans output/*.json for entries with needs_geocoding: true
+  - Uses glob.glob() to find all output JSON files
+  - Calls geocoder.geocode_with_google_only() to skip Nominatim (since it already failed)
+  - Updates files in-place: sets coordinates, clears needs_geocoding flag, clears geocoding_query
+  - Prints retry report with total_retried, succeeded, still_failing counts
+  - If --retry-failed is set, run() calls run_retry_failed() and returns early (skips normal scraping)
+  - Respects --dry-run flag: won't write files if dry-run is enabled
+---
+
