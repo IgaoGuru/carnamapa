@@ -1,0 +1,100 @@
+## Codebase Patterns
+- This is a React + TypeScript + Vite project
+- Map component uses MapTiler SDK with custom EventMarker elements
+- BlockDetailModal.tsx displays event details with RSVP button ("Eu vou!" / "Não vou mais")
+- Event data in GeoJSON format with properties: id, date, time, is_free, etc.
+- Existing hooks in frontend/src/hooks/ (useCityData, useUrlParams, useGeolocation)
+- date-fns already installed for date manipulation
+- Tailwind CSS for styling with custom carnival colors (carnival-blue, carnival-purple, etc.)
+- TypeScript checking: npx tsc --noEmit (no typecheck script)
+- localStorage key for device ID: 'carnamapa_device_id'
+- Use getDeviceId() from frontend/src/lib/deviceId.ts for device identification
+- Services directory at frontend/src/services/ for backend API interaction functions
+- Contexts directory at frontend/src/contexts/ for React context providers
+- When exporting both a provider and a hook from a context file, add eslint-disable for react-refresh/only-export-components
+- useRsvp(eventId, eventDate) hook returns { isGoing, isLoading, toggleRsvp, canRsvp } for individual event RSVP state
+
+---
+
+## 2026-01-28 - US-001
+- What was implemented: Device ID management utility for anonymous RSVP tracking
+- Files changed: frontend/src/lib/deviceId.ts (created)
+- **Learnings for future iterations:**
+  - crypto.randomUUID() works in modern browsers without polyfills
+  - The lib/ directory is for utility functions (cities, cityDetection, types, deviceId)
+  - Keep utility functions simple and focused on a single responsibility
+---
+
+## 2026-01-28 - US-002
+- What was implemented: Supabase client configuration for backend communication
+- Files changed:
+  - frontend/src/lib/supabase.ts (created)
+  - frontend/.env.example (updated with Supabase env vars)
+  - frontend/package.json (added @supabase/supabase-js dependency)
+- **Learnings for future iterations:**
+  - Use pnpm for package management (npm has issues in this project)
+  - Supabase client uses import.meta.env for Vite environment variables (VITE_ prefix)
+  - Throw error at startup if Supabase env vars are missing to catch misconfigurations early
+  - Supabase client instance should be exported as singleton from lib/supabase.ts
+---
+
+## 2026-01-28 - US-003
+- What was implemented: RSVP service layer for Supabase interactions
+- Files changed: frontend/src/services/rsvpService.ts (created)
+- **Learnings for future iterations:**
+  - Services directory created at frontend/src/services/ for backend API interactions
+  - Supabase queries use .from('table').select/insert/delete pattern
+  - Error handling: log to console AND throw for caller to handle
+  - Use .eq() chaining for multiple filter conditions in Supabase queries
+---
+
+## 2026-01-28 - US-004
+- What was implemented: RSVP context for app-wide state management with optimistic updates
+- Files changed: frontend/src/contexts/RsvpContext.tsx (created)
+- **Learnings for future iterations:**
+  - Contexts directory created at frontend/src/contexts/ for React context providers
+  - Use useCallback for context functions to avoid unnecessary re-renders
+  - Implement optimistic updates: update local state immediately, revert on error
+  - Working directory is frontend/, so paths in git commands should be relative (src/... not frontend/src/...)
+  - eslint react-refresh/only-export-components requires disable comment when exporting hooks from context files
+---
+
+## 2026-01-28 - US-005
+- What was implemented: Wrapped app component tree with RsvpProvider for app-wide RSVP state access
+- Files changed: frontend/src/main.tsx (modified to import and wrap with RsvpProvider)
+- **Learnings for future iterations:**
+  - Provider placement: Wrap providers in main.tsx outside of App for cleaner separation
+  - The RsvpProvider must be inside StrictMode but outside App component
+  - Simple integration tasks may not require new patterns - just follow existing project structure
+---
+
+## 2026-01-28 - US-006
+- What was implemented: useRsvp hook for individual event RSVP management with date validation
+- Files changed: frontend/src/hooks/useRsvp.ts (created)
+- **Learnings for future iterations:**
+  - Hooks directory at frontend/src/hooks/ follows existing pattern (useGeolocation, useCityData, useUrlParams)
+  - Use date-fns isBefore() and startOfDay() for date comparisons
+  - Combine context loading state with local toggling state for accurate isLoading indicator
+  - Hook returns: isGoing (boolean), isLoading (boolean), toggleRsvp (function), canRsvp (boolean)
+  - Pre-existing lint errors in codebase don't affect new files - verify new files pass lint individually
+---
+
+## 2026-01-28 - US-007
+- What was implemented: Replaced "Obter direções" button with RSVP toggle button in BlockDetailModal
+- Files changed: frontend/src/components/BlockDetailModal.tsx (modified)
+- **Learnings for future iterations:**
+  - Dynamic className with template literals works well for conditional Tailwind styling
+  - Outline button style: use border-2, text color, bg-transparent (not just removing bg class)
+  - The useRsvp hook integrates cleanly with UI components via destructuring
+  - Button disabled state should combine multiple conditions (isLoading || !canRsvp)
+---
+
+## 2026-01-28 - US-008
+- What was implemented: Added privacy notice text below RSVP button in BlockDetailModal
+- Files changed: frontend/src/components/BlockDetailModal.tsx (modified)
+- **Learnings for future iterations:**
+  - Privacy notice uses standard Tailwind utility classes: text-xs, text-gray-500, text-center, mt-2
+  - Place informational text between related action buttons (after RSVP, before external link)
+  - Simple UI additions don't require new patterns - just use existing Tailwind conventions
+---
+
