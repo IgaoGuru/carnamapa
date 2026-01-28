@@ -1,6 +1,7 @@
 import type { BlockFeature } from '../lib/types';
 import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import { useRsvp } from '../hooks/useRsvp';
 
 interface BlockDetailModalProps {
   block: BlockFeature;
@@ -15,20 +16,10 @@ function decodeHtmlEntities(text: string): string {
 }
 
 export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
-  const { properties: p, geometry } = block;
+  const { properties: p } = block;
   const dateFormatted = format(parseISO(p.date), "EEEE, d 'de' MMMM", { locale: ptBR });
   const blockName = decodeHtmlEntities(p.name);
-
-  const handleGetDirections = () => {
-    if (geometry.coordinates) {
-      const [lng, lat] = geometry.coordinates;
-      // Opens in Google Maps on mobile, or web
-      window.open(
-        `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`,
-        '_blank'
-      );
-    }
-  };
+  const { isGoing, isLoading, toggleRsvp, canRsvp } = useRsvp(p.id, p.date);
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
@@ -87,10 +78,19 @@ export function BlockDetailModal({ block, onClose }: BlockDetailModalProps) {
           {/* Actions */}
           <div className="flex flex-col gap-2 pt-4">
             <button
-              onClick={handleGetDirections}
-              className="w-full py-3 bg-carnival-blue text-white font-medium rounded-lg hover:bg-blue-600 transition-colors"
+              onClick={toggleRsvp}
+              disabled={isLoading || !canRsvp}
+              className={`w-full py-3 font-medium rounded-lg transition-colors ${
+                isLoading || !canRsvp
+                  ? 'opacity-50 cursor-not-allowed'
+                  : ''
+              } ${
+                isGoing
+                  ? 'border-2 border-carnival-blue text-carnival-blue bg-transparent hover:bg-carnival-blue/10'
+                  : 'bg-carnival-blue text-white hover:bg-blue-600'
+              }`}
             >
-              Obter direções
+              {isGoing ? 'Não vou mais' : 'Eu vou!'}
             </button>
 
             <a
