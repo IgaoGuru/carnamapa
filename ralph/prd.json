@@ -89,7 +89,7 @@
         "Typecheck passes (run: cd scraper && python -m py_compile src/skip_checker.py)"
       ],
       "priority": 5,
-      "passes": false,
+      "passes": true,
       "notes": ""
     },
     {

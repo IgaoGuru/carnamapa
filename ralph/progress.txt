@@ -18,6 +18,7 @@
 - Geocoder.geocode_with_fallback() is the main geocoding method (4-step fallback chain)
 - Geocoder.geocode_with_google_only() for retrying failed Nominatim lookups
 - GeocodingPool in scraper/src/geocoding_pool.py for parallel geocoding with rate limiting
+- Skip checker in scraper/src/skip_checker.py (load_existing_event_ids, should_skip_event)
 
 ---
 
@@ -72,5 +73,18 @@
   - get_results_by_address() method available for (address, city) tuple keys
   - Imports GEOCODING_NOMINATIM_CONCURRENCY and GEOCODING_GOOGLE_CONCURRENCY from config
   - Max workers set to max(NOMINATIM_CONCURRENCY, GOOGLE_CONCURRENCY) for optimal parallelism
+---
+
+## 2026-01-28 - US-005
+- What was implemented: Created skip_checker module for avoiding re-processing already scraped events
+- Files changed:
+  - scraper/src/skip_checker.py (new file)
+- **Learnings for future iterations:**
+  - load_existing_event_ids(city_slug) reads output/{city}.json and returns set of event IDs with valid coordinates
+  - Valid coordinates means geometry.coordinates is not None (null in JSON)
+  - should_skip_event(event_id, existing_ids) is a simple set membership check
+  - Both functions handle edge cases: missing files return empty set, JSON parse errors return empty set
+  - Event IDs match the "id" field in GeoJSON features (e.g., "ensaio-aberto-bloco-reciclar-sp-27-01-26")
+  - Output file path: scraper/output/{city-slug}.json
 ---
 
