@@ -107,7 +107,7 @@
         "Typecheck passes (run: cd scraper && python -m py_compile src/city_scraper.py)"
       ],
       "priority": 6,
-      "passes": false,
+      "passes": true,
       "notes": "Depends on US-005 for skip logic. Refactors logic from existing scraper.py"
     },
     {

@@ -73,6 +73,11 @@
   - get_results_by_address() method available for (address, city) tuple keys
   - Imports GEOCODING_NOMINATIM_CONCURRENCY and GEOCODING_GOOGLE_CONCURRENCY from config
   - Max workers set to max(NOMINATIM_CONCURRENCY, GOOGLE_CONCURRENCY) for optimal parallelism
+- CityScraper class in scraper/src/city_scraper.py for parallel event scraping within a city
+- CityScraper.scrape() returns list of event dicts (raw data without geocoding)
+- MAX_WORKERS = 5 for concurrent event page fetches per city
+- Skip logic integrated: load_existing_event_ids() + should_skip_event()
+
 ---
 
 ## 2026-01-28 - US-005
@@ -86,5 +91,19 @@
   - Both functions handle edge cases: missing files return empty set, JSON parse errors return empty set
   - Event IDs match the "id" field in GeoJSON features (e.g., "ensaio-aberto-bloco-reciclar-sp-27-01-26")
   - Output file path: scraper/output/{city-slug}.json
+---
+
+## 2026-01-28 - US-006
+- What was implemented: Created CityScraper class for parallel scraping of event pages within a single city
+- Files changed:
+  - scraper/src/city_scraper.py (new file)
+- **Learnings for future iterations:**
+  - CityScraper.scrape() returns raw event data WITHOUT geocoding - geocoding is done later by pipeline
+  - MAX_WORKERS = 5 for concurrent ThreadPoolExecutor (respects website)
+  - Thread-safe logging via _log_lock and _log() method with [city_slug] prefix
+  - Integrates skip_checker: load_existing_event_ids() before scraping, should_skip_event() to filter URLs
+  - Partial results preserved on error: try/except around each event, errors logged but don't stop city
+  - Stats tracking: events_found, events_skipped, events_scraped, errors
+  - Events have needs_geocoding=True and geocoding_query set for later pipeline batch geocoding
 ---
 
