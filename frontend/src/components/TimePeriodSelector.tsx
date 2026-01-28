@@ -3,16 +3,15 @@ import type { TimePeriod } from '../lib/types';
 import { TIME_PERIODS } from '../lib/types';
 
 interface TimePeriodSelectorProps {
-  selected: TimePeriod[];
-  onChange: (periods: TimePeriod[]) => void;
+  selected: TimePeriod | null;
+  onChange: (period: TimePeriod | null) => void;
 }
 
 export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorProps) {
   const handleToggle = (period: TimePeriod) => {
-    const newSelected = selected.includes(period)
-      ? selected.filter(p => p !== period)
-      : [...selected, period];
-    onChange(newSelected);
+    // If already selected, deselect (back to null/show all)
+    // Otherwise, select this one
+    onChange(selected === period ? null : period);
   };
 
   const periods = Object.keys(TIME_PERIODS) as TimePeriod[];
@@ -20,7 +19,7 @@ export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorPro
   return (
     <div className="flex bg-white/80 rounded-full p-1 shadow-md">
       {periods.map((period, index) => {
-        const isSelected = selected.includes(period);
+        const isSelected = selected === period;
         return (
           <button
             key={period}
@@ -30,7 +29,7 @@ export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorPro
               index === 0 && 'rounded-l-full',
               index === periods.length - 1 && 'rounded-r-full',
               isSelected
-                ? 'bg-carnival-purple text-white'
+                ? 'bg-carnival-red text-white'
                 : 'text-gray-700 hover:bg-white/50'
             )}
           >

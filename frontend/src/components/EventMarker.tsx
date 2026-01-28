@@ -21,14 +21,14 @@ export function createEventMarkerElement({ time, isFree }: EventMarkerOptions): 
   const hoverBoxShadow = '0 3px 6px rgba(0, 0, 0, 0.2), 0 6px 16px rgba(0, 0, 0, 0.15)';
 
   // Outline color: pastel green for free, red for paid (outline is outside the box)
-  const outlineColor = isFree ? '#90EE90' : '#FF0000';
+  const outlineColor = isFree ? '#90EE90' : '#f54927';
 
   // Inner box - apply all visual styles and hover effects here
   const inner = document.createElement('div');
   inner.style.cssText = `
-    display: flex;
+    display: flex
     align-items: center;
-    justify-content: center;
+    justify-content: center
     background: #FFFFFF;
     cursor: pointer;
     box-shadow: ${boxShadow};

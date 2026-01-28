@@ -51,7 +51,7 @@ export type AppView = 'landing' | 'map';
 export interface FilterState {
   selectedDate: string | null;  // YYYY-MM-DD or null for all dates
   freeOnly: boolean;            // Show only free events
-  timePeriods: TimePeriod[];    // Selected time periods (multi-select)
+  timePeriod: TimePeriod | null; // Selected time period (null = show all)
 }
 
 // Time period options

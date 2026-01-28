@@ -19,7 +19,7 @@ export default function App() {
   const [filters, setFilters] = useState<FilterState>({
     selectedDate: null,
     freeOnly: false,
-    timePeriods: [],
+    timePeriod: null,
   });
   const [selectedBlock, setSelectedBlock] = useState<BlockFeature | null>(null);
 
@@ -59,7 +59,7 @@ export default function App() {
   const handleCityChange = useCallback((slug: string) => {
     setCitySlug(slug);
     setParams({ city: slug, date: undefined, free: undefined });
-    setFilters({ selectedDate: null, freeOnly: false, timePeriods: [] });
+    setFilters({ selectedDate: null, freeOnly: false, timePeriod: null });
     setSelectedBlock(null);
     setView('map');
   }, [setParams]);
@@ -97,12 +97,11 @@ export default function App() {
         return false;
       }
 
-      // Time period filter (if any selected)
-      if (filters.timePeriods.length > 0) {
-        const matchesPeriod = filters.timePeriods.some(period =>
-          isTimeInPeriod(properties.time, period)
-        );
-        if (!matchesPeriod) return false;
+      // Time period filter (if one is selected)
+      if (filters.timePeriod !== null) {
+        if (!isTimeInPeriod(properties.time, filters.timePeriod)) {
+          return false;
+        }
       }
 
       return true;

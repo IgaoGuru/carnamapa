@@ -29,8 +29,8 @@ export function FilterBar({ availableDates, filters, onFiltersChange }: FilterBa
     onFiltersChange({ ...filters, selectedDate: date });
   };
 
-  const handleTimePeriodsChange = (periods: typeof filters.timePeriods) => {
-    onFiltersChange({ ...filters, timePeriods: periods });
+  const handleTimePeriodChange = (period: typeof filters.timePeriod) => {
+    onFiltersChange({ ...filters, timePeriod: period });
   };
 
   const handleFreeOnlyChange = (checked: boolean) => {
@@ -53,8 +53,8 @@ export function FilterBar({ availableDates, filters, onFiltersChange }: FilterBa
         {/* Layer 2: Time Period + Free Only */}
         <div className="px-4 py-3 flex items-center justify-between gap-4">
           <TimePeriodSelector
-            selected={filters.timePeriods}
-            onChange={handleTimePeriodsChange}
+            selected={filters.timePeriod}
+            onChange={handleTimePeriodChange}
           />
 
           <button
