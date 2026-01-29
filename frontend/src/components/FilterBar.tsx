@@ -3,8 +3,10 @@ import clsx from 'clsx';
 import { DateSelector } from './DateSelector';
 import { CalendarPopup } from './CalendarPopup';
 import { TimePeriodSelector } from './TimePeriodSelector';
+import { BlockSearch } from './BlockSearch';
 import { useRsvpContext } from '../contexts/RsvpContext';
 import type { FilterState } from '../lib/types';
+import type { SearchResult } from '../hooks/useBlockSearch';
 
 // Fixed carnival date range
 const CARNIVAL_START = '2026-02-01';
@@ -15,9 +17,22 @@ interface FilterBarProps {
   filters: FilterState;
   onFiltersChange: (filters: FilterState) => void;
   onMeusBlocosClick: () => void;
+  searchQuery: string;
+  onSearchChange: (query: string) => void;
+  searchResults: SearchResult[];
+  onSearchResultSelect: (result: SearchResult) => void;
 }
 
-export function FilterBar({ availableDates, filters, onFiltersChange, onMeusBlocosClick }: FilterBarProps) {
+export function FilterBar({
+  availableDates,
+  filters,
+  onFiltersChange,
+  onMeusBlocosClick,
+  searchQuery,
+  onSearchChange,
+  searchResults,
+  onSearchResultSelect,
+}: FilterBarProps) {
   const [calendarOpen, setCalendarOpen] = useState(false);
   const { rsvpEventIds } = useRsvpContext();
 
@@ -43,7 +58,15 @@ export function FilterBar({ availableDates, filters, onFiltersChange, onMeusBloc
   return (
     <>
       <div className="absolute bottom-0 left-0 right-0 z-10 px-4 pb-6 space-y-2">
-        {/* Row 1: Date Selector + Meus Blocos */}
+        {/* Row 1: Search bar */}
+        <BlockSearch
+          value={searchQuery}
+          onChange={onSearchChange}
+          searchResults={searchResults}
+          onSelectResult={onSearchResultSelect}
+        />
+
+        {/* Row 2: Date Selector + Meus Blocos */}
         <div className="flex items-center justify-between">
           <DateSelector
             selectedDate={filters.selectedDate}
@@ -59,7 +82,7 @@ export function FilterBar({ availableDates, filters, onFiltersChange, onMeusBloc
           </button>
         </div>
 
-        {/* Row 2: Time Period + Só Gratuitos */}
+        {/* Row 3: Time Period + Só Gratuitos */}
         <div className="flex items-center justify-between">
           <TimePeriodSelector
             selected={filters.timePeriod}

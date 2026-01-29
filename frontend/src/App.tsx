@@ -5,7 +5,6 @@ import { BlockDetailModal } from './components/BlockDetailModal';
 import { MeusBlocosModal } from './components/MeusBlocosModal';
 import { InfoModal } from './components/InfoModal';
 import { CitySelector } from './components/CitySelector';
-import { BlockSearch } from './components/BlockSearch';
 import { LandingScreen } from './components/LandingScreen';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { useGeolocation } from './hooks/useGeolocation';
@@ -219,14 +218,6 @@ export default function App() {
         onChange={handleCityChange}
       />
 
-      {/* Search bar */}
-      <BlockSearch
-        value={searchQuery}
-        onChange={setSearchQuery}
-        searchResults={searchResults}
-        onSelectResult={handleSearchResultSelect}
-      />
-
       {/* Map (clean UI - no controls) */}
       <Map
         ref={mapRef}
@@ -241,6 +232,10 @@ export default function App() {
         filters={filters}
         onFiltersChange={handleFiltersChange}
         onMeusBlocosClick={() => setShowMeusBlocos(true)}
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        searchResults={searchResults}
+        onSearchResultSelect={handleSearchResultSelect}
       />
 
       {/* Block detail modal */}

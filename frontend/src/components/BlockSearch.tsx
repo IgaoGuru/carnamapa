@@ -88,13 +88,13 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
   return (
     <div
       ref={containerRef}
-      className="absolute top-4 left-36 right-14 z-10 flex justify-center"
+      className="relative w-[200px]"
     >
-      <div className="relative w-full max-w-md">
+      <div className="relative w-full">
         {/* Search icon */}
-        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+        <div className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
           <svg
-            className="w-5 h-5"
+            className="w-4 h-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -117,8 +117,8 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
           onFocus={() => setIsFocused(true)}
           onKeyDown={handleKeyDown}
           placeholder="Buscar bloco..."
-          className={`w-full pl-10 pr-10 py-2 bg-white shadow-md text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-carnival-purple ${
-            showDropdown ? 'rounded-t-lg' : 'rounded-lg'
+          className={`w-full pl-8 pr-8 py-1.5 bg-white/80 shadow-md text-gray-800 text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-carnival-red ${
+            showDropdown ? 'rounded-b-full' : 'rounded-full'
           }`}
         />
 
@@ -127,18 +127,18 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
           <button
             type="button"
             onClick={() => onChange('')}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
             aria-label="Limpar busca"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         )}
 
-        {/* Dropdown with search results */}
+        {/* Dropdown with search results (opens upward) */}
         {showDropdown && (
-          <div className="absolute top-full left-0 right-0 bg-white rounded-b-lg shadow-md max-h-80 overflow-y-auto border-t border-gray-100">
+          <div className="absolute bottom-full left-0 w-72 bg-white rounded-t-lg shadow-md max-h-80 overflow-y-auto border-b border-gray-100">
             {searchResults.length === 0 ? (
               <div className="p-4 text-center text-gray-500">
                 Nenhum bloco encontrado
