@@ -50,28 +50,40 @@ export function MeusBlocosModal({ blocks, onClose }: MeusBlocosModalProps) {
 
         {/* Content */}
         <div className="p-4">
-          {/* Block list */}
-          <div className="space-y-3">
-            {sortedBlocks.map((block) => {
-              const { properties: p } = block;
-              const dateFormatted = format(parseISO(p.date), "EEE, d 'de' MMM", { locale: ptBR });
-              const blockName = decodeHtmlEntities(p.name);
+          {sortedBlocks.length === 0 ? (
+            /* Empty state */
+            <div className="py-8 text-center">
+              <p className="text-gray-600">
+                Você ainda não confirmou presença em nenhum bloco
+              </p>
+              <p className="text-sm text-gray-400 mt-2">
+                Clique em "Eu vou!" nos blocos para adicioná-los aqui
+              </p>
+            </div>
+          ) : (
+            /* Block list */
+            <div className="space-y-3">
+              {sortedBlocks.map((block) => {
+                const { properties: p } = block;
+                const dateFormatted = format(parseISO(p.date), "EEE, d 'de' MMM", { locale: ptBR });
+                const blockName = decodeHtmlEntities(p.name);
 
-              return (
-                <div
-                  key={block.id}
-                  className="p-3 bg-gray-50 rounded-lg"
-                >
-                  <p className="font-medium text-gray-900">{blockName}</p>
-                  <div className="flex items-center gap-2 mt-1 text-sm text-gray-600">
-                    <span className="capitalize">{dateFormatted}</span>
-                    <span>•</span>
-                    <span>{p.time}</span>
+                return (
+                  <div
+                    key={block.id}
+                    className="p-3 bg-gray-50 rounded-lg"
+                  >
+                    <p className="font-medium text-gray-900">{blockName}</p>
+                    <div className="flex items-center gap-2 mt-1 text-sm text-gray-600">
+                      <span className="capitalize">{dateFormatted}</span>
+                      <span>•</span>
+                      <span>{p.time}</span>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>
