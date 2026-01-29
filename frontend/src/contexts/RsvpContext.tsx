@@ -55,14 +55,23 @@ export function RsvpProvider({ children }: RsvpProviderProps) {
     setIsLoading(true);
     try {
       const eventIds = await getUserRsvps();
-      setRsvpEventIds(new Set(eventIds));
+
+      // On initial load, merge URL blocos with user's existing RSVPs
+      // This allows shared links to add blocks without losing user's own selections
+      if (isInitialLoad.current) {
+        const urlBlocos = getBlocosFromUrl();
+        const mergedIds = new Set([...eventIds, ...urlBlocos]);
+        setRsvpEventIds(mergedIds);
+      } else {
+        setRsvpEventIds(new Set(eventIds));
+      }
     } catch (error) {
       console.error('Failed to fetch RSVPs:', error);
     } finally {
       setIsLoading(false);
       isInitialLoad.current = false;
     }
-  }, []);
+  }, [getBlocosFromUrl]);
 
   const addRsvp = useCallback(async (eventId: string) => {
     // Optimistic update
