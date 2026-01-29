@@ -1,5 +1,6 @@
 # Ralph Progress Log
-Started: Wed Jan 28 14:34:54 -03 2026
+Started: 2025-01-29
+Feature: Meus Blocos + Block Search
 
 ## Codebase Patterns
 - Use Tailwind CSS with custom carnival colors defined in `frontend/src/index.css` via CSS variables
@@ -7,16 +8,157 @@ Started: Wed Jan 28 14:34:54 -03 2026
 - For map markers, use `createEventMarkerElement()` from `EventMarker.tsx` to create HTMLElement for MapTiler
 - TypeScript check: run `npx tsc --noEmit` in frontend directory
 - ESLint: run `npm run lint` (some pre-existing lint errors exist in App.tsx and useCityData.ts)
+- MapTiler markers accept an `element` option with a custom HTMLElement
+- Free events use white accent (#FFFFFF), paid events use red (#DC2626)
+- RSVP state is managed via RsvpContext - use useRsvp hook to access
+- URL params managed via useUrlParams hook in hooks/useUrlParams.ts
+- BlockDetailModal is the pattern for white-themed modals
+- InfoModal uses dark theme (#1F0914 bg, #F8F5FF text, JetBrains Mono + Instrument Serif fonts)
+- Map component exposes MapHandle.flyTo(coords) via forwardRef - use mapRef.current?.flyTo() for programmatic navigation
+- handleNavigateToBlock in App.tsx handles navigation from modals/search: closes modal, sets date filter, flies map, opens block detail
 
 ---
 
-## 2026-01-28 14:36 - US-001
-- What was implemented: Created EventMarker component that generates HTMLElement for MapTiler custom markers
+## 2025-01-29 - US-001
+- Implemented URL storage for block selections
 - Files changed:
-  - `frontend/src/components/EventMarker.tsx` (new file)
+  - `frontend/src/hooks/useUrlParams.ts` - Added `blocos` parameter
+  - `frontend/src/contexts/RsvpContext.tsx` - Added URL sync logic
 - **Learnings for future iterations:**
-  - MapTiler markers accept an `element` option with a custom HTMLElement
-  - The component uses inline styles since it creates raw DOM elements, not React components
-  - Free events use white accent (#FFFFFF), paid events use red (#DC2626)
-  - Pill shape achieved with `border-radius: 9999px`
+  - useUrlParams hook already preserves existing params when setting new ones
+  - RsvpContext uses optimistic updates - URL sync needs to wait until after initial load to avoid overwriting shared blocos param
+  - Use `isInitialLoad` ref pattern to distinguish between initial load and subsequent changes
+  - getBlocosFromUrl helper exposed for future US-002 merge logic
 ---
+
+## 2025-01-29 - US-002
+- Implemented merge logic for shared blocks on URL load
+- Files changed:
+  - `frontend/src/contexts/RsvpContext.tsx` - Added URL blocos merge in refreshRsvps
+- **Learnings for future iterations:**
+  - Set data structure handles deduplication automatically when merging user RSVPs with URL blocos
+  - City handling is already done by App.tsx on mount via useUrlParams - RsvpContext doesn't need to handle city
+  - The merge happens on initial load only (when isInitialLoad.current is true), before the URL sync effect takes over
+  - getBlocosFromUrl needed to be added to useCallback dependencies for refreshRsvps
+---
+
+## 2025-01-29 - US-003
+- Added Meus Blocos button to filter bar
+- Files changed:
+  - `frontend/src/components/FilterBar.tsx` - Added Meus Blocos button with count from RsvpContext
+  - `frontend/src/App.tsx` - Added onMeusBlocosClick prop (placeholder for future modal)
+- **Learnings for future iterations:**
+  - FilterBar is positioned absolute at the bottom with two layers: date selector (Layer 1) and filter buttons (Layer 2)
+  - Buttons in Layer 2 use consistent styling: `px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md whitespace-nowrap bg-white/80 text-gray-700 hover:bg-white`
+  - Active state uses `bg-carnival-purple text-white` (like Só gratuitos toggle)
+  - rsvpEventIds.size gives the count of selected blocks
+  - onMeusBlocosClick callback added for modal integration in US-004
+---
+
+## 2025-01-29 - US-004
+- Created Meus Blocos modal with block list
+- Files changed:
+  - `frontend/src/components/MeusBlocosModal.tsx` - New modal component with white theme
+  - `frontend/src/App.tsx` - Added modal state, rsvpBlocks computation, and modal rendering
+- **Learnings for future iterations:**
+  - Modal pattern: fixed inset-0, backdrop with bg-black/50 onClick={onClose}, relative content div
+  - White-themed modal styling: bg-white, rounded-t-xl (mobile) sm:rounded-xl, max-h-[80vh] overflow-y-auto
+  - Sticky header pattern: sticky top-0 bg-white with border-b for visual separation
+  - Get RSVP blocks by filtering cityData.features where rsvpEventIds.has(f.id)
+  - Sort blocks by date then time using string comparison (localeCompare works for YYYY-MM-DD and HH:MM)
+  - Use date-fns format with ptBR locale for Portuguese date formatting
+  - decodeHtmlEntities helper is reusable across components for block names
+---
+
+## 2025-01-29 - US-005
+- Added empty state to MeusBlocosModal when no blocks are selected
+- Files changed:
+  - `frontend/src/components/MeusBlocosModal.tsx` - Added conditional rendering for empty state
+- **Learnings for future iterations:**
+  - Empty state pattern: conditional render based on array length before mapping
+  - Use centered text with py-8 for visual balance in empty state
+  - Include hint text (text-sm text-gray-400) below main message to guide users
+  - Main message uses text-gray-600 for readable but subtle appearance
+---
+
+## 2025-01-29 - US-006
+- Implemented navigation to block from Meus Blocos modal
+- Files changed:
+  - `frontend/src/components/MeusBlocosModal.tsx` - Added onSelectBlock callback, made block items clickable buttons
+  - `frontend/src/components/Map.tsx` - Exposed flyTo method via forwardRef + useImperativeHandle
+  - `frontend/src/App.tsx` - Added mapRef, handleNavigateToBlock callback that closes modal, updates date filter, flies map, and opens block detail modal
+- **Learnings for future iterations:**
+  - Use forwardRef + useImperativeHandle to expose imperative methods from child components
+  - MapHandle interface exports flyTo(coords) for programmatic map navigation
+  - handleNavigateToBlock is reusable for search navigation (US-011)
+  - Zoom level 15 is appropriate for block-level detail view (city overview uses 12)
+  - Block items in lists should be buttons with hover:bg-gray-100 for clickability feedback
+---
+
+## 2025-01-29 - US-007
+- Added share button to Meus Blocos modal
+- Files changed:
+  - `frontend/src/components/MeusBlocosModal.tsx` - Added handleShare function, share button with feedback state
+- **Learnings for future iterations:**
+  - Web Share API: check navigator.share availability before using (mobile only)
+  - Navigator.share() returns a Promise - use async/await with try/catch
+  - AbortError name means user cancelled share - don't show error in this case
+  - Clipboard fallback: navigator.clipboard.writeText(url) for desktop
+  - Sticky bottom footer with border-t gives nice separation from scrollable content
+  - Use state with setTimeout for temporary feedback messages (e.g., 'Link copiado!')
+  - Button hidden when empty state (no blocks) - cleaner than disabled state
+---
+
+## 2025-01-29 - US-008
+- Implemented search logic for blocks
+- Files changed:
+  - `frontend/src/hooks/useBlockSearch.ts` - New hook with accent-insensitive, case-insensitive search
+- **Learnings for future iterations:**
+  - Use normalize('NFD').replace(/[\u0300-\u036f]/g, '') for accent-insensitive matching
+  - SearchResult interface includes matchType to indicate whether match was on name or neighborhood
+  - Search results sorted by relevance: name matches first, then neighborhood matches
+  - decodeHtmlEntities needed for block names (some have HTML entities like &amp;)
+  - Hook takes blocks array directly (all blocks, no filtering) - caller decides what blocks to search
+  - useMemo ensures results only recompute when query or blocks change
+---
+
+## 2025-01-29 - US-009
+- Added search bar component to top of screen
+- Files changed:
+  - `frontend/src/components/BlockSearch.tsx` - New component with search input, icon, and clear button
+  - `frontend/src/App.tsx` - Added searchQuery state and BlockSearch component
+- **Learnings for future iterations:**
+  - Search bar positioned with absolute positioning, centered on mobile (left-1/2 -translate-x-1/2), beside city selector on desktop (sm:left-40 sm:translate-x-0)
+  - Use z-10 to match CitySelector layer (both need to be above map but below modals)
+  - Focus ring uses ring-carnival-purple for consistent brand styling
+  - Clear button (X) appears only when input has value for cleaner UX
+  - Escape key blurs input to improve keyboard navigation
+  - Search input takes value/onChange props controlled by parent - state lives in App.tsx for future integration with dropdown
+---
+
+## 2025-01-29 - US-010
+- Implemented dropdown with search results
+- Files changed:
+  - `frontend/src/components/BlockSearch.tsx` - Added dropdown component with result list, debounced query state, click-outside handling
+  - `frontend/src/App.tsx` - Integrated useBlockSearch hook, added handleSearchResultSelect callback, passed new props to BlockSearch
+- **Learnings for future iterations:**
+  - Use debouncedQuery state separate from value prop to control when dropdown shows (avoids flickering on rapid typing)
+  - Click-outside listener should use mousedown event (not click) to prevent closing when clicking within dropdown
+  - Dropdown visibility controlled by: isFocused && debouncedQuery.trim().length > 0
+  - Removed onBlur from input to prevent dropdown closing before click events fire on results
+  - containerRef wraps entire component for click-outside detection
+  - SearchResult type exported from useBlockSearch hook for type safety in callbacks
+  - Input border-radius changes dynamically: rounded-lg when closed, rounded-t-lg when dropdown open for seamless appearance
+---
+
+## 2025-01-29 - US-011
+- Verified navigation to block from search results (already implemented in US-010)
+- Files changed:
+  - `scripts/ralph/prd.json` - Marked US-011 as passing
+- **Learnings for future iterations:**
+  - US-010 implementation included complete result selection handling: handleResultClick calls onSelectResult(result), clears input, and closes dropdown
+  - handleSearchResultSelect in App.tsx delegates to handleNavigateToBlock, which handles all navigation logic
+  - This story was effectively completed during US-010 development - the acceptance criteria were met as part of the dropdown implementation
+  - Pattern: when implementing dropdown/list selection, include navigation logic at the same time to avoid separate story
+---
+

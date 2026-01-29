@@ -1,0 +1,203 @@
+{
+  "project": "CarnaMapa",
+  "branchName": "ralph/meus-blocos-and-search",
+  "description": "Add Meus Blocos feature for viewing/sharing selected blocks, and block search functionality",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Store block selections in URL",
+      "description": "As a developer, I need to persist block selections in the URL so they can be shared and restored.",
+      "acceptanceCriteria": [
+        "Block IDs are stored in URL query parameter (e.g., ?blocos=id1,id2,id3)",
+        "URL includes city parameter (e.g., ?city=rio&blocos=id1,id2,id3)",
+        "URL updates when user adds/removes blocks via 'Eu vou!' button",
+        "Block selections are restored when loading a URL with blocos param",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": "Foundation for sharing - must be done first. Use existing useUrlParams hook. Sync with RsvpContext state."
+    },
+    {
+      "id": "US-002",
+      "title": "Merge shared blocks on URL load",
+      "description": "As a user receiving a shared link, I want the shared blocks added to my existing selection so I don't lose my own choices.",
+      "acceptanceCriteria": [
+        "When loading URL with blocos param, blocks are merged with existing local RSVP selection",
+        "Duplicate blocks are not added twice",
+        "User's existing blocks are preserved",
+        "City from URL is applied (navigates to shared city)",
+        "Typecheck passes"
+      ],
+      "priority": 2,
+      "passes": true,
+      "notes": "Depends on US-001. Merge logic should happen on app init when URL has blocos param."
+    },
+    {
+      "id": "US-003",
+      "title": "Add Meus Blocos button to filter bar",
+      "description": "As a user, I want to access my selected blocks from the main interface so I can quickly see my carnival schedule.",
+      "acceptanceCriteria": [
+        "Meus Blocos button appears in the filter bar at the bottom",
+        "Button shows count of selected blocks (e.g., 'Meus Blocos (3)')",
+        "Button is visually consistent with existing filter bar elements",
+        "Button is always visible (even with 0 blocks selected)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 3,
+      "passes": true,
+      "notes": "Add to FilterBar component. Get count from RsvpContext."
+    },
+    {
+      "id": "US-004",
+      "title": "Create Meus Blocos modal with block list",
+      "description": "As a user, I want to see all my selected blocks in a modal so I can review my carnival schedule.",
+      "acceptanceCriteria": [
+        "Modal opens when clicking Meus Blocos button",
+        "Uses white theme styling (like BlockDetailModal)",
+        "Modal has a header 'Meus Blocos'",
+        "Each block shows: name, date, and time",
+        "Blocks are sorted by date (ascending), then by time (ascending)",
+        "Modal can be closed by clicking backdrop or X button",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 4,
+      "passes": true,
+      "notes": "Create MeusBlocosModal.tsx. Get RSVP block IDs from context, match with cityData features to get block details."
+    },
+    {
+      "id": "US-005",
+      "title": "Show empty state when no blocks selected",
+      "description": "As a user with no selected blocks, I want to see a helpful message so I understand how to use the feature.",
+      "acceptanceCriteria": [
+        "When user has 0 blocks selected, modal shows empty state",
+        "Empty state message: 'Você ainda não confirmou presença em nenhum bloco'",
+        "Optionally include hint text about how to select blocks",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 5,
+      "passes": true,
+      "notes": "Part of MeusBlocosModal - add conditional rendering for empty state."
+    },
+    {
+      "id": "US-006",
+      "title": "Navigate to block from Meus Blocos modal",
+      "description": "As a user, I want to click on a block in the modal to see it on the map so I can check its location.",
+      "acceptanceCriteria": [
+        "Clicking a block in the list closes the modal",
+        "Map zooms/pans to center on the selected block",
+        "Date filter changes to show the block's date",
+        "The block's detail modal opens (existing BlockDetailModal)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 6,
+      "passes": true,
+      "notes": "Need to pass callbacks from App.tsx: onSelectBlock, onDateChange, onClose. May need to lift map flyTo logic."
+    },
+    {
+      "id": "US-007",
+      "title": "Add share button to Meus Blocos modal",
+      "description": "As a user, I want to share my block selection with friends so we can coordinate our carnival plans.",
+      "acceptanceCriteria": [
+        "'Mandar pra um amigo' button at bottom of modal",
+        "Button uses Web Share API if available (mobile)",
+        "Falls back to copying URL to clipboard on desktop",
+        "Shows confirmation feedback after sharing/copying (e.g., 'Link copiado!')",
+        "Button is disabled/hidden when no blocks are selected",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 7,
+      "passes": true,
+      "notes": "Web Share API: navigator.share(). Clipboard: navigator.clipboard.writeText(). Check navigator.share availability."
+    },
+    {
+      "id": "US-008",
+      "title": "Implement search logic",
+      "description": "As a developer, I need search logic that matches blocks by name or neighborhood.",
+      "acceptanceCriteria": [
+        "Search matches against block name (case-insensitive, accent-insensitive)",
+        "Search matches against neighborhood (case-insensitive, accent-insensitive)",
+        "Search works across ALL dates (ignores current date filter)",
+        "Returns results sorted by relevance (name matches before neighborhood matches)",
+        "Limits results to max 10 items",
+        "Typecheck passes"
+      ],
+      "priority": 8,
+      "passes": true,
+      "notes": "Create useBlockSearch hook or utility. Use normalize('NFD').replace(/[\\u0300-\\u036f]/g, '') for accent-insensitive. Search cityData.features."
+    },
+    {
+      "id": "US-009",
+      "title": "Add search bar to top of screen",
+      "description": "As a user, I want a search bar at the top of the map so I can quickly find blocks.",
+      "acceptanceCriteria": [
+        "Search input appears at top of screen (below or beside city selector)",
+        "Search bar has placeholder text 'Buscar bloco...'",
+        "Search bar has a search icon",
+        "Search bar is visually consistent with app design",
+        "Search bar does not obstruct map interaction when not focused",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 9,
+      "passes": true,
+      "notes": "Create BlockSearch.tsx component. Position with fixed/absolute at top. Add to App.tsx map view."
+    },
+    {
+      "id": "US-010",
+      "title": "Show dropdown with search results",
+      "description": "As a user, I want to see matching blocks in a dropdown as I type so I can find what I'm looking for.",
+      "acceptanceCriteria": [
+        "Dropdown appears below search bar when user types",
+        "Each result shows block name, neighborhood, date, and time",
+        "Results update as user types (debounced ~200ms)",
+        "Dropdown shows 'Nenhum bloco encontrado' when no matches",
+        "Dropdown closes when clicking outside or pressing Escape",
+        "Dropdown closes when search input is cleared",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 10,
+      "passes": true,
+      "notes": "Part of BlockSearch component. Use useState for dropdown visibility. Add click-outside listener."
+    },
+    {
+      "id": "US-011",
+      "title": "Navigate to block from search results",
+      "description": "As a user, I want to click a search result to go directly to that block on the map.",
+      "acceptanceCriteria": [
+        "Clicking a result closes the dropdown",
+        "Clicking a result clears the search input",
+        "Date filter updates to show the block's date",
+        "Map zooms/pans to center on the selected block",
+        "Block detail modal opens (existing BlockDetailModal)",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 11,
+      "passes": true,
+      "notes": "Reuse navigation pattern from US-006. Pass same callbacks: onSelectBlock, onDateChange."
+    },
+    {
+      "id": "US-012",
+      "title": "Keyboard navigation for search",
+      "description": "As a user, I want to navigate search results with my keyboard for faster interaction.",
+      "acceptanceCriteria": [
+        "Arrow up/down moves selection through results",
+        "Enter key selects the highlighted result",
+        "Escape key closes the dropdown",
+        "First result is highlighted by default when dropdown opens",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 12,
+      "passes": false,
+      "notes": "Add onKeyDown handler to search input. Track selectedIndex state. Handle ArrowUp, ArrowDown, Enter, Escape."
+    }
+  ]
+}
