@@ -11,6 +11,7 @@ import { LoadingSpinner } from './components/LoadingSpinner';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useCityData } from './hooks/useCityData';
 import { useUrlParams } from './hooks/useUrlParams';
+import { useBlockSearch, type SearchResult } from './hooks/useBlockSearch';
 import { useRsvpContext } from './contexts/RsvpContext';
 import { CITIES, getCityBySlug } from './lib/cities';
 import { detectCityFromCoords } from './lib/cityDetection';
@@ -126,6 +127,9 @@ export default function App() {
     return cityData.features.filter(f => rsvpEventIds.has(f.id));
   }, [cityData, rsvpEventIds]);
 
+  // Search results (searches ALL blocks, ignoring current date filter)
+  const searchResults = useBlockSearch(cityData?.features ?? [], searchQuery);
+
   // Handle navigation to a block (from Meus Blocos modal or search)
   const handleNavigateToBlock = useCallback((block: BlockFeature) => {
     // Close Meus Blocos modal
@@ -143,6 +147,11 @@ export default function App() {
     // Open the block detail modal
     setSelectedBlock(block);
   }, [setParams]);
+
+  // Handle search result selection
+  const handleSearchResultSelect = useCallback((result: SearchResult) => {
+    handleNavigateToBlock(result.block);
+  }, [handleNavigateToBlock]);
 
   // Info button component (shared across views)
   const InfoButton = (
@@ -214,6 +223,8 @@ export default function App() {
       <BlockSearch
         value={searchQuery}
         onChange={setSearchQuery}
+        searchResults={searchResults}
+        onSelectResult={handleSearchResultSelect}
       />
 
       {/* Map (clean UI - no controls) */}
