@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import type { BlockFeature } from '../lib/types';
@@ -17,6 +17,8 @@ function decodeHtmlEntities(text: string): string {
 }
 
 export function MeusBlocosModal({ blocks, onClose, onSelectBlock }: MeusBlocosModalProps) {
+  const [shareStatus, setShareStatus] = useState<'idle' | 'copied'>('idle');
+
   // Sort blocks by date (ascending), then by time (ascending)
   const sortedBlocks = useMemo(() => {
     return [...blocks].sort((a, b) => {
@@ -27,6 +29,37 @@ export function MeusBlocosModal({ blocks, onClose, onSelectBlock }: MeusBlocosMo
       return a.properties.time.localeCompare(b.properties.time);
     });
   }, [blocks]);
+
+  const handleShare = async () => {
+    const url = window.location.href;
+    const shareData = {
+      title: 'Meus Blocos no CarnaMapa',
+      text: 'Confira os blocos que eu vou!',
+      url,
+    };
+
+    // Try Web Share API first (available on mobile)
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        return;
+      } catch (err) {
+        // User cancelled or share failed, fall through to clipboard
+        if ((err as Error).name === 'AbortError') {
+          return; // User cancelled, do nothing
+        }
+      }
+    }
+
+    // Fallback: copy to clipboard
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus('idle'), 2000);
+    } catch (err) {
+      console.error('Failed to copy URL:', err);
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
@@ -87,6 +120,18 @@ export function MeusBlocosModal({ blocks, onClose, onSelectBlock }: MeusBlocosMo
             </div>
           )}
         </div>
+
+        {/* Share button - only show when blocks are selected */}
+        {sortedBlocks.length > 0 && (
+          <div className="sticky bottom-0 bg-white p-4 border-t border-gray-100">
+            <button
+              onClick={handleShare}
+              className="w-full py-3 px-4 bg-carnival-purple text-white font-medium rounded-full hover:bg-carnival-purple/90 transition-colors"
+            >
+              {shareStatus === 'copied' ? 'Link copiado!' : 'Mandar pra um amigo'}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
