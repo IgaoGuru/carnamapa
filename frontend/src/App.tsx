@@ -191,6 +191,7 @@ export default function App() {
         availableDates={availableDates}
         filters={filters}
         onFiltersChange={handleFiltersChange}
+        onMeusBlocosClick={() => {/* TODO: Open Meus Blocos modal (US-004) */}}
       />
 
       {/* Block detail modal */}
