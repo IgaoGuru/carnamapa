@@ -5,6 +5,7 @@ import { BlockDetailModal } from './components/BlockDetailModal';
 import { MeusBlocosModal } from './components/MeusBlocosModal';
 import { InfoModal } from './components/InfoModal';
 import { CitySelector } from './components/CitySelector';
+import { BlockSearch } from './components/BlockSearch';
 import { LandingScreen } from './components/LandingScreen';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { useGeolocation } from './hooks/useGeolocation';
@@ -27,6 +28,7 @@ export default function App() {
   const [selectedBlock, setSelectedBlock] = useState<BlockFeature | null>(null);
   const [showInfo, setShowInfo] = useState(false);
   const [showMeusBlocos, setShowMeusBlocos] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const { coords, error: geoError, loading: geoLoading, requestLocation } = useGeolocation();
   const { data: cityData, loading: dataLoading, error: dataError } = useCityData(citySlug);
@@ -206,6 +208,12 @@ export default function App() {
         currentCity={citySlug!}
         cities={CITIES}
         onChange={handleCityChange}
+      />
+
+      {/* Search bar */}
+      <BlockSearch
+        value={searchQuery}
+        onChange={setSearchQuery}
       />
 
       {/* Map (clean UI - no controls) */}
