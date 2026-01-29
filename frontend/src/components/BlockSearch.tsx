@@ -117,7 +117,7 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
           onFocus={() => setIsFocused(true)}
           onKeyDown={handleKeyDown}
           placeholder="Buscar bloco..."
-          className={`w-full pl-8 pr-8 py-1.5 bg-white/80 shadow-md text-gray-800 text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-carnival-red ${
+          className={`w-full pl-8 pr-8 py-1.5 bg-white/80 shadow-md text-gray-800 text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-carnival-red ${
             showDropdown ? 'rounded-b-full' : 'rounded-full'
           }`}
         />
