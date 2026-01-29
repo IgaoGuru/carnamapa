@@ -1,5 +1,5 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
-import { Map } from './components/Map';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { Map, MapHandle } from './components/Map';
 import { FilterBar } from './components/FilterBar';
 import { BlockDetailModal } from './components/BlockDetailModal';
 import { MeusBlocosModal } from './components/MeusBlocosModal';
@@ -32,6 +32,7 @@ export default function App() {
   const { data: cityData, loading: dataLoading, error: dataError } = useCityData(citySlug);
   const { getParams, setParams } = useUrlParams();
   const { rsvpEventIds } = useRsvpContext();
+  const mapRef = useRef<MapHandle>(null);
 
   // Check URL params on mount
   useEffect(() => {
@@ -123,6 +124,24 @@ export default function App() {
     return cityData.features.filter(f => rsvpEventIds.has(f.id));
   }, [cityData, rsvpEventIds]);
 
+  // Handle navigation to a block (from Meus Blocos modal or search)
+  const handleNavigateToBlock = useCallback((block: BlockFeature) => {
+    // Close Meus Blocos modal
+    setShowMeusBlocos(false);
+
+    // Update date filter to show the block's date
+    setFilters(prev => ({ ...prev, selectedDate: block.properties.date }));
+    setParams({ date: block.properties.date });
+
+    // Fly map to the block's location
+    if (block.geometry.coordinates) {
+      mapRef.current?.flyTo(block.geometry.coordinates);
+    }
+
+    // Open the block detail modal
+    setSelectedBlock(block);
+  }, [setParams]);
+
   // Info button component (shared across views)
   const InfoButton = (
     <button
@@ -191,6 +210,7 @@ export default function App() {
 
       {/* Map (clean UI - no controls) */}
       <Map
+        ref={mapRef}
         cityCenter={currentCity.center}
         filteredFeatures={filteredFeatures}
         onSelectBlock={setSelectedBlock}
@@ -220,6 +240,7 @@ export default function App() {
         <MeusBlocosModal
           blocks={rsvpBlocks}
           onClose={() => setShowMeusBlocos(false)}
+          onSelectBlock={handleNavigateToBlock}
         />
       )}
     </div>

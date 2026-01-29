@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import '@maptiler/sdk/dist/maptiler-sdk.css';
 import type { BlockFeature } from '../lib/types';
@@ -10,10 +10,26 @@ interface MapProps {
   onSelectBlock: (block: BlockFeature) => void;
 }
 
-export function Map({ cityCenter, filteredFeatures, onSelectBlock }: MapProps) {
+export interface MapHandle {
+  flyTo: (coords: [number, number]) => void;
+}
+
+export const Map = forwardRef<MapHandle, MapProps>(function Map(
+  { cityCenter, filteredFeatures, onSelectBlock },
+  ref
+) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<maptilersdk.Map | null>(null);
   const markersRef = useRef<maptilersdk.Marker[]>([]);
+
+  // Expose flyTo method to parent component
+  useImperativeHandle(ref, () => ({
+    flyTo: (coords: [number, number]) => {
+      if (map.current) {
+        map.current.flyTo({ center: coords, zoom: 15 });
+      }
+    },
+  }));
 
   // Initialize map
   useEffect(() => {
@@ -83,4 +99,4 @@ export function Map({ cityCenter, filteredFeatures, onSelectBlock }: MapProps) {
   return (
     <div ref={mapContainer} className="w-full h-full" />
   );
-}
+});

@@ -6,6 +6,7 @@ import type { BlockFeature } from '../lib/types';
 interface MeusBlocosModalProps {
   blocks: BlockFeature[];
   onClose: () => void;
+  onSelectBlock: (block: BlockFeature) => void;
 }
 
 // Decode HTML entities in block names
@@ -15,7 +16,7 @@ function decodeHtmlEntities(text: string): string {
   return textarea.value;
 }
 
-export function MeusBlocosModal({ blocks, onClose }: MeusBlocosModalProps) {
+export function MeusBlocosModal({ blocks, onClose, onSelectBlock }: MeusBlocosModalProps) {
   // Sort blocks by date (ascending), then by time (ascending)
   const sortedBlocks = useMemo(() => {
     return [...blocks].sort((a, b) => {
@@ -69,9 +70,10 @@ export function MeusBlocosModal({ blocks, onClose }: MeusBlocosModalProps) {
                 const blockName = decodeHtmlEntities(p.name);
 
                 return (
-                  <div
+                  <button
                     key={block.id}
-                    className="p-3 bg-gray-50 rounded-lg"
+                    className="w-full p-3 bg-gray-50 rounded-lg text-left hover:bg-gray-100 transition-colors cursor-pointer"
+                    onClick={() => onSelectBlock(block)}
                   >
                     <p className="font-medium text-gray-900">{blockName}</p>
                     <div className="flex items-center gap-2 mt-1 text-sm text-gray-600">
@@ -79,7 +81,7 @@ export function MeusBlocosModal({ blocks, onClose }: MeusBlocosModalProps) {
                       <span>•</span>
                       <span>{p.time}</span>
                     </div>
-                  </div>
+                  </button>
                 );
               })}
             </div>
