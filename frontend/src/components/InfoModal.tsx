@@ -69,7 +69,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
           <div>
             <h2 className="text-xl mb-2" style={{ fontFamily: '"Instrument Serif", serif' }}>qual é o seu livro favorito?</h2>
             <p className="text-xs opacity-90">
-              em ordem: Ensaio sobre a Cegueira, O Livro do Jobi, Cathedral and the Bazaar, Punished by Rewards
+              em ordem: Hoje Nós Não Vamos Ficar Tristes, O Livro do Jobi, Cathedral and the Bazaar, Punished by Rewards
             </p>
           </div>
 
