@@ -33,7 +33,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
         <div className="p-6 space-y-5">
           {/* Section 1 */}
           <div>
-            <h2 className="text-xl mb-2" style={{ fontFamily: '"Instrument Serif", serif' }}>o quê é esse site?</h2>
+            <h2 className="text-xl mb-2" style={{ fontFamily: '"Instrument Serif", serif' }}>o que é esse site?</h2>
             <p className="text-xs opacity-90">
               O CarnaMapa foi criado para facilitar a vida de quem quer curtir o carnaval de rua. Aqui você encontra todos os blocos de carnaval mapeados, com filtros por data, horário e preço.<br/><br/> Você pode até mandar pros seus amigos!
               </p>
@@ -45,7 +45,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
             <p className="text-xs opacity-90">
               Eu, <a className="text-xs opacity-90 underline" href="https://falso.net">
               Igor
-              </a>, pro o Carnaval 2026.
+              </a>, pro o Carnaval 2026!!
             </p>
           </div>
 
@@ -64,6 +64,15 @@ export function InfoModal({ onClose }: InfoModalProps) {
               </a>
             </p>
           </div>
+
+          {/*section 3 */}
+          <div>
+            <h2 className="text-xl mb-2" style={{ fontFamily: '"Instrument Serif", serif' }}>qual é o seu livro favorito?</h2>
+            <p className="text-xs opacity-90">
+              em ordem: Ensaio sobre a Cegueira, O Livro do Jobi, Cathedral and the Bazaar, Punished by Rewards
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
