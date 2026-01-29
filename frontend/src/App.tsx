@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Map } from './components/Map';
 import { FilterBar } from './components/FilterBar';
 import { BlockDetailModal } from './components/BlockDetailModal';
+import { InfoModal } from './components/InfoModal';
 import { CitySelector } from './components/CitySelector';
 import { LandingScreen } from './components/LandingScreen';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -22,6 +23,7 @@ export default function App() {
     timePeriod: null,
   });
   const [selectedBlock, setSelectedBlock] = useState<BlockFeature | null>(null);
+  const [showInfo, setShowInfo] = useState(false);
 
   const { coords, error: geoError, loading: geoLoading, requestLocation } = useGeolocation();
   const { data: cityData, loading: dataLoading, error: dataError } = useCityData(citySlug);
@@ -111,39 +113,65 @@ export default function App() {
   // Get current city config
   const currentCity = citySlug ? getCityBySlug(citySlug) : null;
 
+  // Info button component (shared across views)
+  const InfoButton = (
+    <button
+      onClick={() => setShowInfo(true)}
+      className="fixed top-4 right-4 z-40 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-gray-900 hover:shadow-lg transition-all"
+      aria-label="Informações"
+    >
+      ?
+    </button>
+  );
+
   // Landing screen
   if (view === 'landing') {
     return (
-      <LandingScreen
-        onRequestLocation={requestLocation}
-        onSelectCity={handleCityChange}
-        loading={geoLoading}
-        error={geoError}
-        cities={CITIES}
-      />
+      <>
+        {InfoButton}
+        <LandingScreen
+          onRequestLocation={requestLocation}
+          onSelectCity={handleCityChange}
+          loading={geoLoading}
+          error={geoError}
+          cities={CITIES}
+        />
+        {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
+      </>
     );
   }
 
   // Loading city data
   if (dataLoading || !cityData || !currentCity) {
     return (
-      <div className="h-full flex items-center justify-center">
-        <LoadingSpinner message="Carregando blocos..." />
-      </div>
+      <>
+        {InfoButton}
+        <div className="h-full flex items-center justify-center">
+          <LoadingSpinner message="Carregando blocos..." />
+        </div>
+        {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
+      </>
     );
   }
 
   // Error loading data
   if (dataError) {
     return (
-      <div className="h-full flex items-center justify-center">
-        <p className="text-red-500">Erro ao carregar dados: {dataError}</p>
-      </div>
+      <>
+        {InfoButton}
+        <div className="h-full flex items-center justify-center">
+          <p className="text-red-500">Erro ao carregar dados: {dataError}</p>
+        </div>
+        {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
+      </>
     );
   }
 
   return (
     <div className="h-full relative">
+      {/* Info button */}
+      {InfoButton}
+
       {/* City selector */}
       <CitySelector
         currentCity={citySlug!}
@@ -172,6 +200,9 @@ export default function App() {
           onClose={() => setSelectedBlock(null)}
         />
       )}
+
+      {/* Info modal */}
+      {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
     </div>
   );
 }
