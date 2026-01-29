@@ -20,13 +20,15 @@ function decodeHtmlEntities(text: string): string {
 export function BlockSearch({ value, onChange, searchResults, onSelectResult }: BlockSearchProps) {
   const [isFocused, setIsFocused] = useState(false);
   const [debouncedQuery, setDebouncedQuery] = useState(value);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Debounce the query (~200ms)
+  // Debounce the query and reset selection (~200ms)
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedQuery(value);
+      setSelectedIndex(0); // Reset selection when query changes
     }, 200);
     return () => clearTimeout(timer);
   }, [value]);
@@ -48,20 +50,40 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
     }
   }, [showDropdown]);
 
-  // Handle escape key to close dropdown
+  // Handle result selection
+  const handleResultClick = useCallback((result: SearchResult) => {
+    onSelectResult(result);
+    onChange(''); // Clear search input
+    setIsFocused(false);
+  }, [onSelectResult, onChange]);
+
+  // Handle keyboard navigation
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.key === 'Escape') {
       setIsFocused(false);
       inputRef.current?.blur();
+      return;
     }
-  }, []);
 
-  // Handle result selection
-  const handleResultClick = (result: SearchResult) => {
-    onSelectResult(result);
-    onChange(''); // Clear search input
-    setIsFocused(false);
-  };
+    // Only handle navigation when dropdown is visible and has results
+    if (!showDropdown || searchResults.length === 0) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSelectedIndex(prev =>
+        prev < searchResults.length - 1 ? prev + 1 : prev
+      );
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSelectedIndex(prev => (prev > 0 ? prev - 1 : prev));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const selectedResult = searchResults[selectedIndex];
+      if (selectedResult) {
+        handleResultClick(selectedResult);
+      }
+    }
+  }, [showDropdown, searchResults, selectedIndex, handleResultClick]);
 
   return (
     <div
@@ -123,18 +145,22 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
               </div>
             ) : (
               <ul className="py-1">
-                {searchResults.map((result) => {
+                {searchResults.map((result, index) => {
                   const { block } = result;
                   const { properties: p } = block;
                   const blockName = decodeHtmlEntities(p.name);
                   const dateFormatted = format(parseISO(p.date), "EEE, d 'de' MMM", { locale: ptBR });
+                  const isSelected = index === selectedIndex;
 
                   return (
                     <li key={block.id}>
                       <button
                         type="button"
-                        className="w-full px-4 py-3 text-left hover:bg-gray-100 transition-colors"
+                        className={`w-full px-4 py-3 text-left transition-colors ${
+                          isSelected ? 'bg-gray-100' : 'hover:bg-gray-100'
+                        }`}
                         onClick={() => handleResultClick(result)}
+                        onMouseEnter={() => setSelectedIndex(index)}
                       >
                         <p className="font-medium text-gray-900">{blockName}</p>
                         <div className="flex items-center gap-2 mt-1 text-sm text-gray-600">

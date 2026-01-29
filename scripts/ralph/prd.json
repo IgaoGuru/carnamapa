@@ -196,7 +196,7 @@
         "Verify in browser using dev-browser skill"
       ],
       "priority": 12,
-      "passes": false,
+      "passes": true,
       "notes": "Add onKeyDown handler to search input. Track selectedIndex state. Handle ArrowUp, ArrowDown, Enter, Escape."
     }
   ]

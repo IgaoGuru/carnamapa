@@ -162,3 +162,17 @@ Feature: Meus Blocos + Block Search
   - Pattern: when implementing dropdown/list selection, include navigation logic at the same time to avoid separate story
 ---
 
+## 2025-01-29 - US-012
+- Implemented keyboard navigation for search dropdown
+- Files changed:
+  - `frontend/src/components/BlockSearch.tsx` - Added selectedIndex state, keyboard handlers for ArrowUp/ArrowDown/Enter, visual highlighting
+  - `scripts/ralph/prd.json` - Marked US-012 as passing
+- **Learnings for future iterations:**
+  - Keyboard navigation pattern: selectedIndex state, ArrowUp/ArrowDown to move, Enter to select
+  - Reset selectedIndex in the debounce effect when value changes (inside setTimeout callback) to avoid triggering lint rule about setState in effects
+  - Add onMouseEnter to update selectedIndex on hover for consistent highlighting between keyboard and mouse
+  - Use conditional className for selected state: `${isSelected ? 'bg-gray-100' : 'hover:bg-gray-100'}`
+  - handleResultClick needs to be defined before handleKeyDown (or use useCallback) since handleKeyDown references it
+  - ESLint react-hooks/refs rule prohibits accessing refs during render, and react-hooks/set-state-in-effect prohibits setState in effects - work around by setting state in timeout callbacks instead
+---
+
