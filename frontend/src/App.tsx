@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Map } from './components/Map';
 import { FilterBar } from './components/FilterBar';
 import { BlockDetailModal } from './components/BlockDetailModal';
+import { MeusBlocosModal } from './components/MeusBlocosModal';
 import { InfoModal } from './components/InfoModal';
 import { CitySelector } from './components/CitySelector';
 import { LandingScreen } from './components/LandingScreen';
@@ -9,6 +10,7 @@ import { LoadingSpinner } from './components/LoadingSpinner';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useCityData } from './hooks/useCityData';
 import { useUrlParams } from './hooks/useUrlParams';
+import { useRsvpContext } from './contexts/RsvpContext';
 import { CITIES, getCityBySlug } from './lib/cities';
 import { detectCityFromCoords } from './lib/cityDetection';
 import { isTimeInPeriod } from './lib/types';
@@ -24,10 +26,12 @@ export default function App() {
   });
   const [selectedBlock, setSelectedBlock] = useState<BlockFeature | null>(null);
   const [showInfo, setShowInfo] = useState(false);
+  const [showMeusBlocos, setShowMeusBlocos] = useState(false);
 
   const { coords, error: geoError, loading: geoLoading, requestLocation } = useGeolocation();
   const { data: cityData, loading: dataLoading, error: dataError } = useCityData(citySlug);
   const { getParams, setParams } = useUrlParams();
+  const { rsvpEventIds } = useRsvpContext();
 
   // Check URL params on mount
   useEffect(() => {
@@ -113,6 +117,12 @@ export default function App() {
   // Get current city config
   const currentCity = citySlug ? getCityBySlug(citySlug) : null;
 
+  // Get RSVP blocks by matching IDs with cityData features
+  const rsvpBlocks = useMemo(() => {
+    if (!cityData) return [];
+    return cityData.features.filter(f => rsvpEventIds.has(f.id));
+  }, [cityData, rsvpEventIds]);
+
   // Info button component (shared across views)
   const InfoButton = (
     <button
@@ -191,7 +201,7 @@ export default function App() {
         availableDates={availableDates}
         filters={filters}
         onFiltersChange={handleFiltersChange}
-        onMeusBlocosClick={() => {/* TODO: Open Meus Blocos modal (US-004) */}}
+        onMeusBlocosClick={() => setShowMeusBlocos(true)}
       />
 
       {/* Block detail modal */}
@@ -204,6 +214,14 @@ export default function App() {
 
       {/* Info modal */}
       {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
+
+      {/* Meus Blocos modal */}
+      {showMeusBlocos && (
+        <MeusBlocosModal
+          blocks={rsvpBlocks}
+          onClose={() => setShowMeusBlocos(false)}
+        />
+      )}
     </div>
   );
 }
