@@ -88,9 +88,9 @@ export function BlockSearch({ value, onChange, searchResults, onSelectResult }: 
   return (
     <div
       ref={containerRef}
-      className="absolute top-4 left-1/2 -translate-x-1/2 z-10 w-full max-w-md px-4 sm:px-0 sm:left-40 sm:translate-x-0"
+      className="absolute top-4 left-36 right-14 z-10 flex justify-center"
     >
-      <div className="relative">
+      <div className="relative w-full max-w-md">
         {/* Search icon */}
         <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
           <svg

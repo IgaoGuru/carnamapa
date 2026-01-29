@@ -17,7 +17,7 @@ export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorPro
   const periods = Object.keys(TIME_PERIODS) as TimePeriod[];
 
   return (
-    <div className="flex bg-white/80 rounded-full p-1 shadow-md">
+    <div className="flex bg-white/80 rounded-full shadow-md w-[200px]">
       {periods.map((period, index) => {
         const isSelected = selected === period;
         return (
@@ -25,7 +25,7 @@ export function TimePeriodSelector({ selected, onChange }: TimePeriodSelectorPro
             key={period}
             onClick={() => handleToggle(period)}
             className={clsx(
-              'px-4 py-1.5 text-sm font-medium transition-colors',
+              'flex-1 py-1.5 text-xs font-medium transition-colors',
               index === 0 && 'rounded-l-full',
               index === periods.length - 1 && 'rounded-r-full',
               isSelected

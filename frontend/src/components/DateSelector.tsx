@@ -48,28 +48,28 @@ export function DateSelector({
     : 'Todos os dias';
 
   return (
-    <div className="flex items-center justify-start gap-2">
+    <div className="inline-flex items-stretch rounded-full shadow-md overflow-hidden w-[200px]">
       <button
         onClick={handlePrev}
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/80 hover:bg-white text-gray-700 text-lg font-bold transition-colors shadow-md"
+        className="w-7 flex items-center justify-center bg-gray-200/80 hover:bg-gray-300 text-gray-700 text-xs font-bold transition-colors"
         aria-label="Data anterior"
       >
-        &lt;
+        ‹
       </button>
 
       <button
         onClick={onOpenCalendar}
-        className="px-6 py-2 bg-white rounded-full text-gray-800 font-medium min-w-[180px] hover:bg-gray-100 transition-colors shadow-md"
+        className="flex-1 px-2 py-1.5 bg-white/80 text-gray-800 text-xs font-medium hover:bg-gray-50 transition-colors text-center"
       >
         {displayText}
       </button>
 
       <button
         onClick={handleNext}
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/80 hover:bg-white text-gray-700 text-lg font-bold transition-colors shadow-md"
+        className="w-7 flex items-center justify-center bg-gray-200/80 hover:bg-gray-300 text-gray-700 text-xs font-bold transition-colors"
         aria-label="Proxima data"
       >
-        &gt;
+        ›
       </button>
     </div>
   );

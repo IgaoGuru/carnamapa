@@ -42,44 +42,48 @@ export function FilterBar({ availableDates, filters, onFiltersChange, onMeusBloc
 
   return (
     <>
-      <div className="absolute bottom-0 left-0 right-0 z-10">
-        {/* Layer 1: Date Selector */}
-        <div className="px-4 py-3">
+      <div className="absolute bottom-0 left-0 right-0 z-10 px-4 pb-6 space-y-2">
+        {/* Row 1: Date Selector + Meus Blocos */}
+        <div className="flex items-center justify-between">
           <DateSelector
             selectedDate={filters.selectedDate}
             availableDates={sortedDates}
             onDateChange={handleDateChange}
             onOpenCalendar={() => setCalendarOpen(true)}
           />
+          <button
+            onClick={onMeusBlocosClick}
+            className="px-3 py-1.5 rounded-full text-xs font-medium transition-colors shadow-md whitespace-nowrap bg-white/80 text-gray-700 hover:bg-white"
+          >
+            Meus Blocos ({rsvpEventIds.size})
+          </button>
         </div>
 
-        {/* Layer 2: Time Period + Meus Blocos + Free Only */}
-        <div className="px-4 py-3 flex items-center justify-between gap-4">
+        {/* Row 2: Time Period + Só Gratuitos */}
+        <div className="flex items-center justify-between">
           <TimePeriodSelector
             selected={filters.timePeriod}
             onChange={handleTimePeriodChange}
           />
-
-          <div className="flex items-center gap-2">
+          <label className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 shadow-md cursor-pointer">
+            <span className="text-xs font-medium text-gray-700">Só gratuitos</span>
             <button
-              onClick={onMeusBlocosClick}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md whitespace-nowrap bg-white/80 text-gray-700 hover:bg-white"
-            >
-              Meus Blocos ({rsvpEventIds.size})
-            </button>
-
-            <button
+              role="switch"
+              aria-checked={filters.freeOnly}
               onClick={() => handleFreeOnlyChange(!filters.freeOnly)}
               className={clsx(
-                'px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md whitespace-nowrap',
-                filters.freeOnly
-                  ? 'bg-carnival-purple text-white'
-                  : 'bg-white/80 text-gray-700 hover:bg-white'
+                'relative w-9 h-5 rounded-full transition-colors',
+                filters.freeOnly ? 'bg-carnival-red' : 'bg-gray-300'
               )}
             >
-              Só gratuitos
+              <span
+                className={clsx(
+                  'absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform',
+                  filters.freeOnly && 'translate-x-4'
+                )}
+              />
             </button>
-          </div>
+          </label>
         </div>
       </div>
 

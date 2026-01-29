@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { Map, MapHandle } from './components/Map';
+import { Map, type MapHandle } from './components/Map';
 import { FilterBar } from './components/FilterBar';
 import { BlockDetailModal } from './components/BlockDetailModal';
 import { MeusBlocosModal } from './components/MeusBlocosModal';
@@ -208,7 +208,7 @@ export default function App() {
   }
 
   return (
-    <div className="h-full relative">
+    <div className="h-full w-full relative">
       {/* Info button */}
       {InfoButton}
 
