@@ -4,6 +4,7 @@ import {
   useState,
   useEffect,
   useCallback,
+  useRef,
   type ReactNode,
 } from 'react';
 import {
@@ -11,6 +12,7 @@ import {
   createRsvp,
   deleteRsvp,
 } from '../services/rsvpService';
+import { useUrlParams } from '../hooks/useUrlParams';
 
 interface RsvpContextValue {
   rsvpEventIds: Set<string>;
@@ -18,6 +20,7 @@ interface RsvpContextValue {
   addRsvp: (eventId: string) => Promise<void>;
   removeRsvp: (eventId: string) => Promise<void>;
   refreshRsvps: () => Promise<void>;
+  getBlocosFromUrl: () => string[];
 }
 
 const RsvpContext = createContext<RsvpContextValue | null>(null);
@@ -29,6 +32,24 @@ interface RsvpProviderProps {
 export function RsvpProvider({ children }: RsvpProviderProps) {
   const [rsvpEventIds, setRsvpEventIds] = useState<Set<string>>(new Set());
   const [isLoading, setIsLoading] = useState(true);
+  const { getParams, setParams } = useUrlParams();
+  const isInitialLoad = useRef(true);
+
+  // Get blocos from URL for merging (used by components on initial load)
+  const getBlocosFromUrl = useCallback((): string[] => {
+    const { blocos } = getParams();
+    if (!blocos) return [];
+    return blocos.split(',').filter((id) => id.trim() !== '');
+  }, [getParams]);
+
+  // Sync RSVPs to URL whenever they change (after initial load)
+  useEffect(() => {
+    if (isInitialLoad.current) return;
+
+    const blocosArray = Array.from(rsvpEventIds);
+    const blocosParam = blocosArray.length > 0 ? blocosArray.join(',') : undefined;
+    setParams({ blocos: blocosParam });
+  }, [rsvpEventIds, setParams]);
 
   const refreshRsvps = useCallback(async () => {
     setIsLoading(true);
@@ -39,6 +60,7 @@ export function RsvpProvider({ children }: RsvpProviderProps) {
       console.error('Failed to fetch RSVPs:', error);
     } finally {
       setIsLoading(false);
+      isInitialLoad.current = false;
     }
   }, []);
 
@@ -88,6 +110,7 @@ export function RsvpProvider({ children }: RsvpProviderProps) {
         addRsvp,
         removeRsvp,
         refreshRsvps,
+        getBlocosFromUrl,
       }}
     >
       {children}

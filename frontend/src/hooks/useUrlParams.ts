@@ -5,6 +5,7 @@ interface UrlParams {
   date?: string;
   free?: string;  // "1" for free only filter
   block?: string;
+  blocos?: string; // Comma-separated list of block IDs for sharing
 }
 
 export function useUrlParams() {
@@ -15,6 +16,7 @@ export function useUrlParams() {
       date: params.get('date') || undefined,
       free: params.get('free') || undefined,
       block: params.get('block') || undefined,
+      blocos: params.get('blocos') || undefined,
     };
   }, []);
 
