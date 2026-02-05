@@ -45,7 +45,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
             <p className="text-xs opacity-90">
               Eu, <a className="text-xs opacity-90 underline" href="https://falso.net">
               Igor
-              </a>, pro o Carnaval 2026!!
+              </a>, pro Carnaval 2026!!
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export function InfoModal({ onClose }: InfoModalProps) {
           <div>
             <h2 className="text-xl mb-2" style={{ fontFamily: '"Instrument Serif", serif' }}>de onde vêm os dados?</h2>
             <p className="text-xs opacity-90">
-              Os dados dos blocos vêm do{' '}
+              Os dados dos blocos vem do{' '}
               <a
                 href="https://blocosderua.com"
                 target="_blank"
